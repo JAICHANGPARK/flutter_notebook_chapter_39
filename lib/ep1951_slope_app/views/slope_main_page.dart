@@ -52,7 +52,8 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                     decoration: BoxDecoration(
                         color: Colors.white,
                         gradient: LinearGradient(
-                          
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
                           colors: [
                             Colors.white,
                             Colors.white.withOpacity(.2),
