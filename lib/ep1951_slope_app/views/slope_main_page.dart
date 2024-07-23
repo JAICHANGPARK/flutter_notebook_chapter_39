@@ -56,6 +56,8 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                           end: Alignment.topCenter,
                           colors: [
                             Colors.white,
+                            Colors.white,
+                            Colors.white.withOpacity(.6),
                             Colors.white.withOpacity(.2),
                           ],
                         )),
