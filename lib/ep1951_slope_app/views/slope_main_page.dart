@@ -34,11 +34,35 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                   "Unknown Places",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ),
               ),
             ),
-          )
+          ),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              child: Column(
+                children: [
+                  Container(
+                    height: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Container(
+                    height: 52,
+                    decoration: BoxDecoration(
+                      color: 
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
