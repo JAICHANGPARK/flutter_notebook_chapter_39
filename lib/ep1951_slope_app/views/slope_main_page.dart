@@ -70,7 +70,15 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                               radius: 4,
                               backgroundColor: Colors.red,
                             ),
-                            Text("Zone Ludique")
+                            Text("Zone Ludique"),
+
+                          ],
+                        ),
+
+                        Text("7:40 - 7:55"),
+                        Row(
+                          children: [
+
                           ],
                         )
                       ],
