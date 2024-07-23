@@ -78,6 +78,21 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                         Text("7:40 - 7:55"),
                         Row(
                           children: [
+                            Column(
+                              children: [
+
+                              ],
+                            ),
+                            Column(
+                              children: [
+
+                              ],
+                            ),
+                            Column(
+                              children: [
+
+                              ],
+                            )
 
                           ],
                         )
