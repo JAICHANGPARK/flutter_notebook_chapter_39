@@ -12,7 +12,7 @@ class SlopeMobileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:SlopeMainPage(),
+      home: SlopeMainPage(),
     );
   }
 }
