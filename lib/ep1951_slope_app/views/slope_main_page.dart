@@ -62,9 +62,11 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                         ],
                       ),
                     ),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(
                               radius: 4,
