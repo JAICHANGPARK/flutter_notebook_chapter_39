@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SlopeMainPage extends StatefulWidget {
   const SlopeMainPage({super.key});
 
@@ -14,7 +13,12 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned.fill(
+              child: Container(
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(229, 240, 248, 1),
+            ),
+          )),
         ],
       ),
     );
