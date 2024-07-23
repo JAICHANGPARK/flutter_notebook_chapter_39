@@ -22,7 +22,6 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
           ),
           Positioned(
             top: 62,
-
             left: 24,
             right: 24,
             child: Container(
@@ -33,6 +32,9 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
               child: Center(
                 child: Text(
                   "Unknown Places",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
