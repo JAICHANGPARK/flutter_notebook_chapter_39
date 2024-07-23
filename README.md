@@ -2,10 +2,10 @@
 
 ## EP1951
 
-- Qumiqo - Architecture Mobile Design
-- Levi Wilson for QClay
-- https://dribbble.com/shots/24469525-Qumiqo-Architecture-Mobile-Design
+- Slope Mobile iOS App Design Concept
+- Kristina Spiridonova for Purrweb UI/UX Agency
+- https://dribbble.com/shots/24562076-Slope-Mobile-iOS-App-Design-Concept
 
-<img src="https://cdn.dribbble.com/userupload/15446290/file/original-90b7de08551dc6025d91c2564457e0e5.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15716628/file/original-4cacc017dc5a5e1156a6b08882f516ce.png?resize=1905x1429"/>
 
 A new Flutter project.
