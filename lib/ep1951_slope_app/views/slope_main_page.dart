@@ -11,6 +11,12 @@ class SlopeMainPage extends StatefulWidget {
 class _SlopeMainPageState extends State<SlopeMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
