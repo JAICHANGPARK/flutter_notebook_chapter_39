@@ -56,7 +56,17 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                   Container(
                     height: 52,
                     decoration: BoxDecoration(
-                      color: 
+                      color: Colors.black,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Your best result in 5 min 32 sec",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   )
                 ],
