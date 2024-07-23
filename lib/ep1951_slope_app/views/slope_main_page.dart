@@ -50,17 +50,31 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                   Container(
                     height: 240,
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        gradient: LinearGradient(
-                          begin: Alignment.bottomCenter,
-                          end: Alignment.topCenter,
-                          colors: [
-                            Colors.white,
-                            Colors.white,
-                            Colors.white.withOpacity(.6),
-                            Colors.white.withOpacity(.2),
+                      color: Colors.white,
+                      gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [
+                          Colors.white,
+                          Colors.white,
+                          Colors.white.withOpacity(.6),
+                          Colors.white.withOpacity(.2),
+                        ],
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 4,
+                              backgroundColor: Colors.red,
+                            ),
+                            Text("Zone Ludique")
                           ],
-                        )),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     height: 72,
