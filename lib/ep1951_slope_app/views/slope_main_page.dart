@@ -21,10 +21,12 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             ),
           ),
           Positioned(
-            top: 24,
+            top: 62,
+
             left: 24,
             right: 24,
             child: Container(
+              padding: EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
