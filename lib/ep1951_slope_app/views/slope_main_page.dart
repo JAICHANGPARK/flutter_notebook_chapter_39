@@ -26,10 +26,11 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             right: 16,
             top: 140,
             child: CustomPaint(
-              child: Container(
-                height: 400,
-                color: Colors.blue,
-              ),
+              painter: PathPainter(),
+              // child: Container(
+              //   height: 400,
+              //   color: Colors.blue,
+              // ),
             ),
           ),
           Positioned(
@@ -193,11 +194,14 @@ class PathPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
 
+    Paint painter = Paint()..color =Colors.red;
     canvas.drawCircle(
       Offset(64, 24),
-      4,
+      8,
       Paint()..color = Colors.red,
     );
+
+    canvas.drawPath(Path(), painter);
   }
 
   @override
