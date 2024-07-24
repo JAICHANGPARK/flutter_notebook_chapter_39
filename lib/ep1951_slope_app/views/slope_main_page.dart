@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SlopeMainPage extends StatefulWidget {
   const SlopeMainPage({super.key});
@@ -81,7 +82,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                             Column(
                               children: [
                                 Icon(Icons.timer_sharp),
-                                Gap()
+                                Gap(4),
                                 Text(
                                   "5:32",
                                   style: TextStyle(
