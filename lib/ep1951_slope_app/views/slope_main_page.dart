@@ -49,7 +49,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 240,
+                    height: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       gradient: LinearGradient(
