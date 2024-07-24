@@ -99,11 +99,43 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                               ],
                             ),
                             Column(
-                              children: [],
+                              children: [
+                                Icon(Icons.speed),
+                                Gap(4),
+                                Text(
+                                  "28.9",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Text(
+                                  "track time",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
+                              ],
                             ),
                             Column(
-                              children: [],
-                            )
+                              children: [
+                                Icon(Icons.timer_sharp),
+                                Gap(4),
+                                Text(
+                                  "5:32",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Text(
+                                  "track time",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
+                              ],
+                            ),
                           ],
                         )
                       ],
