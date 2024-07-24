@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -211,10 +213,17 @@ class PathPainter extends CustomPainter {
     double startY = 0;
     double endX = size.width;
     double endY = size.height;
-
     Path path = Path()
-      ..moveTo(64, 24)
-      ..lineTo(42, 42);
+      ..moveTo(64, 24);
+
+    for ( var i = 0; i< numLines; i++){
+      double randomStartX = startX + Random().nextDouble() * (endX - startX);
+      double randomStartY = startY + Random().nextDouble() * (endY - startY);
+
+
+
+    }
+
 
     canvas.drawPath(path, linePainter);
   }
