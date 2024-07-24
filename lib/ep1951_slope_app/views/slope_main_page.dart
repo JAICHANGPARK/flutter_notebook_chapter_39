@@ -73,11 +73,21 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                               radius: 4,
                               backgroundColor: Colors.red,
                             ),
-                            Text("Zone Ludique"),
+                            Gap(4),
+                            Text(
+                              "Zone Ludique",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
                           ],
                         ),
+                        Gap(4),
                         Text("7:40 - 7:55"),
+                        Gap(24),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             Column(
                               children: [
