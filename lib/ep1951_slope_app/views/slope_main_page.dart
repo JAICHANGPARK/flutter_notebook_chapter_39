@@ -73,29 +73,36 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                               backgroundColor: Colors.red,
                             ),
                             Text("Zone Ludique"),
-
                           ],
                         ),
-
                         Text("7:40 - 7:55"),
                         Row(
                           children: [
                             Column(
                               children: [
-
+                                Icon(Icons.timer_sharp),
+                                Gap()
+                                Text(
+                                  "5:32",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Text(
+                                  "track time",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
                               ],
                             ),
                             Column(
-                              children: [
-
-                              ],
+                              children: [],
                             ),
                             Column(
-                              children: [
-
-                              ],
+                              children: [],
                             )
-
                           ],
                         )
                       ],
