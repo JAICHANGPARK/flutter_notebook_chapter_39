@@ -224,9 +224,9 @@ class PathPainter extends CustomPainter {
       // double randomEndY = startY + Random().nextDouble() * (endY - startY);
 
 
-      double randomStartX = Random().nextInt(size.width.toInt()).toDouble();
-      double randomStartY = startY + Random().nextInt(24).toDouble();
-      path.lineTo(randomStartX, randomStartY);
+      startX = Random().nextInt(size.width.toInt()).toDouble();
+      startY += (startY + Random().nextDouble());
+      path.lineTo(startX, startY);
       // path.lineTo(randomEndX, randomEndY);
     }
 
