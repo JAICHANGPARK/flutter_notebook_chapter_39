@@ -194,14 +194,16 @@ class PathPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
 
-    Paint painter = Paint()..color =Colors.red;
+    Paint painter = Paint()..color = Colors.red;
     canvas.drawCircle(
       Offset(64, 24),
       8,
-      Paint()..color = Colors.red,
+      painter,
     );
 
-    canvas.drawPath(Path(), painter);
+    Path path = Path()..moveTo(64, 24)..lineTo(42, 42);
+
+    canvas.drawPath(path, painter);
   }
 
   @override
