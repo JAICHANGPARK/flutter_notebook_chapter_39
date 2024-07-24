@@ -129,7 +129,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                                   ),
                                 ),
                                 Text(
-                                  "track time",
+                                  "max high",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
