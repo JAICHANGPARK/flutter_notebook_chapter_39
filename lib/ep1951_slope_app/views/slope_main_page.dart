@@ -201,6 +201,10 @@ class PathPainter extends CustomPainter {
       ..color = Colors.red
       ..strokeWidth = 2
       ..style = PaintingStyle.stroke;
+    Paint lineWhitePainter = Paint()
+      ..color = Colors.white
+      ..strokeWidth = 2
+      ..style = PaintingStyle.stroke;
 
     canvas.drawCircle(
       Offset(64, 24),
@@ -211,27 +215,31 @@ class PathPainter extends CustomPainter {
     var numLines = 10;
     double startX = 0;
     double startY = 24;
+    double startX2 = 0;
+    double startY2 = size.height - 24;
     double endX = size.width;
     double endY = size.height;
-    Path path = Path()
-      ..moveTo(64, 24);
+    Path path = Path()..moveTo(64, 24);
+    Path path2 = Path()..moveTo(startX2, startY2);
 
-    for ( var i = 0; i < numLines; i++){
+    for (var i = 0; i < numLines; i++) {
       // double randomStartX = doublestartX + Random().nextDouble() * (endX - startX);
       // double randomStartY = startY + Random().nextDouble() * (endY - startY);
 
       // double randomEndX = startX + Random().nextDouble() * (endX - startX);
       // double randomEndY = startY + Random().nextDouble() * (endY - startY);
 
-
       startX = Random().nextInt(size.width.toInt()).toDouble();
       startY += (startY + Random().nextDouble()) * 0.3;
+      startX2 += (startX2 + Random().nextDouble());
+      // startY2 =  Random().nextInt(size.height.toInt()).toDouble();
       path.lineTo(startX, startY);
-      // path.lineTo(randomEndX, randomEndY);
+      path2.lineTo(startX2, startY2);
     }
 
-
     canvas.drawPath(path, linePainter);
+
+    canvas.drawPath(path2, lineWhitePainter);
   }
 
   @override
