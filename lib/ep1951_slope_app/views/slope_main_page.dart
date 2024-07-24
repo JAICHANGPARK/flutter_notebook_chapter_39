@@ -110,7 +110,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                                   ),
                                 ),
                                 Text(
-                                  "track time",
+                                  "max speed",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -119,10 +119,10 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                             ),
                             Column(
                               children: [
-                                Icon(Icons.timer_sharp),
+                                Icon(Icons.expand),
                                 Gap(4),
                                 Text(
-                                  "5:32",
+                                  "2800",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
