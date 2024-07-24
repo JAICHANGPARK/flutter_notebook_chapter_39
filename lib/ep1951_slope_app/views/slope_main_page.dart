@@ -195,9 +195,10 @@ class PathPainter extends CustomPainter {
     // TODO: implement paint
 
     Paint painter = Paint()..color = Colors.red;
-    Paint linePainter = Paint()..color = Colors.red
-    ..strokeWidth = 1
-    ..style = PaintingStyle.stroke;
+    Paint linePainter = Paint()
+      ..color = Colors.red
+      ..strokeWidth = 2
+      ..style = PaintingStyle.stroke;
 
     canvas.drawCircle(
       Offset(64, 24),
@@ -205,7 +206,15 @@ class PathPainter extends CustomPainter {
       painter,
     );
 
-    Path path = Path()..moveTo(64, 24)..lineTo(42, 42);
+    var numLines = 10;
+    double startX = 0;
+    double startY = 0;
+    double endX = size.width;
+    double endY = size.height;
+
+    Path path = Path()
+      ..moveTo(64, 24)
+      ..lineTo(42, 42);
 
     canvas.drawPath(path, linePainter);
   }
