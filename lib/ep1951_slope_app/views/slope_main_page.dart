@@ -22,13 +22,24 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             ),
           ),
           Positioned(
+            left: 16,
+            right: 16,
+            top: 140,
+            child: CustomPaint(
+              child: Container(
+                height: 400,
+                color: Colors.blue,
+              ),
+            ),
+          ),
+          Positioned(
             top: 62,
             left: 24,
             right: 24,
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.white.withOpacity(.6),
               ),
               child: Center(
                 child: Text(
@@ -175,4 +186,9 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
       ),
     );
   }
+}
+
+
+class PathPainter extends CustomPainter{
+
 }
