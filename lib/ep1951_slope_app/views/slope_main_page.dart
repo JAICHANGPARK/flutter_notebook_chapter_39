@@ -210,23 +210,24 @@ class PathPainter extends CustomPainter {
 
     var numLines = 10;
     double startX = 0;
-    double startY = 0;
+    double startY = 24;
     double endX = size.width;
     double endY = size.height;
     Path path = Path()
       ..moveTo(64, 24);
 
-    for ( var i = 0; i< numLines; i++){
-      double randomStartX = startX + Random().nextDouble() * (endX - startX);
-      double randomStartY = startY + Random().nextDouble() * (endY - startY);
+    for ( var i = 0; i < numLines; i++){
+      // double randomStartX = doublestartX + Random().nextDouble() * (endX - startX);
+      // double randomStartY = startY + Random().nextDouble() * (endY - startY);
 
-      double randomEndX = startX + Random().nextDouble() * (endX - startX);
-      double randomEndY = startY + Random().nextDouble() * (endY - startY);
+      // double randomEndX = startX + Random().nextDouble() * (endX - startX);
+      // double randomEndY = startY + Random().nextDouble() * (endY - startY);
 
+
+      double randomStartX = Random().nextInt(size.width.toInt()).toDouble();
+      double randomStartY = startY + Random().nextInt(24).toDouble();
       path.lineTo(randomStartX, randomStartY);
-      path.lineTo(randomEndX, randomEndY);
-
-
+      // path.lineTo(randomEndX, randomEndY);
     }
 
 
