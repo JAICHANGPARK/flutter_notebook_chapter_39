@@ -188,7 +188,21 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
   }
 }
 
+class PathPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    // TODO: implement paint
 
-class PathPainter extends CustomPainter{
+    canvas.drawCircle(
+      Offset(64, 24),
+      4,
+      Paint()..color = Colors.red,
+    );
+  }
 
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    // TODO: implement shouldRepaint
+    return false;
+  }
 }
