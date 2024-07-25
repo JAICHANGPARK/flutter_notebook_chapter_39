@@ -238,7 +238,6 @@ class PathPainter extends CustomPainter {
     }
 
     canvas.drawPath(path, linePainter);
-
     canvas.drawPath(path2, lineWhitePainter);
   }
 
