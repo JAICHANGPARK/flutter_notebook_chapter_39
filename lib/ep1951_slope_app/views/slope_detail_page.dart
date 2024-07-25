@@ -11,6 +11,13 @@ class SlopeDetailPage extends StatefulWidget {
 class _SlopeDetailPageState extends State<SlopeDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Stack(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
