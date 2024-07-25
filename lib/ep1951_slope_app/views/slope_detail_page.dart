@@ -27,33 +27,42 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Row(
+                  child: Column(
                     children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.arrow_back_ios_new,
-                        ),
-                      ),
-                      Expanded(
-                        child: Center(
-                          child: Text(
-                            "Les Mountain, Unknown Places",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      SizedBox(
+                        height: 64,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_back_ios_new,
+                              ),
                               color: Colors.white,
-                              fontSize: 16,
                             ),
-                          ),
+                            Expanded(
+                              child: Center(
+                                child: Text(
+                                  "Les Mountain, Unknown Places",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.more_horiz,
+                              ),
+                              color: Colors.white,
+                            )
+                          ],
                         ),
                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.more_horiz,
-                        ),
-                        color: Colors.white,
-                      )
                     ],
                   ),
                 ),
