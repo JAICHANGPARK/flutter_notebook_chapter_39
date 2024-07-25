@@ -39,8 +39,20 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                         child: Center(
                           child: Text(
                             "Les Mountain, Unknown Places",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 16,
+                            ),
                           ),
                         ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.more_horiz,
+                        ),
+                        color: Colors.white,
                       )
                     ],
                   ),
