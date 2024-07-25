@@ -18,7 +18,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
         children: [
           Positioned.fill(
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(229, 240, 248, 1),
               ),
             ),
@@ -40,11 +40,11 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             left: 24,
             right: 24,
             child: Container(
-              padding: EdgeInsets.symmetric(vertical: 8),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(.6),
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "Unknown Places",
                   style: TextStyle(
@@ -77,8 +77,8 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                         ],
                       ),
                     ),
-                    padding: EdgeInsets.all(16),
-                    child: Column(
+                    padding: const EdgeInsets.all(16),
+                    child: const Column(
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -167,10 +167,10 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                   ),
                   Container(
                     height: 72,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.black,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Your best result in 5 min 32 sec",
                         style: TextStyle(
@@ -207,7 +207,7 @@ class PathPainter extends CustomPainter {
       ..style = PaintingStyle.stroke;
 
     canvas.drawCircle(
-      Offset(64, 24),
+      const Offset(64, 24),
       8,
       painter,
     );
