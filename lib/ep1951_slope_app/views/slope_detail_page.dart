@@ -101,13 +101,12 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                           child: Row(
                             children: [
                               Container(
-                          
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                 ),
                                 child: IconButton(
                                   icon: Icon(Icons.bookmark_added_outlined),
-                                  onPressed: (){},
+                                  onPressed: () {},
                                   color: Colors.white,
                                 ),
                               )
@@ -116,7 +115,16 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                         ),
                         Spacer(),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200]!,
+                          ),
+                          height: 64,
+                          child: Center(
+                            child: Text(
+                              "Learn more",
+                              
+                            ),
+                          ),
                         )
                       ],
                     ),
