@@ -97,6 +97,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                             ],
                           ),
                         ),
+                        Gap(24),
                         Expanded(
                           child: Row(
                             children: [
