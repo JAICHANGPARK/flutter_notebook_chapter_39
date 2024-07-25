@@ -234,7 +234,7 @@ class PathPainter extends CustomPainter {
       startX2 += (startX2 + Random().nextDouble());
       // startY2 =  Random().nextInt(size.height.toInt()).toDouble();
       path.lineTo(startX, startY);
-      path2.lineTo(startX2, startY2);
+      // path2.lineTo(startX2, startY2);
     }
 
     canvas.drawPath(path, linePainter);
