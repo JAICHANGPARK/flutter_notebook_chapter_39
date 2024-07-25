@@ -30,11 +30,7 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             top: 140,
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => SlopeDetailPage(),
-                  ),
-                );
+
               },
               child: CustomPaint(
                 painter: PathPainter(),
@@ -175,18 +171,27 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
                       ],
                     ),
                   ),
-                  Container(
-                    height: 72,
-                    decoration: const BoxDecoration(
-                      color: Colors.black,
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "Your best result in 5 min 32 sec",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => SlopeDetailPage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 72,
+                      decoration: const BoxDecoration(
+                        color: Colors.black,
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Your best result in 5 min 32 sec",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
