@@ -29,10 +29,10 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                   ),
                   child: Column(
                     children: [
-                      SizedBox(
-                        height: 64,
+                      Container(
+                        padding: EdgeInsets.symmetric(vertical: 42),
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             IconButton(
                               onPressed: () {},
