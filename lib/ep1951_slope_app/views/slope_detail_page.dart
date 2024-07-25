@@ -69,7 +69,22 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                 Expanded(
                   child: Container(
                     child: Column(
-                      children: [],
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 300,
+                              color: Colors.blue,
+                            ),
+                            Column(
+                              children: [
+                                Text("650 km"),
+                                Text("total tracks"),
+                              ],
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 )
