@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1951_slope_app/views/slope_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class SlopeMainPage extends StatefulWidget {
@@ -27,12 +28,21 @@ class _SlopeMainPageState extends State<SlopeMainPage> {
             left: 16,
             right: 16,
             top: 140,
-            child: CustomPaint(
-              painter: PathPainter(),
-              // child: Container(
-              //   height: 400,
-              //   color: Colors.blue,
-              // ),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => SlopeDetailPage(),
+                  ),
+                );
+              },
+              child: CustomPaint(
+                painter: PathPainter(),
+                // child: Container(
+                //   height: 400,
+                //   color: Colors.blue,
+                // ),
+              ),
             ),
           ),
           Positioned(
