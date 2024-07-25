@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SlopeDetailPage extends StatefulWidget {
   const SlopeDetailPage({super.key});
@@ -70,17 +71,26 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                   child: Container(
                     child: Column(
                       children: [
+                        Gap(24),
                         Row(
                           children: [
                             Container(
-                              width: 300,
+                              width: 200,
                               color: Colors.blue,
                             ),
-                            Column(
-                              children: [
-                                Text("650 km"),
-                                Text("total tracks"),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("650 km"),
+                                  Text("total tracks"),
+                                  Text("3200 km"),
+                                  Text("total tracks"),
+                                  Text("650 km"),
+                                  Text("total tracks"),
+                                ],
+                              ),
                             )
                           ],
                         )
