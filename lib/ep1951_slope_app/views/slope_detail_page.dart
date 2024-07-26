@@ -104,14 +104,22 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18,
                                       ),),
-                                    Text("maximum height"),
+                                    Text("maximum height",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),),
                                     Gap(16),
                                     Text("1800 m",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 18,
                                       ),),
-                                    Text("drop"),
+                                    Text("drop",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),),
                                   ],
                                 ),
                               )
