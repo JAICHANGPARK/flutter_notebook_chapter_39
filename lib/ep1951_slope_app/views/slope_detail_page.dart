@@ -76,9 +76,9 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                           child: Row(
                             children: [
                               Container(
-                                width: 200,
+                                width: 220,
                                 height: 240,
-                                color: Colors.blue,
+
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(16.0),
