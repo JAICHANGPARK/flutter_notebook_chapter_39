@@ -39,14 +39,25 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.white.withOpacity(.5),
+                  Colors.white.withOpacity(.05),
+
                   Colors.black,
                 ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                // stops: [.05, .1, ]
               ),
             ),
+            padding: EdgeInsets.all(16),
+
             child: Row(
               children: [
                 CircleAvatar(),
+                Expanded(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
               ],
             ),
           );
