@@ -16,7 +16,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        
+
       ),
       body: Column(
 
