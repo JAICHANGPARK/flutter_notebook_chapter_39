@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class SocialMediaHomePage extends StatefulWidget {
@@ -16,10 +14,20 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.person_add_alt),
+          ),
+          Badge(
+            child: IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.notifications,),
+            ),
+          )
+        ],
       ),
       body: Column(
-
         children: [],
       ),
     );
