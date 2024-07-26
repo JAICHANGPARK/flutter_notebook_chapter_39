@@ -35,7 +35,21 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
       body: ListView.builder(
         itemCount: 10,
         itemBuilder: (context, index) {
-          return Placeholder();
+          return Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.white.withOpacity(.5),
+                  Colors.black,
+                ],
+              ),
+            ),
+            child: Row(
+              children: [
+                CircleAvatar(),
+              ],
+            ),
+          );
         },
       ),
       bottomNavigationBar: BottomAppBar(
