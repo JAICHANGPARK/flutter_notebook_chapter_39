@@ -69,6 +69,14 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           color: Colors.grey,
                         ),
                       ),
+                      Row(
+                        children: [
+                          Icon(Icons.favorite),
+                          Text("40.9K"),
+                          Icon(Icons.chat_outlined),
+                          Text("1.3K"),
+                        ],
+                      ),
                     ],
                   ),
                 ),
