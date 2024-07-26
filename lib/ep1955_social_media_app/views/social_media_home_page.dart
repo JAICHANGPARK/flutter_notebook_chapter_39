@@ -36,36 +36,38 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         itemCount: 10,
         itemBuilder: (context, index) {
           return Container(
+
             decoration: BoxDecoration(
+
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-
-                  Colors.white.withOpacity(.004),
+                  Colors.white.withOpacity(.05),
                   Colors.black,
-
+                  Colors.black,
 
                 ],
 
-                // stops: [.05, .1, ]
+                // stops: [.05, .065 ]
               ),
             ),
             padding: EdgeInsets.all(16),
-
             child: Row(
               children: [
                 CircleAvatar(),
+                Gap(12),
                 Expanded(
                   child: Column(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("Dream"),
-                          Text("2h")
-                        ],
-                      )
+                        children: [Text("Dream"), Text("2h")],
+                      ),
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                        maxLines: 2,
+                      ),
                     ],
                   ),
                 ),
