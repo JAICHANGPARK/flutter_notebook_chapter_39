@@ -36,27 +36,36 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         children: [],
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.black,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.featured_play_list_rounded,
               ),
+              color: Colors.grey,
             ),
             IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.explore_outlined,
               ),
+              color: Colors.grey,
             ),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(.2),
+                borderRadius: BorderRadius.circular(24),
+              ),
+              padding: EdgeInsets.symmetric(
+                horizontal: 20,
               ),
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.add_circle),
+                color: Colors.white.withOpacity(.5),
               ),
             ),
             IconButton(
@@ -64,12 +73,14 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               icon: Icon(
                 Icons.bookmark,
               ),
+              color: Colors.grey,
             ),
             IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.account_circle_rounded,
               ),
+              color: Colors.grey,
             ),
           ],
         ),
