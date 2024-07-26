@@ -55,10 +55,22 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 color: Colors.white.withOpacity(.2),
               ),
               child: IconButton(
-                onPressed: (){},
+                onPressed: () {},
                 icon: Icon(Icons.add_circle),
               ),
-            )
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.bookmark,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.account_circle_rounded,
+              ),
+            ),
           ],
         ),
       ),
