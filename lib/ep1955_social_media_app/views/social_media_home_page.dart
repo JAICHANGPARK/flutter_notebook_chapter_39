@@ -38,13 +38,16 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           return Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+
                 colors: [
-                  Colors.white.withOpacity(.1),
                   Colors.black,
+                  Colors.white.withOpacity(.05),
+                  Colors.white.withOpacity(.1),
+
                 ],
-                stops: [0.1, 0.1],
+                stops: [0.8, 0.2, .1],
               ),
             ),
             padding: EdgeInsets.all(16),
@@ -52,9 +55,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
-                  radius: 24,
+                  radius: 22,
                 ),
-                Gap(12),
+                Gap(16),
                 Expanded(
                   child: Column(
                     children: [
