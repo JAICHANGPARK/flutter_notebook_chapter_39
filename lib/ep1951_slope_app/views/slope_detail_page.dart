@@ -149,7 +149,11 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
           Positioned(
             left: 16,
             top: 200,
-            child: Container(),
+            child: Container(
+              height: 280,
+              width: 200,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
