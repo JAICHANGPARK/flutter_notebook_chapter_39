@@ -32,8 +32,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           Gap(12),
         ],
       ),
-      body: Column(
-        children: [],
+      body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return Placeholder();
+        },
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.black,
