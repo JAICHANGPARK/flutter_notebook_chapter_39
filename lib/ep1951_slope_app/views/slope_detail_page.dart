@@ -88,6 +88,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                                       "650 km",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     Text(
