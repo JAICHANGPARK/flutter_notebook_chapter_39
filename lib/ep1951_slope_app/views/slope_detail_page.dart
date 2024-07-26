@@ -20,7 +20,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
               children: [
                 Container(
                   height: 320,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
                         "https://cdn.pixabay.com/photo/2014/09/29/17/01/ski-run-466225_1280.jpg",
@@ -31,18 +31,18 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(vertical: 42),
+                        padding: const EdgeInsets.symmetric(vertical: 42),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.arrow_back_ios_new,
                               ),
                               color: Colors.white,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Center(
                                 child: Text(
                                   "Les Mountain, Unknown Places",
@@ -56,7 +56,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                             ),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.more_horiz,
                               ),
                               color: Colors.white,
@@ -71,7 +71,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                   child: Container(
                     child: Column(
                       children: [
-                        Gap(24),
+                        const Gap(24),
                         Expanded(
                           child: Row(
                             children: [
@@ -79,8 +79,8 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                                 width: 220,
                                 height: 240,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(16.0),
+                              const Padding(
+                                padding: EdgeInsets.all(16.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -126,41 +126,41 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                             ],
                           ),
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Expanded(
                           child: Row(
                             children: [
-                              Gap(24),
+                              const Gap(24),
                               Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.black,
                                 ),
-                                padding: EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(4),
                                 child: IconButton(
-                                  icon: Icon(Icons.bookmark_added_outlined),
+                                  icon: const Icon(Icons.bookmark_added_outlined),
                                   onPressed: () {},
                                   color: Colors.white,
                                 ),
                               ),
-                              Gap(64),
-                              Expanded(
+                              const Gap(64),
+                              const Expanded(
                                 child: Text(
                                   """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 """,
                                   maxLines: 10,
                                 ),
                               ),
-                              Gap(24),
+                              const Gap(24),
                             ],
                           ),
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.grey[200]!,
                           ),
                           height: 64,
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Learn more",
                               style: TextStyle(
@@ -182,7 +182,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
             child: Container(
               height: 280,
               width: 200,
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               color: Colors.white,
               child: Container(
                 child: Image.network(
