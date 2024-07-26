@@ -20,10 +20,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             icon: Icon(Icons.person_add_alt),
           ),
           Badge(
-            child: IconButton(
-              onPressed: (){},
-              icon: Icon(Icons.notifications,),
-            ),
+            child:  Icon(Icons.notifications,),
+            // child: IconButton(
+            //   onPressed: (){},
+            //   icon: Icon(Icons.notifications,),
+            // ),
           )
         ],
       ),
