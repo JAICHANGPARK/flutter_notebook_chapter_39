@@ -135,6 +135,7 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                 ),
+                                padding: EdgeInsets.all(4),
                                 child: IconButton(
                                   icon: Icon(Icons.bookmark_added_outlined),
                                   onPressed: () {},
