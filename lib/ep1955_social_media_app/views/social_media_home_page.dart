@@ -41,10 +41,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Colors.white.withOpacity(.05),
+                  Colors.white.withOpacity(.1),
                   Colors.black,
                 ],
-                stops: [0, .1],
+                stops: [0.1, 0.1],
               ),
             ),
             padding: EdgeInsets.all(16),
