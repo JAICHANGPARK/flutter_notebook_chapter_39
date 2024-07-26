@@ -49,8 +49,11 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             ),
             padding: EdgeInsets.all(16),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(),
+                CircleAvatar(
+                  radius: 24,
+                ),
                 Gap(12),
                 Expanded(
                   child: Column(
