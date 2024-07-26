@@ -78,15 +78,25 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                               Container(
                                 width: 220,
                                 height: 240,
-
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("650 km"),
-                                    Text("total tracks"),
+                                    Text(
+                                      "650 km",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "total tracks",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    ),
                                     Text("3200 m"),
                                     Text("maximum height"),
                                     Text("1800 m"),
@@ -149,7 +159,6 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
           Positioned(
             left: 16,
             top: 260,
-            
             child: Container(
               height: 280,
               width: 200,
@@ -160,7 +169,6 @@ class _SlopeDetailPageState extends State<SlopeDetailPage> {
                   "https://cdn.pixabay.com/photo/2017/02/14/03/03/ama-dablam-2064522_1280.jpg",
                   fit: BoxFit.cover,
                 ),
-
               ),
             ),
           ),
