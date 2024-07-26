@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/social_media_home_page.dart';
+
 void main() {
   runApp(SocialMediaApp());
 }
@@ -9,6 +11,8 @@ class SocialMediaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: SocialMediaHomePage(),
+    );
   }
 }
