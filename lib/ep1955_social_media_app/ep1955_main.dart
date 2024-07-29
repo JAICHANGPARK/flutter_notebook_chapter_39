@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/social_media_home_page.dart';
 
 void main() {
-  runApp(SocialMediaApp());
+  runApp(const SocialMediaApp());
 }
 
 class SocialMediaApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class SocialMediaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: SocialMediaHomePage(),
     );
   }
