@@ -74,7 +74,9 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       decoration: BoxDecoration(
                         color: Colors.brown[50]!,
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 6,),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 6,
+                      ),
                       child: Center(
                         child: Text("Contributors"),
                       ),
@@ -83,6 +85,17 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                 ),
               ),
               Gap(16),
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      border: Border.all(color: Colors.grey),
+                    ),
+                    child: Text("Edit"),
+                  ),
+                ],
+              ),
 
             ],
           ),
