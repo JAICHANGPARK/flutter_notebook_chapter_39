@@ -122,13 +122,17 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       tabs: [],
                     ),
                     Expanded(
-                      child: Row(
+                      child: TabBarView(
                         children: [
-                          Expanded(
-                            child: Container(),
-                          ),
-                          Expanded(
-                            child: Container(),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Placeholder(),
+                              ),
+                              Expanded(
+                                child: Container(),
+                              ),
+                            ],
                           ),
                         ],
                       ),
