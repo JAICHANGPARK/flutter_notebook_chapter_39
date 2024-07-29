@@ -11,6 +11,10 @@ class SocialMediaProfilePage extends StatefulWidget {
 class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Stack(
+      children: [
+
+      ],
+    );
   }
 }
