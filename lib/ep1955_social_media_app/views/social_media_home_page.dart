@@ -96,6 +96,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                             Icons.chat_outlined,
                             color: Colors.grey,
                           ),
+                          Gap(6),
                           Text(
                             "1.3K",
                             style: TextStyle(
@@ -103,7 +104,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                             ),
                           ),
                           Spacer(),
-                          Icon(Icons.bookmark)
+                          Icon(
+                            Icons.bookmark,
+                            color: Colors.grey,
+                          )
                         ],
                       ),
                     ],
