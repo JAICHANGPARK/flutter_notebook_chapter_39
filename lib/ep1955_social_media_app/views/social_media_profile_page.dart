@@ -45,7 +45,27 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   fontSize: 24,
                 ),
               ),
-              Text("UI/UX Designer ? ")
+              Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.brown[50]!,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(Icons.new_releases_outlined),
+                        Text("Premium"),
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         )
