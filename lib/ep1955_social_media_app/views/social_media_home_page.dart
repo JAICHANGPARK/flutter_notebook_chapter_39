@@ -62,8 +62,18 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text("Dream"),
-                          Text("2h"),
+                          Text(
+                            "Dream",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "2h",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                       const Text(
@@ -73,38 +83,38 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           color: Colors.grey,
                         ),
                       ),
-                      if(index != 0)
-                      Container(
-                        margin: const EdgeInsets.symmetric(vertical: 12),
-                        height: 240,
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Container(
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(4),
-                                    bottomLeft: Radius.circular(4),
+                      if (index != 0)
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 12),
+                          height: 240,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(4),
+                                      bottomLeft: Radius.circular(4),
+                                    ),
+                                    color: Colors.orange,
                                   ),
-                                  color: Colors.orange,
                                 ),
                               ),
-                            ),
-                            const Gap(6),
-                            Expanded(
-                              child: Container(
-                                decoration: const BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(4),
-                                    bottomRight: Radius.circular(4),
+                              const Gap(6),
+                              Expanded(
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                    borderRadius: BorderRadius.only(
+                                      topRight: Radius.circular(4),
+                                      bottomRight: Radius.circular(4),
+                                    ),
+                                    color: Colors.orange,
                                   ),
-                                  color: Colors.orange,
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
                       const Row(
                         children: [
                           Icon(
