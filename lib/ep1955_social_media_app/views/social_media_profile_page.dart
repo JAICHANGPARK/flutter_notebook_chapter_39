@@ -84,7 +84,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ],
                 ),
               ),
-              Gap(16),
+              Gap(24),
               Row(
                 children: [
                   Container(
@@ -114,7 +114,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ),
                 ],
               ),
-              Gap(12),
+              Gap(24),
               Expanded(
                 child: DefaultTabController(
                   length: 4,
