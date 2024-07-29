@@ -18,9 +18,9 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.person_add_alt),
+            icon: const Icon(Icons.person_add_alt),
           ),
-          Badge(
+          const Badge(
             child: Icon(
               Icons.notifications,
             ),
@@ -29,7 +29,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
             //   icon: Icon(Icons.notifications,),
             // ),
           ),
-          Gap(12),
+          const Gap(12),
         ],
       ),
       body: ListView.builder(
@@ -48,25 +48,25 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 stops: [0.8, 0.2, .1],
               ),
             ),
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 22,
                 ),
-                Gap(16),
+                const Gap(16),
                 Expanded(
                   child: Column(
                     children: [
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("Dream"),
                           Text("2h"),
                         ],
                       ),
-                      Text(
+                      const Text(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                         maxLines: 2,
                         style: TextStyle(
@@ -75,13 +75,13 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       ),
                       if(index != 0)
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 12),
+                        margin: const EdgeInsets.symmetric(vertical: 12),
                         height: 240,
                         child: Row(
                           children: [
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(4),
                                     bottomLeft: Radius.circular(4),
@@ -90,10 +90,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                 ),
                               ),
                             ),
-                            Gap(6),
+                            const Gap(6),
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(4),
                                     bottomRight: Radius.circular(4),
@@ -105,7 +105,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           ],
                         ),
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.favorite,
@@ -152,14 +152,14 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.featured_play_list_rounded,
               ),
               color: Colors.grey,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.explore_outlined,
               ),
               color: Colors.grey,
@@ -169,25 +169,25 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                 color: Colors.white.withOpacity(.2),
                 borderRadius: BorderRadius.circular(24),
               ),
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 20,
               ),
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.add_circle),
+                icon: const Icon(Icons.add_circle),
                 color: Colors.white.withOpacity(.5),
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.bookmark,
               ),
               color: Colors.grey,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.account_circle_rounded,
               ),
               color: Colors.grey,
