@@ -40,12 +40,10 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
               gradient: LinearGradient(
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
-
                 colors: [
                   Colors.black,
                   Colors.white.withOpacity(.05),
                   Colors.white.withOpacity(.1),
-
                 ],
                 stops: [0.8, 0.2, .1],
               ),
@@ -82,15 +80,32 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       ),
                       Row(
                         children: [
-                          Icon(Icons.favorite),
-                          Text("40.9K"),
-                          Icon(Icons.chat_outlined),
-                          Text("1.3K"),
+                          Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ),
+                          Gap(6),
+                          Text(
+                            "40.9K",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Gap(12),
+                          Icon(
+                            Icons.chat_outlined,
+                            color: Colors.grey,
+                          ),
+                          Text(
+                            "1.3K",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
                           Spacer(),
                           Icon(Icons.bookmark)
                         ],
                       ),
-
                     ],
                   ),
                 ),
