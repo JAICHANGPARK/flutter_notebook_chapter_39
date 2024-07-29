@@ -79,7 +79,16 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         color: Colors.orange,
                         child: Row(
                           children: [
-                            Expanded(child: Container()),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(4),
+                                    bottomLeft: Radius.circular(4),
+                                  ),
+                                ),
+                              ),
+                            ),
                             Expanded(
                               child: Container(),
                             ),
