@@ -94,6 +94,20 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                     ),
                     child: Text("Edit"),
                   ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(Icons.email,color: Colors.grey,),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(32),
+                      shape: BoxShape.circle,
+                    ),
+                    child: Icon(Icons.email,color: Colors.grey,),
+                  ),
                 ],
               ),
 
