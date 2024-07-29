@@ -114,30 +114,45 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ),
                 ],
               ),
-              DefaultTabController(
-                length: 4,
-                child: Column(
-                  children: [
-                    TabBar(
-                      tabs: [],
-                    ),
-                    Expanded(
-                      child: TabBarView(
-                        children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Placeholder(),
-                              ),
-                              Expanded(
-                                child: Container(),
-                              ),
-                            ],
+              Expanded(
+                child: DefaultTabController(
+                  length: 4,
+                  child: Column(
+                    children: [
+                      TabBar(
+                        tabs: [
+                          Tab(
+                            text: "Posts",
+                          ),
+                          Tab(
+                            text: "Groups",
+                          ),
+                          Tab(
+                            text: "Connections",
+                          ),
+                          Tab(
+                            text: "Likes",
                           ),
                         ],
                       ),
-                    ),
-                  ],
+                      Expanded(
+                        child: TabBarView(
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Placeholder(),
+                                ),
+                                Expanded(
+                                  child: Container(),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               )
             ],
