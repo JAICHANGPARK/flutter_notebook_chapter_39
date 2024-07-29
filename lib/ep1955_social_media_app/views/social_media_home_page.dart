@@ -73,6 +73,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                           color: Colors.grey,
                         ),
                       ),
+                      if(index != 0)
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 12),
                         height: 240,
@@ -94,8 +95,8 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(4),
-                                    bottomLeft: Radius.circular(4),
+                                    topRight: Radius.circular(4),
+                                    bottomRight: Radius.circular(4),
                                   ),
                                   color: Colors.orange,
                                 ),
