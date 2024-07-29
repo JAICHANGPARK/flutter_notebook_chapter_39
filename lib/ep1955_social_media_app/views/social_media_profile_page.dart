@@ -96,21 +96,46 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(Icons.email,color: Colors.grey,),
+                    child: Icon(
+                      Icons.email,
+                      color: Colors.grey,
+                    ),
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(Icons.email,color: Colors.grey,),
+                    child: Icon(
+                      Icons.email,
+                      color: Colors.grey,
+                    ),
                   ),
                 ],
               ),
-
+              DefaultTabController(
+                length: 4,
+                child: Column(
+                  children: [
+                    TabBar(
+                      tabs: [],
+                    ),
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(),
+                          ),
+                          Expanded(
+                            child: Container(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         )
