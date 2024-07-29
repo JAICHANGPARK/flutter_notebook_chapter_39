@@ -114,6 +114,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ),
                 ],
               ),
+              Gap(12),
               Expanded(
                 child: DefaultTabController(
                   length: 4,
