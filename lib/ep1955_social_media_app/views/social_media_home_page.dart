@@ -77,6 +77,14 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                         margin: EdgeInsets.symmetric(vertical: 12),
                         height: 240,
                         color: Colors.orange,
+                        child: Row(
+                          children: [
+                            Expanded(child: Container()),
+                            Expanded(
+                              child: Container(),
+                            ),
+                          ],
+                        ),
                       ),
                       Row(
                         children: [
