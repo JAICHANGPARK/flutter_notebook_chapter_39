@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SocialMediaProfilePage extends StatefulWidget {
   const SocialMediaProfilePage({super.key});
 
@@ -13,16 +12,27 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-
-        Positioned(child: Column(
+        Positioned(
+            child: Column(
           children: [
             Container(
-                height: 200,
-                color: Colors.pink[50], ,
+              height: 160,
+              color: Colors.pink[50],
+              
+            ),
+            Expanded(
+              child: Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+
+                  ],
+                ),
+              ),
             )
           ],
         ))
-
       ],
     );
   }
