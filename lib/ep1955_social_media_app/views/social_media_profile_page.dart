@@ -14,6 +14,15 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
     return Stack(
       children: [
 
+        Positioned(child: Column(
+          children: [
+            Container(
+                height: 200,
+                color: Colors.pink[50], ,
+            )
+          ],
+        ))
+
       ],
     );
   }
