@@ -76,7 +76,6 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 12),
                         height: 240,
-                        color: Colors.orange,
                         child: Row(
                           children: [
                             Expanded(
@@ -86,11 +85,21 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                     topLeft: Radius.circular(4),
                                     bottomLeft: Radius.circular(4),
                                   ),
+                                  color: Colors.orange,
                                 ),
                               ),
                             ),
+                            Gap(6),
                             Expanded(
-                              child: Container(),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(4),
+                                    bottomLeft: Radius.circular(4),
+                                  ),
+                                  color: Colors.orange,
+                                ),
+                              ),
                             ),
                           ],
                         ),
