@@ -100,7 +100,7 @@ class _SocialMediaHomePageState extends State<SocialMediaHomePage> {
                                   ),
                                 ),
                               ),
-                              const Gap(6),
+                              const Gap(4),
                               Expanded(
                                 child: Container(
                                   decoration: const BoxDecoration(
