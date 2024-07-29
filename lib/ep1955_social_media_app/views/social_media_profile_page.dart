@@ -51,21 +51,39 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   color: Colors.grey,
                 ),
               ),
-              Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.brown[50]!,
+              Gap(16),
+              SizedBox(
+                height: 32,
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.brown[50]!,
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                      child: Row(
+                        children: [
+                          Icon(Icons.new_releases_outlined),
+                          Gap(4),
+                          Text("Premium"),
+                        ],
+                      ),
                     ),
-                    child: Row(
-                      children: [
-                        Icon(Icons.new_releases_outlined),
-                        Text("Premium"),
-                      ],
+                    Gap(8),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.brown[50]!,
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 6,),
+                      child: Center(
+                        child: Text("Contributors"),
+                      ),
                     ),
-                  )
-                ],
-              )
+                  ],
+                ),
+              ),
+              Gap(16),
+
             ],
           ),
         )
