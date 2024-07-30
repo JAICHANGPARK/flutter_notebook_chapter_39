@@ -60,10 +60,13 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       decoration: BoxDecoration(
                         color: Colors.brown[50]!,
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                      padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
                       child: Row(
                         children: [
-                          Icon(Icons.new_releases_outlined),
+                          Icon(
+                            Icons.new_releases_outlined,
+                            size: 16,
+                          ),
                           Gap(4),
                           Text("Premium"),
                         ],
@@ -122,6 +125,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       size: 16,
                     ),
                   ),
+                  Gap(12),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
