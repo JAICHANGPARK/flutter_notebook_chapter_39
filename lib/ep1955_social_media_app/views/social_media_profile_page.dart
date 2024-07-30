@@ -210,6 +210,15 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                                     decoration: BoxDecoration(
                                                       color: Colors.black,
                                                     ),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "Leave",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
+                                                    ),
                                                   ),
                                                 )
                                               ],
