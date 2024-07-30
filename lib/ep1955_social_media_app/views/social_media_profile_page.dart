@@ -194,7 +194,10 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                             Row(
                                               children: [
                                                 Container(
-                                                  decoration: BoxDecoration(),
+                                                  decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                    color: Colors.grey,
+                                                  )),
                                                   padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                                   child: Row(
                                                     children: [
