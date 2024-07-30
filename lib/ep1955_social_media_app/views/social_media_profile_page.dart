@@ -98,6 +98,9 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       borderRadius: BorderRadius.circular(32),
                       border: Border.all(color: Colors.grey),
                     ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 24,
+                    ),
                     child: Text("Edit"),
                   ),
                   Container(
