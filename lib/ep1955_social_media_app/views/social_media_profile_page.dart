@@ -186,9 +186,12 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     children: [
                                       CircleAvatar(),
                                       Spacer(),
-                                      Text("Figma", style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),),
+                                      Text(
+                                        "Figma",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                       Gap(4),
                                       Text(
                                         "The biggest Figma Community in Seoul",
@@ -198,9 +201,11 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                         children: [
                                           Container(
                                             decoration: BoxDecoration(
-                                                border: Border.all(
-                                                  color: Colors.grey,
-                                                )),
+                                              border: Border.all(
+                                                color: Colors.grey,
+                                              ),
+                                              borderRadius: BorderRadius.circular(24),
+                                            ),
                                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                             child: Row(
                                               children: [
