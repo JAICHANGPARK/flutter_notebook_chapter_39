@@ -183,6 +183,16 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.brown[50],
                                         ),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            CircleAvatar(),
+                                            Text("Figma"),
+                                            Text(
+                                              "The biggest Figma Community in Seoul",
+                                            ),
+                                          ],
+                                        ),
                                       );
                                     },
                                   ),
