@@ -119,15 +119,18 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                     child: Icon(
                       Icons.email,
                       color: Colors.grey,
+                      size: 16,
                     ),
                   ),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
+                      border: Border.all(color: Colors.grey[400]!),
                     ),
                     child: Icon(
                       Icons.email,
                       color: Colors.grey,
+                      size: 16,
                     ),
                   ),
                 ],
