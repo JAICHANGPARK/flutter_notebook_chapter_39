@@ -78,7 +78,13 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                         horizontal: 6,
                       ),
                       child: Center(
-                        child: Text("Contributors"),
+                        child: Text(
+                          "Contributors",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blue,
+                          ),
+                        ),
                       ),
                     ),
                   ],
