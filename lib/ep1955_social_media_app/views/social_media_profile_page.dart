@@ -171,80 +171,73 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       Expanded(
                         child: TabBarView(
                           children: [
-                            Row(
-                              children: [
-                                Expanded(
-                                  child: ListView.builder(
-                                    scrollDirection: Axis.horizontal,
-                                    itemBuilder: (context, index) {
-                                      return Container(
-                                        width: 240,
-                                        margin: EdgeInsets.only(right: 8),
-                                        decoration: BoxDecoration(
-                                          color: Colors.brown[50],
-                                        ),
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            CircleAvatar(),
-                                            Text("Figma"),
-                                            Text(
-                                              "The biggest Figma Community in Seoul",
-                                            ),
-                                            Row(
+                            ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 240,
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.brown[50],
+                                  ),
+                                  padding: EdgeInsets.all(12),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      CircleAvatar(),
+                                      Spacer(),
+                                      Text("Figma"),
+                                      Text(
+                                        "The biggest Figma Community in Seoul",
+                                      ),
+                                      Row(
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                )),
+                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                            child: Row(
                                               children: [
-                                                Container(
-                                                  decoration: BoxDecoration(
-                                                      border: Border.all(
-                                                    color: Colors.grey,
-                                                  )),
-                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                                  child: Row(
-                                                    children: [
-                                                      Icon(
-                                                        Icons.group,
-                                                        size: 16,
-                                                      ),
-                                                      Gap(4),
-                                                      Text(
-                                                        "8K",
-                                                        style: TextStyle(
-                                                          fontWeight: FontWeight.bold,
-                                                        ),
-                                                      ),
-                                                    ],
+                                                Icon(
+                                                  Icons.group,
+                                                  size: 16,
+                                                ),
+                                                Gap(4),
+                                                Text(
+                                                  "8K",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
                                                   ),
                                                 ),
-                                                Gap(8),
-                                                Expanded(
-                                                  child: Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.black,
-                                                      borderRadius: BorderRadius.circular(24),
-                                                    ),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "Leave",
-                                                        style: TextStyle(
-                                                          color: Colors.white,
-                                                          fontWeight: FontWeight.bold,
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                )
                                               ],
-                                            )
-                                          ],
-                                        ),
-                                      );
-                                    },
+                                            ),
+                                          ),
+                                          Gap(8),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black,
+                                                borderRadius: BorderRadius.circular(24),
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  "Leave",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
                                   ),
-                                ),
-                                Expanded(
-                                  child: Container(),
-                                ),
-                              ],
+                                );
+                              },
                             ),
                           ],
                         ),
