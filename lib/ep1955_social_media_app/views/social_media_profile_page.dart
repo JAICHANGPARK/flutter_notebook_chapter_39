@@ -59,6 +59,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.brown[50]!,
+                        borderRadius: BorderRadius.circular(4),
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
                       child: Row(
@@ -76,6 +77,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.brown[50]!,
+                        borderRadius: BorderRadius.circular(4),
                       ),
                       padding: EdgeInsets.symmetric(
                         horizontal: 6,
