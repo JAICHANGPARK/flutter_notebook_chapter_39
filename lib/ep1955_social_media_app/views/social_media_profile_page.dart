@@ -191,6 +191,29 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                             Text(
                                               "The biggest Figma Community in Seoul",
                                             ),
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.group,
+                                                        size: 16,
+                                                      ),
+                                                      Text("8K"),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            )
                                           ],
                                         ),
                                       );
