@@ -109,10 +109,13 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       ),
                     ),
                   ),
+                  Gap(12),
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
+                      border: Border.all(color: Colors.grey[400]!),
                     ),
+                    padding: EdgeInsets.all(6),
                     child: Icon(
                       Icons.email,
                       color: Colors.grey,
