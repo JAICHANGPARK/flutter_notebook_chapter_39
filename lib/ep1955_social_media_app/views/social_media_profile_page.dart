@@ -175,7 +175,16 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               children: [
                                 Expanded(
                                   child: ListView.builder(
-                                    itemBuilder: (context, index) {},
+                                    scrollDirection: Axis.horizontal,
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        width: 240,
+                                        margin: EdgeInsets.only(right: 8),
+                                        decoration: BoxDecoration(
+                                          color: Colors.brown[50],
+                                        ),
+                                      );
+                                    },
                                   ),
                                 ),
                                 Expanded(
