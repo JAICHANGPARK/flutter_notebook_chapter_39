@@ -201,14 +201,21 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                                         Icons.group,
                                                         size: 16,
                                                       ),
-                                                      Text("8K"),
+                                                      Text(
+                                                        "8K",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                 ),
+                                                Gap(8),
                                                 Expanded(
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                       color: Colors.black,
+                                                      borderRadius: BorderRadius.circular(24),
                                                     ),
                                                     child: Center(
                                                       child: Text(
