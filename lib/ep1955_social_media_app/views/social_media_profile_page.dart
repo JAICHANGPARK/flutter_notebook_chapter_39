@@ -175,7 +175,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  width: 240,
+                                  width: 200,
                                   margin: EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.brown[50],
@@ -186,10 +186,14 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     children: [
                                       CircleAvatar(),
                                       Spacer(),
-                                      Text("Figma"),
+                                      Text("Figma", style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),),
+                                      Gap(4),
                                       Text(
                                         "The biggest Figma Community in Seoul",
                                       ),
+                                      Gap(12),
                                       Row(
                                         children: [
                                           Container(
