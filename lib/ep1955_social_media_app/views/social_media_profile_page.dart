@@ -195,12 +195,14 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                               children: [
                                                 Container(
                                                   decoration: BoxDecoration(),
+                                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                                   child: Row(
                                                     children: [
                                                       Icon(
                                                         Icons.group,
                                                         size: 16,
                                                       ),
+                                                      Gap(4),
                                                       Text(
                                                         "8K",
                                                         style: TextStyle(
