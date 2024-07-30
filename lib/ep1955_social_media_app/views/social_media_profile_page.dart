@@ -80,7 +80,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                         borderRadius: BorderRadius.circular(4),
                       ),
                       padding: EdgeInsets.symmetric(
-                        horizontal: 6,
+                        horizontal: 8,
                       ),
                       child: Center(
                         child: Text(
@@ -149,6 +149,9 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   child: Column(
                     children: [
                       TabBar(
+                        indicatorColor: Colors.grey,
+                        unselectedLabelColor: Colors.grey,
+                        labelColor: Colors.white,
                         tabs: [
                           Tab(
                             text: "Posts",
