@@ -100,6 +100,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                     ),
                     padding: EdgeInsets.symmetric(
                       horizontal: 24,
+                      vertical: 12,
                     ),
                     child: Text(
                       "Edit",
