@@ -115,7 +115,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       shape: BoxShape.circle,
                       border: Border.all(color: Colors.grey[400]!),
                     ),
-                    padding: EdgeInsets.all(6),
+                    padding: EdgeInsets.all(12),
                     child: Icon(
                       Icons.email,
                       color: Colors.grey,
