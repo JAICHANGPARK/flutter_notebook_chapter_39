@@ -24,9 +24,40 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(4),
                 ),
-              )
+              ),
             ],
           ),
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.edit_outlined,
+              ),
+              label: "Write",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.star_border,
+              ),
+              label: "Prompts",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.inbox,
+              ),
+              label: "My Emails",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_circle_outlined,
+              ),
+              label: "Account",
+            ),
+          ],
         ),
       ),
     );
