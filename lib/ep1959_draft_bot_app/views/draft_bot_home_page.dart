@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class DraftBotHomePage extends StatefulWidget {
   const DraftBotHomePage({super.key});
 
@@ -17,7 +16,13 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
+            Container(
+              height: 52,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(4),
+              ),
+            )
           ],
         ),
       ),
