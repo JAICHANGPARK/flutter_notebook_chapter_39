@@ -15,7 +15,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
       backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -34,6 +34,22 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                           color: Colors.indigoAccent,
                           borderRadius: BorderRadius.circular(4),
                         ),
+                        child: Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.edit_outlined,
+                                color: Colors.white,
+                              ),
+                              Gap(4),
+                              Text(
+                                "Write",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     Gap(6),
@@ -43,6 +59,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                           color: Colors.white,
                         ),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.reply),
                             Gap(4),
