@@ -11,6 +11,6 @@ class DraftBotHomePage extends StatefulWidget {
 class _DraftBotHomePageState extends State<DraftBotHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
