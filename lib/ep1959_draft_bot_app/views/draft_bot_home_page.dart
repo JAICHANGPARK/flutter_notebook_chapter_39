@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class DraftBotHomePage extends StatefulWidget {
   const DraftBotHomePage({super.key});
@@ -35,7 +36,23 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                         ),
                       ),
                     ),
-                    Expanded(child: Container()),
+                    Gap(6),
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.reply),
+                            Gap(4),
+                            Text(
+                              "Reply",
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
