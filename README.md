@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_39
 
-## EP1955
+## EP1959
+
+- DraftBot | Mobile App Design 🤖
+- Nugraha Jati Utama
+- https://dribbble.com/shots/24575866-DraftBot-Mobile-App-Design
+
+<img src=""/>
+
+## EP1955-1958
 
 - Social Media Mobile App
 - Risang Kuncoro ® for Plainthing Studio
