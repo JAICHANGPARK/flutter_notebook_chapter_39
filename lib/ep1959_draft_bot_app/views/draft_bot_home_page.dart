@@ -24,6 +24,20 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(4),
                 ),
+                padding: EdgeInsets.all(4),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.indigoAccent,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                    ),
+                    Expanded(child: Container()),
+                  ],
+                ),
               ),
             ],
           ),
