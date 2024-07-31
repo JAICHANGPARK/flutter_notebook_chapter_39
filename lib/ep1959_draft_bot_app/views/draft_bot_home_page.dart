@@ -11,6 +11,8 @@ class DraftBotHomePage extends StatefulWidget {
 class _DraftBotHomePageState extends State<DraftBotHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.grey[100],
+    );
   }
 }
