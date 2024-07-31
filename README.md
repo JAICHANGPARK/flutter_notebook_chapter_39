@@ -6,7 +6,7 @@
 - Nugraha Jati Utama
 - https://dribbble.com/shots/24575866-DraftBot-Mobile-App-Design
 
-<img src=""/>
+<img src="https://cdn.dribbble.com/userupload/15758428/file/original-d32a2813312bdc86c3d6eb05fb2cc6de.png?resize=1905x1429"/>
 
 ## EP1955-1958
 
