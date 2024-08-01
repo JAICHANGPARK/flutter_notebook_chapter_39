@@ -241,11 +241,14 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                 child: Row(
                   children: [
                     Icon(Icons.person),
                     Text("Add Prospect"),
                     Container(
+
+                      padding: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey,
@@ -253,6 +256,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Row(
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(
                             Icons.add_circle_outline,
