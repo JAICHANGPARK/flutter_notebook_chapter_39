@@ -87,8 +87,13 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
-                      child: TextField(),
+                      child: TextField(
+                        maxLines: 8,
+                        decoration: InputDecoration(),
+
+                      ),
                     ),
+                    Gap(8),
                     Align(
                       alignment: Alignment.centerRight,
                       child: Container(
