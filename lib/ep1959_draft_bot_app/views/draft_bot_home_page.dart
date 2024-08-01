@@ -77,7 +77,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
               Text("Your Goal"),
               Gap(4),
               Container(
-                height: 240,
+                height: 220,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
@@ -89,7 +89,11 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                     Expanded(
                       child: TextField(
                         maxLines: 8,
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Ex: Hi, Dream! Let's have a call today and discuss our new project in details"
+                        ),
+
 
                       ),
                     ),
