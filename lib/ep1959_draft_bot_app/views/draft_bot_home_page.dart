@@ -241,6 +241,28 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                child: Row(
+                  children: [
+                    Icon(Icons.person),
+                    Text("Add Prospect"),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.add_circle_outline,
+                          ),
+                          Text("Add Info")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
