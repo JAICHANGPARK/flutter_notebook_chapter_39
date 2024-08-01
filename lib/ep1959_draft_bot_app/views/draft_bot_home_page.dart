@@ -147,12 +147,16 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 child: DropdownButtonFormField<String>(
                   dropdownColor: Colors.white,
                   value: "Korean",
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 4,
+                  ),
                   items: [
-
                     DropdownMenuItem(
                       child: Text(
                         "Korean",
                       ),
+                      value: "Korean",
                     ),
                     DropdownMenuItem(
                       child: Text(
