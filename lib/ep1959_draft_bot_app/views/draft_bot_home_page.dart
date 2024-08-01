@@ -89,30 +89,33 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                     Expanded(
                       child: TextField(),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.grey[100]!,
-                        ),
-                        borderRadius: BorderRadius.circular(4),
-                      ),
-                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(
-                            Icons.add_circle_outline,
-                            size: 16,
-                            color: Colors.grey,
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[100]!,
                           ),
-                          Gap(4),
-                          Text(
-                            "Add Prompt",
-                            style: TextStyle(
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.add_circle_outline,
+                              size: 16,
                               color: Colors.grey,
                             ),
-                          )
-                        ],
+                            Gap(4),
+                            Text(
+                              "Add Prompt",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
