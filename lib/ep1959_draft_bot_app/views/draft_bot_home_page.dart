@@ -151,6 +151,9 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                     horizontal: 8,
                     vertical: 4,
                   ),
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                  ),
                   items: [
                     DropdownMenuItem(
                       child: Text(
@@ -162,11 +165,13 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       child: Text(
                         "English",
                       ),
+                      value: "English",
                     ),
                     DropdownMenuItem(
                       child: Text(
                         "Japanese",
                       ),
+                      value: "Japanese",
                     )
                   ],
                   onChanged: (Object? value) {},
