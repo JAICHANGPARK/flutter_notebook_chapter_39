@@ -238,7 +238,6 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ),
                 ],
               ),
-
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -250,7 +249,6 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                     Text("Add Prospect"),
                     Spacer(),
                     Container(
-
                       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
                       decoration: BoxDecoration(
                         border: Border.all(
@@ -267,6 +265,25 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                           Text("Add Info")
                         ],
                       ),
+                    )
+                  ],
+                ),
+              ),
+              Gap(24),
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 12),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6),
+                  color: Colors.indigoAccent,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.star,
+                    ),
+                    Text(
+                      "Generate Email",
                     )
                   ],
                 ),
