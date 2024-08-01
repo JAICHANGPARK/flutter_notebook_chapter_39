@@ -82,7 +82,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: EdgeInsets.all(8),
+                padding: EdgeInsets.all(12),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
