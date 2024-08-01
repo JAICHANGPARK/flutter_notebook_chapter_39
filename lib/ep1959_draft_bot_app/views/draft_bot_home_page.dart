@@ -228,13 +228,19 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 children: [
                   Text("Mass Generate"),
                   Switch(value: true, onChanged: (value) {}),
+                  Spacer(),
                   Icon(
                     Icons.bookmark_border,
                   ),
                   Text(
                     "Save Prompt",
-                  )
+                  ),
                 ],
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
               )
             ],
           ),
