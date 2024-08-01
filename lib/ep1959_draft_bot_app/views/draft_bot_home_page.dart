@@ -82,6 +82,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
                 ),
+                padding: EdgeInsets.all(8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -95,7 +96,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 4),
+                      padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
