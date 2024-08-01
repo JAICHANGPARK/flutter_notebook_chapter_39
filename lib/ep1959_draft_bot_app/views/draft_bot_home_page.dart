@@ -95,7 +95,17 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(4),
                       ),
-                    )
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.add_circle_outline,
+                          ),
+                          Text(
+                            "Add Prompt",
+                          )
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               )
