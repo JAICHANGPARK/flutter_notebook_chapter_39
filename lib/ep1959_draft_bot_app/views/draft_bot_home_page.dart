@@ -95,10 +95,14 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                         ),
                         borderRadius: BorderRadius.circular(4),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 4),
                       child: Row(
+
+                        mainAxisSize: MainAxisSize.min,
                         children: [
                           Icon(
                             Icons.add_circle_outline,
+                            size: 15,
                           ),
                           Text(
                             "Add Prompt",
