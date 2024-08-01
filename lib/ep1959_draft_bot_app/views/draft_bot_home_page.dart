@@ -139,6 +139,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Gap(8),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -174,8 +175,66 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       value: "Japanese",
                     )
                   ],
-                  onChanged: (Object? value) {},
+                  onChanged: (String? value) {},
                 ),
+              ),
+              Gap(8),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
+                  children: [
+                    Icon(Icons.star),
+                    Expanded(
+                      child: DropdownButtonFormField<String>(
+                        dropdownColor: Colors.white,
+                        value: "Korean",
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 4,
+                        ),
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                        ),
+                        items: [
+                          DropdownMenuItem(
+                            child: Text(
+                              "Korean",
+                            ),
+                            value: "Korean",
+                          ),
+                          DropdownMenuItem(
+                            child: Text(
+                              "English",
+                            ),
+                            value: "English",
+                          ),
+                          DropdownMenuItem(
+                            child: Text(
+                              "Japanese",
+                            ),
+                            value: "Japanese",
+                          )
+                        ],
+                        onChanged: (String? value) {},
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  Text("Mass Generate"),
+                  Switch(value: true, onChanged: (value) {}),
+                  Icon(
+                    Icons.bookmark_border,
+                  ),
+                  Text(
+                    "Save Prompt",
+                  )
+                ],
               )
             ],
           ),
