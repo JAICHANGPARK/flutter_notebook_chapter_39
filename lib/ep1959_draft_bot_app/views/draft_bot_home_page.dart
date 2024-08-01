@@ -73,9 +73,14 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ],
                 ),
               ),
-              Gap(12),
-              Text("Your Goal"),
-              Gap(4),
+              Gap(20),
+              Text(
+                "Your Goal",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Gap(6),
               Container(
                 height: 220,
                 decoration: BoxDecoration(
@@ -90,11 +95,8 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       child: TextField(
                         maxLines: 8,
                         decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "Ex: Hi, Dream! Let's have a call today and discuss our new project in details"
-                        ),
-
-
+                            border: InputBorder.none,
+                            hintText: "Ex: Hi, Dream! Let's have a call today and discuss our new project in details"),
                       ),
                     ),
                     Gap(8),
@@ -128,6 +130,42 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       ),
                     ),
                   ],
+                ),
+              ),
+              Gap(20),
+              Text(
+                "Output Language",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: DropdownButtonFormField<String>(
+                  dropdownColor: Colors.white,
+                  value: "Korean",
+                  items: [
+
+                    DropdownMenuItem(
+                      child: Text(
+                        "Korean",
+                      ),
+                    ),
+                    DropdownMenuItem(
+                      child: Text(
+                        "English",
+                      ),
+                    ),
+                    DropdownMenuItem(
+                      child: Text(
+                        "Japanese",
+                      ),
+                    )
+                  ],
+                  onChanged: (Object? value) {},
                 ),
               )
             ],
