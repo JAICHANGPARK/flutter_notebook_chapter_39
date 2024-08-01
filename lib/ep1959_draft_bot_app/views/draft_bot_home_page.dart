@@ -178,7 +178,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   onChanged: (String? value) {},
                 ),
               ),
-              Gap(8),
+              Gap(12),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -224,6 +224,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ],
                 ),
               ),
+              Gap(16),
               Row(
                 children: [
                   Text("Mass Generate"),
@@ -237,6 +238,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ),
                 ],
               ),
+
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
