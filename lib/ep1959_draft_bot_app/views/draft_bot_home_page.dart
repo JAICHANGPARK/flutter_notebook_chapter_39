@@ -73,12 +73,20 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ],
                 ),
               ),
+              Gap(12),
               Text("Your Goal"),
+              Gap(4),
               Container(
-                height: 320,
+                height: 240,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+
+                  ],
                 ),
               )
             ],
