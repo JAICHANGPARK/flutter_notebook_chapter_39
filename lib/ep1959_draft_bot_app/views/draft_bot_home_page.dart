@@ -246,6 +246,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   children: [
                     Icon(Icons.person),
                     Text("Add Prospect"),
+                    Spacer(),
                     Container(
 
                       padding: EdgeInsets.symmetric(vertical: 4, horizontal: 6),
