@@ -85,7 +85,17 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
+                    Expanded(
+                      child: TextField(),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[100]!,
+                        ),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                    )
                   ],
                 ),
               )
