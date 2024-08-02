@@ -89,9 +89,11 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Wrap(spacing: 24,
+            Gap(12),
+            Wrap(
+              spacing: 24,
               runSpacing: 24,
-              children: ["Formal", "Confident", "Informal"].map((e){
+              children: ["Formal", "Confident", "Informal"].map((e) {
                 return Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -104,8 +106,47 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 );
-
               }).toList(),
+            ),
+            Gap(24),
+            Text(
+              "Length",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Gap(12),
+            Wrap(
+              spacing: 24,
+              runSpacing: 24,
+              children: ["Short", "Mid", "Long"].map((e) {
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Text(
+                    e.toString(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                );
+              }).toList(),
+            ),
+            SwitchListTile.adaptive(
+              value: true,
+              onChanged: (v) {},
+              title: Text("Emoji"),
+            ),
+            Spacer(),
+            Container(
+              decoration: BoxDecoration(
+
+              ),
+              child: Center(
+                child: Text("Save Settings" ),
+              ),
             )
           ],
         ),
