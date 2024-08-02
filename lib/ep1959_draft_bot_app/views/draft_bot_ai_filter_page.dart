@@ -56,7 +56,7 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 onChanged: (String? value) {},
               ),
             ),
-            Gap(24),
+            Gap(32),
             Text(
               "Tone",
               style: TextStyle(
