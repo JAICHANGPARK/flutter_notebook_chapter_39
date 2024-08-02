@@ -82,11 +82,18 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 );
               }).toList(),
             ),
+            Gap(24),
             Text(
               "Writing Style",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            Wrap(
+              children: ["Formal", "Confident", "Informal"].map((e){
+                return Container();
+
+              }).toList(),
             )
           ],
         ),
