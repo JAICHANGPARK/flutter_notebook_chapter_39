@@ -134,6 +134,7 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 );
               }).toList(),
             ),
+            Gap(24),
             SwitchListTile.adaptive(
               value: true,
               onChanged: (v) {},
@@ -142,10 +143,19 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
             Spacer(),
             Container(
               decoration: BoxDecoration(
-
+                color: Color.fromRGBO(114, 102, 255, 1),
+                borderRadius: BorderRadius.circular(8),
               ),
+              padding: EdgeInsets.symmetric(vertical: 18),
               child: Center(
-                child: Text("Save Settings" ),
+                child: Text(
+                  "Save Settings",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
               ),
             )
           ],
