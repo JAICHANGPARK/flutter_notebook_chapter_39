@@ -103,11 +103,17 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(6),
+                          border: Border.all(
+                            color: Color.fromRGBO(114, 102, 255, 1),
+                          )
                         ),
+                        
                       ),
                     ),
                     Gap(16),
-                    Expanded(child: Container(
+                    Expanded(
+                        child: Container(
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(114, 102, 255, 1),
                       ),
