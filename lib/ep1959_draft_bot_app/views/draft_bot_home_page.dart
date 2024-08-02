@@ -32,7 +32,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.indigoAccent,
+                          color: Color.fromRGBO(114, 102, 255, 1),
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Center(
@@ -181,8 +181,8 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
               ),
               Gap(12),
               GestureDetector(
-                onTap: (){
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                     return DraftBotAiFilterPage();
                   }));
                 },
@@ -215,7 +215,10 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Switch(value: true, onChanged: (value) {}),
+                  Switch(value: true, onChanged: (value) {},
+
+                  activeColor: Color.fromRGBO(114, 102, 255, 1),
+        ),
                   Spacer(),
                   Icon(
                     Icons.bookmark_border,
