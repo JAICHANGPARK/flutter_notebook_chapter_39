@@ -102,11 +102,12 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(6),
-                            border: Border.all(
-                              color: Color.fromRGBO(114, 102, 255, 1),
-                            )),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: Color.fromRGBO(114, 102, 255, 1),
+                          ),
+                        ),
                         child: Center(
                           child: Text(
                             "Discard",
@@ -120,11 +121,17 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                     ),
                     Gap(16),
                     Expanded(
-                        child: Container(
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(114, 102, 255, 1),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(114, 102, 255, 1),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Center(
+                          child: Text("Select"),
+                        ),
                       ),
-                    )),
+
+                    ),
                   ],
                 ),
               )
