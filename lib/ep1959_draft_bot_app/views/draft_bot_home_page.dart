@@ -264,7 +264,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 padding: EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6),
-                  color: Colors.indigoAccent,
+                  color: Color.fromRGBO(114, 102, 255, 1),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
