@@ -62,6 +62,7 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)
                   ),
                 ),
               ),
@@ -79,7 +80,7 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                   children: [
                     Icon(
                       Icons.cached,
-                      size: 32,
+                      size: 28,
                       color: Color.fromRGBO(114, 102, 255, 1),
                     ),
                     Gap(8),
@@ -87,7 +88,7 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                       "Rewrite",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 16,
                         color: Color.fromRGBO(114, 102, 255, 1),
                       ),
                     )
