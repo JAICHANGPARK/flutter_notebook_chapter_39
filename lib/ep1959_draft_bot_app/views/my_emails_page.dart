@@ -72,7 +72,9 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                     color: Color.fromRGBO(114, 102, 255, 1),
                   ),
                 ),
+                padding: EdgeInsets.all(12),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.cached,
