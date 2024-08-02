@@ -63,7 +63,20 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
               ),
             ),
             Wrap(
-              children: [Container()],
+              children: tones.map((e) {
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  child: Text(
+                    e.toString(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                );
+              }).toList(),
             )
           ],
         ),
