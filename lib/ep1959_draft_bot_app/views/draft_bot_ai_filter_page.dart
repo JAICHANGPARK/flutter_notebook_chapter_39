@@ -81,6 +81,12 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 );
               }).toList(),
+            ),
+            Text(
+              "Writing Style",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             )
           ],
         ),
