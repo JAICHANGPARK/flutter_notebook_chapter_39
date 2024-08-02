@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1959_draft_bot_app/views/draft_bot_ai_filter_page.dart';
 import 'package:gap/gap.dart';
 
 class DraftBotHomePage extends StatefulWidget {
@@ -179,23 +180,30 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 ),
               ),
               Gap(12),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                height: 52,
-                padding: EdgeInsets.symmetric(horizontal: 12),
-                child: Row(
-                  children: [
-                    Icon(Icons.star),
-                    Gap(8),
-                    Text("AI Filter"),
-                    Spacer(),
-                    Icon(
-                      Icons.arrow_drop_down,
-                    ),
-                  ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return DraftBotAiFilterPage();
+                  }));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  height: 52,
+                  padding: EdgeInsets.symmetric(horizontal: 12),
+                  child: Row(
+                    children: [
+                      Icon(Icons.star),
+                      Gap(8),
+                      Text("AI Filter"),
+                      Spacer(),
+                      Icon(
+                        Icons.arrow_drop_down,
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Gap(16),
