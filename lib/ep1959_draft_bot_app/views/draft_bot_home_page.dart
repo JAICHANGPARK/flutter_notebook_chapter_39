@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_39/ep1959_draft_bot_app/views/draft_bot_ai_filter_page.dart';
 import 'package:gap/gap.dart';
 
+import 'my_emails_page.dart';
+
 class DraftBotHomePage extends StatefulWidget {
   const DraftBotHomePage({super.key});
 
@@ -215,10 +217,11 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Switch(value: true, onChanged: (value) {},
-
-                  activeColor: Color.fromRGBO(114, 102, 255, 1),
-        ),
+                  Switch(
+                    value: true,
+                    onChanged: (value) {},
+                    activeColor: Color.fromRGBO(114, 102, 255, 1),
+                  ),
                   Spacer(),
                   Icon(
                     Icons.bookmark_border,
@@ -295,6 +298,13 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.indigoAccent,
           unselectedItemColor: Colors.grey,
+          onTap: (idx) {
+            if (idx == 2) {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return MyEmailsPage();
+              }));
+            }
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(
