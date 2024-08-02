@@ -248,7 +248,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   ],
                 ),
               ),
-              Gap(24),
+              Gap(32),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
