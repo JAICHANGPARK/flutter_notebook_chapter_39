@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MyEmailsPage extends StatefulWidget {
   const MyEmailsPage({super.key});
@@ -41,8 +42,54 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.search,
+                      ),
+                      onPressed: () {},
+                    ),
+                  ),
                 ],
+              ),
+              Gap(24),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(
+                    color: Color.fromRGBO(114, 102, 255, 1),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.cached,
+                      size: 32,
+                      color: Color.fromRGBO(114, 102, 255, 1),
+                    ),
+                    Gap(8),
+                    Text(
+                      "Rewrite",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Color.fromRGBO(114, 102, 255, 1),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
