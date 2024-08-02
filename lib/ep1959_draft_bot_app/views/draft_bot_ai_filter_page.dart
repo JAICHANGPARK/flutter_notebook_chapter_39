@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class DraftBotAiFilterPage extends StatefulWidget {
   const DraftBotAiFilterPage({super.key});
@@ -8,6 +9,14 @@ class DraftBotAiFilterPage extends StatefulWidget {
 }
 
 class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
+  List<String> tones = [
+    "Funny",
+    "Sad",
+    "Happy",
+    "Awesome",
+    "Engaging",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +38,7 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Gap(8),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -42,8 +52,18 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                       "Sales Mail",
                     ),
                   )
-                ], onChanged: (String? value) {  },
+                ],
+                onChanged: (String? value) {},
               ),
+            ),
+            Text(
+              "Tone",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Wrap(
+              children: [Container()],
             )
           ],
         ),
