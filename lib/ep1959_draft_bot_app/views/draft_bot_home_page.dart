@@ -187,39 +187,10 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                 child: Row(
                   children: [
                     Icon(Icons.star),
-                    Expanded(
-                      child: DropdownButtonFormField<String>(
-                        dropdownColor: Colors.white,
-                        value: "Korean",
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 4,
-                        ),
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                        ),
-                        items: [
-                          DropdownMenuItem(
-                            child: Text(
-                              "Korean",
-                            ),
-                            value: "Korean",
-                          ),
-                          DropdownMenuItem(
-                            child: Text(
-                              "English",
-                            ),
-                            value: "English",
-                          ),
-                          DropdownMenuItem(
-                            child: Text(
-                              "Japanese",
-                            ),
-                            value: "Japanese",
-                          )
-                        ],
-                        onChanged: (String? value) {},
-                      ),
+                    Text("AI Filter"),
+                    Spacer(),
+                    Icon(
+                      Icons.arrow_drop_down,
                     ),
                   ],
                 ),
