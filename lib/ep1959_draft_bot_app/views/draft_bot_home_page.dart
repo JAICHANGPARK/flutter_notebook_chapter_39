@@ -201,7 +201,12 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
               Gap(16),
               Row(
                 children: [
-                  Text("Mass Generate"),
+                  Text(
+                    "Mass Generate",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Switch(value: true, onChanged: (value) {}),
                   Spacer(),
                   Icon(
@@ -245,7 +250,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
               ),
               Gap(24),
               Container(
-                padding: EdgeInsets.symmetric(vertical: 12),
+                padding: EdgeInsets.symmetric(vertical: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6),
                   color: Colors.indigoAccent,
@@ -255,9 +260,15 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   children: [
                     Icon(
                       Icons.star,
+                      color: Colors.white,
                     ),
+                    Gap(8),
                     Text(
                       "Generate Email",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
                     )
                   ],
                 ),
