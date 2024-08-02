@@ -184,9 +184,12 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
                 ),
+                height: 52,
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 child: Row(
                   children: [
                     Icon(Icons.star),
+                    Gap(8),
                     Text("AI Filter"),
                     Spacer(),
                     Icon(
