@@ -65,6 +65,7 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                   ),
                 ),
               ),
+              Gap(24),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
@@ -90,6 +91,27 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                         color: Color.fromRGBO(114, 102, 255, 1),
                       ),
                     )
+                  ],
+                ),
+              ),
+              Gap(32),
+              SizedBox(
+                height: 62,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Gap(16),
+                    Expanded(child: Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(114, 102, 255, 1),
+                      ),
+                    )),
                   ],
                 ),
               )
