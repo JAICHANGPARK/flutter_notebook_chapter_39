@@ -56,13 +56,17 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
                 onChanged: (String? value) {},
               ),
             ),
+            Gap(24),
             Text(
               "Tone",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Gap(8),
             Wrap(
+              spacing: 24,
+              runSpacing: 24,
               children: tones.map((e) {
                 return Container(
                   decoration: BoxDecoration(
