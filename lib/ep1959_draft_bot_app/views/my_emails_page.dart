@@ -96,19 +96,26 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
               ),
               Gap(32),
               SizedBox(
-                height: 62,
+                height: 54,
                 child: Row(
                   children: [
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(6),
-                          border: Border.all(
-                            color: Color.fromRGBO(114, 102, 255, 1),
-                          )
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(6),
+                            border: Border.all(
+                              color: Color.fromRGBO(114, 102, 255, 1),
+                            )),
+                        child: Center(
+                          child: Text(
+                            "Discard",
+                            style: TextStyle(
+                              color: Color.fromRGBO(114, 102, 255, 1),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
-                        
                       ),
                     ),
                     Gap(16),
