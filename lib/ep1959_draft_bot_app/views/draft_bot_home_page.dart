@@ -296,7 +296,7 @@ class _DraftBotHomePageState extends State<DraftBotHomePage> {
         child: BottomNavigationBar(
           backgroundColor: Colors.white,
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.indigoAccent,
+          selectedItemColor:  Color.fromRGBO(114, 102, 255, 1),
           unselectedItemColor: Colors.grey,
           onTap: (idx) {
             if (idx == 2) {
