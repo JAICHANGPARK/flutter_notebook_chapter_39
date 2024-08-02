@@ -127,10 +127,15 @@ class _MyEmailsPageState extends State<MyEmailsPage> {
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Center(
-                          child: Text("Select"),
+                          child: Text(
+                            "Select",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
                       ),
-
                     ),
                   ],
                 ),
