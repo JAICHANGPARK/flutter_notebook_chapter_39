@@ -18,17 +18,35 @@ class _DraftBotAiFilterPageState extends State<DraftBotAiFilterPage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("Type of Email"),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(6),
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Type of Email",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          )
-        ],
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(6),
+              ),
+              child: DropdownButtonFormField<String>(
+                items: [
+                  DropdownMenuItem(
+                    value: "0",
+                    child: Text(
+                      "Sales Mail",
+                    ),
+                  )
+                ], onChanged: (String? value) {  },
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
