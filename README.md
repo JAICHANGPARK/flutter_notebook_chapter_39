@@ -2,11 +2,11 @@
 
 ## EP1963
 
-- DraftBot | Mobile App Design 🤖
-- Nugraha Jati Utama
-- https://dribbble.com/shots/24575866-DraftBot-Mobile-App-Design
+- E-commerce Mobile App
+- Ronas IT | UI/UX Team
+- https://dribbble.com/shots/24559340-E-commerce-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/15758428/file/original-d32a2813312bdc86c3d6eb05fb2cc6de.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15708411/file/original-68258d43526d46ed34744099d908a81e.png?resize=1905x1429"/>
 
 ## EP1959-1962
 
