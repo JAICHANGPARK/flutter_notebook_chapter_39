@@ -13,7 +13,10 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.only(
+            left: 24,
+            top: 32,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -50,8 +53,10 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                 ],
               ),
-              SizedBox(height: 280,
-              child: Placeholder(),)
+              SizedBox(
+                height: 280,
+                child: Placeholder(),
+              )
             ],
           ),
         ),
