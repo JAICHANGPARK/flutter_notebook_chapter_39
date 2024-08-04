@@ -12,7 +12,6 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
@@ -55,25 +54,47 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 280,
-                child: Placeholder(),
-              )
+              Expanded(
+                child: SizedBox(
+                  child: Placeholder(),
+                ),
+              ),
+
             ],
           ),
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
-        height: 80,
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedHome04,),),
-            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_outline),),
-            IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedShoppingCart01),),
-            CircleAvatar(),
-          ],
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(),
+          )
+        ),
+        child: BottomAppBar(
+          height: 80,
+          color: Colors.white,
+          elevation: 3,
+
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  HugeIcons.strokeRoundedHome04,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.favorite_outline),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(HugeIcons.strokeRoundedShoppingCart01),
+              ),
+              CircleAvatar(),
+            ],
+          ),
         ),
       ),
     );
