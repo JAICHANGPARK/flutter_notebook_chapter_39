@@ -64,11 +64,14 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
+        color: Colors.white,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedHome04,),),
             IconButton(onPressed: () {}, icon: Icon(Icons.favorite_outline),),
             IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedShoppingCart01),),
+            CircleAvatar(),
           ],
         ),
       ),
