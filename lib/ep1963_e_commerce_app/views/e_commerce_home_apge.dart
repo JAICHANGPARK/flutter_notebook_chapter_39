@@ -36,7 +36,17 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               child: Placeholder(),
             ),
             Row(
-              children: [],
+              children: [
+                Text(
+                  "Popular items",
+                ),
+                Text(
+                  "View all",
+                ),
+                Icon(
+                  Icons.arrow_forward,
+                ),
+              ],
             )
           ],
         ),
