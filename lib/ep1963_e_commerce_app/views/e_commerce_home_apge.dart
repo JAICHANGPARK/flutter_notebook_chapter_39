@@ -17,10 +17,16 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
           children: [
             Row(
               children: [
-                
+                Text("drop market"),
+                Spacer(),
+                Icon(
+                  Icons.my_location_outlined,
+                ),
+                Text(
+                  "Seoul, ROK",
+                )
               ],
             )
-
           ],
         ),
       ),
