@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class ECommerceHomeApge extends StatefulWidget {
   const ECommerceHomeApge({super.key});
@@ -65,7 +66,9 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
         height: 80,
         child: Row(
           children: [
-            IconButton(onPressed: (){}, icon: Icon(Icons.home_filled))
+            IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedHome04,),),
+            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_outline),),
+            IconButton(onPressed: () {}, icon: Icon(HugeIcons.strokeRoundedShoppingCart01),),
           ],
         ),
       ),
