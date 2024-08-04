@@ -29,7 +29,15 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
             ),
             SizedBox(
               height: 160,
+              child: Placeholder(),
             ),
+            SizedBox(
+              height: 100,
+              child: Placeholder(),
+            ),
+            Row(
+              children: [],
+            )
           ],
         ),
       ),
