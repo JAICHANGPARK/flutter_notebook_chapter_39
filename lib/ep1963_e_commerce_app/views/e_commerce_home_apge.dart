@@ -61,6 +61,14 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
           ),
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        child: Row(
+          children: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.home_filled))
+          ],
+        ),
+      ),
     );
   }
 }
