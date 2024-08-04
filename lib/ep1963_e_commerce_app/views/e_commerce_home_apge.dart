@@ -26,7 +26,10 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   "Seoul, ROK",
                 )
               ],
-            )
+            ),
+            SizedBox(
+              height: 160,
+            ),
           ],
         ),
       ),
