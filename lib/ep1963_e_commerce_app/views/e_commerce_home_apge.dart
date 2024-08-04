@@ -12,6 +12,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(
