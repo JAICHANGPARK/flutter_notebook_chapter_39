@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class ECommerceHomeApge extends StatefulWidget {
@@ -59,6 +60,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   child: Placeholder(),
                 ),
               ),
+              Gap(16),
 
             ],
           ),
