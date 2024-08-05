@@ -24,16 +24,30 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
             children: [
               Row(
                 children: [
-                  Text("drop market"),
+                  Text(
+                    "drop market",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
                   Spacer(),
                   Icon(
                     Icons.my_location_outlined,
+                    color: Colors.red,
                   ),
+                  Gap(4),
                   Text(
                     "Seoul, ROK",
-                  )
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Gap(16),
                 ],
               ),
+              Gap(16),
               SizedBox(
                 height: 160,
                 child: Placeholder(),
@@ -61,22 +75,19 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                 ),
               ),
               Gap(16),
-
             ],
           ),
         ),
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          border: Border(
-            top: BorderSide(),
-          )
-        ),
+            border: Border(
+          top: BorderSide(),
+        )),
         child: BottomAppBar(
           height: 80,
           color: Colors.white,
           elevation: 3,
-
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
