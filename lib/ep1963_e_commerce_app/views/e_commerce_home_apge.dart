@@ -92,7 +92,21 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   )),
               SizedBox(
                 height: 100,
-                child: Placeholder(),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red[50],
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
+                  ),
+                ),
               ),
               Row(
                 children: [
