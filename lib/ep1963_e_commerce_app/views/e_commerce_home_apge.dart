@@ -100,11 +100,16 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   child: Row(
                     children: [
                       Expanded(
-                        child: Column(
-                          children: [
-                            Text("80% OFF"),
-                            Text("Discover fasion that\nsuits your style"),
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 24),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("80% OFF"),
+                              Text("Discover fasion that\nsuits your style"),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
