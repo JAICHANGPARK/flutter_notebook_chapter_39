@@ -61,7 +61,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                         ),
                         padding: EdgeInsets.all(8),
                         margin: EdgeInsets.only(right: 8),
-                        width: 140,
+                        width: 160,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.end,
@@ -95,7 +95,9 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               Gap(16),
               SizedBox(
                 height: 100,
+
                 child: Container(
+                  margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     color: Colors.red[50],
                     borderRadius: BorderRadius.circular(16),
