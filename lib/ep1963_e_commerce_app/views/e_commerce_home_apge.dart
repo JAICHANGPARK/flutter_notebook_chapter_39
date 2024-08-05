@@ -181,9 +181,17 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                         (index) {
                           return Container(
                             height: 280,
+                            margin: EdgeInsets.only(bottom: 24),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Container()),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                )),
                                 Gap(12),
                                 Text("New bags"),
                                 Text("Find your best bag in new collection"),
