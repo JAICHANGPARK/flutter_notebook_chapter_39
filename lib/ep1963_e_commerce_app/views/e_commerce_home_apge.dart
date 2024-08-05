@@ -127,6 +127,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                           margin: EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
                             color: Colors.black,
+                            borderRadius: BorderRadius.circular(24),
                           ),
                           height: 42,
                           child: Center(
@@ -171,9 +172,16 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               ),
               Gap(16),
               Expanded(
-                child: SizedBox(
-                  child: Placeholder(),
-                ),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: List.generate(10, (index){
+                      return Container(
+                        height: 200,
+                        child: Placeholder(),
+                      );
+                    }),
+                  ),
+                )
               ),
               Gap(16),
             ],
