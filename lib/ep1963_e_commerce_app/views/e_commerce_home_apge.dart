@@ -59,6 +59,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        width: 140,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.end,
