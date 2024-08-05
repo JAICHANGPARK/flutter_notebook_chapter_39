@@ -92,6 +92,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                       );
                     },
                   )),
+              Gap(16),
               SizedBox(
                 height: 100,
                 child: Container(
