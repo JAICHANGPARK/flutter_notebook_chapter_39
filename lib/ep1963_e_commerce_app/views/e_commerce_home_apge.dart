@@ -95,7 +95,6 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               Gap(16),
               SizedBox(
                 height: 100,
-
                 child: Container(
                   margin: EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
@@ -115,6 +114,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                 "80% OFF",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 20,
                                 ),
                               ),
                               Text("Discover fasion that\nsuits your style"),
@@ -149,15 +149,27 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                 children: [
                   Text(
                     "Popular items",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
+                  Spacer(),
                   Text(
                     "View all",
+                    style: TextStyle(
+                      color: Colors.red,
+                    ),
                   ),
+                  Gap(8),
                   Icon(
                     Icons.arrow_forward,
+                    color: Colors.red,
                   ),
+                  Gap(16),
                 ],
               ),
+              Gap(16),
               Expanded(
                 child: SizedBox(
                   child: Placeholder(),
