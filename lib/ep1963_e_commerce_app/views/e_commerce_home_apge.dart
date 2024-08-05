@@ -176,15 +176,25 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   padding: const EdgeInsets.only(right: 16),
                   child: SingleChildScrollView(
                     child: Column(
-                      children: List.generate(10, (index){
-                        return Container(
-                          height: 280,
-                          child: Placeholder(),
-                        );
-                      }),
+                      children: List.generate(
+                        10,
+                        (index) {
+                          return Container(
+                            height: 280,
+                            child: Column(
+                              children: [
+                                Expanded(child: Container()),
+                                Gap(12),
+                                Text("New bags"),
+                                Text("Find your best bag in new collection"),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ),
-                )
+                ),
               ),
               Gap(16),
             ],
