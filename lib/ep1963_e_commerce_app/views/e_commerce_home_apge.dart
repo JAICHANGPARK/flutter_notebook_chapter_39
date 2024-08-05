@@ -103,8 +103,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                         child: Column(
                           children: [
                             Text("80% OFF"),
-                            Text("")
+                            Text("Discover fasion that\nsuits your style"),
                           ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          child: Text("SHOP NOW"),
                         ),
                       )
                     ],
