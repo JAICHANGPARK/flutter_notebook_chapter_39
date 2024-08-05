@@ -106,7 +106,12 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text("80% OFF"),
+                              Text(
+                                "80% OFF",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Text("Discover fasion that\nsuits your style"),
                             ],
                           ),
