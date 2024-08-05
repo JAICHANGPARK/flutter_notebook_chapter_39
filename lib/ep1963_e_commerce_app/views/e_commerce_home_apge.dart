@@ -52,10 +52,34 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   height: 160,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
+                    itemCount: 10,
                     itemBuilder: (context, index) {
                       return Container(
                         decoration: BoxDecoration(
                           color: Colors.grey,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    child: Text("WOMEN"),
+                                  ),
+                                ),
+                                Container(
+                                  height: 42,
+                                  width: 42,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
                         ),
                       );
                     },
