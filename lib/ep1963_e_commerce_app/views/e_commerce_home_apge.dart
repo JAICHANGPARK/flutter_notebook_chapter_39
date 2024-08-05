@@ -109,7 +109,20 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                       ),
                       Expanded(
                         child: Container(
-                          child: Text("SHOP NOW"),
+                          margin: EdgeInsets.symmetric(horizontal: 24),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                          height: 42,
+                          child: Center(
+                            child: Text(
+                              "SHOP NOW",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                         ),
                       )
                     ],
