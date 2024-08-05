@@ -60,11 +60,16 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Row(
                               children: [
                                 Expanded(
                                   child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
                                     child: Text("WOMEN"),
                                   ),
                                 ),
