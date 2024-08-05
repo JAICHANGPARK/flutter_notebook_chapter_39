@@ -49,9 +49,17 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               ),
               Gap(16),
               SizedBox(
-                height: 160,
-                child: Placeholder(),
-              ),
+                  height: 160,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                        ),
+                      );
+                    },
+                  )),
               SizedBox(
                 height: 100,
                 child: Placeholder(),
