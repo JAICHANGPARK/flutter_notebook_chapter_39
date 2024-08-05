@@ -172,14 +172,17 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
               ),
               Gap(16),
               Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: List.generate(10, (index){
-                      return Container(
-                        height: 200,
-                        child: Placeholder(),
-                      );
-                    }),
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 16),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: List.generate(10, (index){
+                        return Container(
+                          height: 280,
+                          child: Placeholder(),
+                        );
+                      }),
+                    ),
                   ),
                 )
               ),
