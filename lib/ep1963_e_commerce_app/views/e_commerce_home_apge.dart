@@ -99,10 +99,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                   child: Row(
                     children: [
-                      Column(
-                        children: [
-                          
-                        ],
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("80% OFF"),
+                            Text("")
+                          ],
+                        ),
                       )
                     ],
                   ),
