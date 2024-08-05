@@ -142,6 +142,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                 ),
               ),
+              Gap(24),
               Row(
                 children: [
                   Text(
