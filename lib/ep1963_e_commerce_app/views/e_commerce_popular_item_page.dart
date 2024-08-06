@@ -111,14 +111,19 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         Text("Sort"),
                       ],
                     ),
+                    Gap(12),
                     Expanded(
                       child: GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 16,
-                            mainAxisSpacing: 16,
-                          ),
-                          itemBuilder: (context, index) {}),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                          childAspectRatio: .7,
+                        ),
+                        itemBuilder: (context, index) {
+                          return Placeholder();
+                        },
+                      ),
                     ),
                   ],
                 ),
