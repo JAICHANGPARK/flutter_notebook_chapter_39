@@ -67,6 +67,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
             Container(
               height: 42,
               child: ListView.builder(
+                scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
                 itemBuilder: (context, index) {
                   return Container(
@@ -75,8 +76,10 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                       color: index == 0 ? Colors.black : Colors.transparent,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    child: Text(
-                      tabs[index],
+                    child: Center(
+                      child: Text(
+                        tabs[index],
+                      ),
                     ),
                   );
                 },
