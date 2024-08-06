@@ -57,9 +57,14 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                     itemBuilder: (context, index) {
                       return Container(
                         decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(12),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2021/03/22/16/07/woman-6115105_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            )),
                         padding: const EdgeInsets.all(8),
                         margin: const EdgeInsets.only(right: 8),
                         width: 160,
