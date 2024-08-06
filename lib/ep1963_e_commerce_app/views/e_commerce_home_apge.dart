@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_notebook_chapter_39/ep1963_e_commerce_app/views/e_commerce_popular_item_page.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -166,7 +168,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                 ),
               ),
               const Gap(24),
-              const Row(
+               Row(
                 children: [
                   Text(
                     "Popular items",
@@ -176,16 +178,27 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                     ),
                   ),
                   Spacer(),
-                  Text(
-                    "View all",
-                    style: TextStyle(
-                      color: Colors.red,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                        return ECommercePopularItemPage();
+                      }));
+                    },
+                    child: Row(
+                      children: [
+                        Text(
+                          "View all",
+                          style: TextStyle(
+                            color: Colors.red,
+                          ),
+                        ),
+                        Gap(8),
+                        Icon(
+                          Icons.arrow_forward,
+                          color: Colors.red,
+                        ),
+                      ],
                     ),
-                  ),
-                  Gap(8),
-                  Icon(
-                    Icons.arrow_forward,
-                    color: Colors.red,
                   ),
                   Gap(16),
                 ],
