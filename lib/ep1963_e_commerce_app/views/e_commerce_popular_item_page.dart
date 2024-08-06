@@ -11,11 +11,37 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:SafeArea(
+      body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  icon: Icon(
+                    Icons.arrow_back,
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.search,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.file_upload_outlined),
+                ),
+              ],
+            )
           ],
         ),
       ),
