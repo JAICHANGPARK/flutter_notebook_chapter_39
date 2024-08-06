@@ -8,6 +8,14 @@ class ECommercePopularItemPage extends StatefulWidget {
 }
 
 class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
+  List<String> tabs = [
+    "View all",
+    "Shirts",
+    "Tops",
+    "Skirts",
+    "Trousers",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +63,25 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                   ),
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 42,
+              child: ListView.builder(
+                itemCount: tabs.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      color: index == 0 ? Colors.black : Colors.transparent,
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    child: Text(
+                      tabs[index],
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),
