@@ -22,7 +22,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 children: [
                   Text(
                     "drop market",
@@ -47,7 +47,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   Gap(16),
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               SizedBox(
                   height: 160,
                   child: ListView.builder(
@@ -59,8 +59,8 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        padding: EdgeInsets.all(8),
-                        margin: EdgeInsets.only(right: 8),
+                        padding: const EdgeInsets.all(8),
+                        margin: const EdgeInsets.only(right: 8),
                         width: 160,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -70,10 +70,17 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.white,
                                     ),
-                                    child: Text("WOMEN"),
+                                    child: Center(
+                                      child: const Text(
+                                        "WOMEN",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 Container(
@@ -92,20 +99,20 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                       );
                     },
                   )),
-              Gap(16),
+              const Gap(16),
               SizedBox(
                 height: 100,
                 child: Container(
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     color: Colors.red[50],
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Row(
                     children: [
-                      Expanded(
+                      const Expanded(
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 24),
+                          padding: EdgeInsets.only(left: 24),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -124,13 +131,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                       ),
                       Expanded(
                         child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 24),
+                          margin: const EdgeInsets.symmetric(horizontal: 24),
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(24),
                           ),
                           height: 42,
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "SHOP NOW",
                               style: TextStyle(
@@ -145,8 +152,8 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                 ),
               ),
-              Gap(24),
-              Row(
+              const Gap(24),
+              const Row(
                 children: [
                   Text(
                     "Popular items",
@@ -170,7 +177,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   Gap(16),
                 ],
               ),
-              Gap(16),
+              const Gap(16),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(right: 16),
@@ -181,7 +188,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                         (index) {
                           return Container(
                             height: 280,
-                            margin: EdgeInsets.only(bottom: 24),
+                            margin: const EdgeInsets.only(bottom: 24),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -193,15 +200,15 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                     ),
                                   ),
                                 ),
-                                Gap(12),
-                                Text(
+                                const Gap(12),
+                                const Text(
                                   "New bags",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                   ),
                                 ),
-                                Text(
+                                const Text(
                                   "Find your best bag in new collection",
                                 ),
                               ],
@@ -213,13 +220,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   ),
                 ),
               ),
-              Gap(16),
+              const Gap(16),
             ],
           ),
         ),
       ),
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             border: Border(
           top: BorderSide(),
         )),
@@ -232,19 +239,19 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   HugeIcons.strokeRoundedHome04,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.favorite_outline),
+                icon: const Icon(Icons.favorite_outline),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(HugeIcons.strokeRoundedShoppingCart01),
+                icon: const Icon(HugeIcons.strokeRoundedShoppingCart01),
               ),
-              CircleAvatar(),
+              const CircleAvatar(),
             ],
           ),
         ),
