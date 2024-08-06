@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ECommercePopularItemPage extends StatefulWidget {
   const ECommercePopularItemPage({super.key});
@@ -64,6 +65,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                 ],
               ),
             ),
+            Gap(16),
             Container(
               height: 42,
               margin: EdgeInsets.only(left: 16),
@@ -93,15 +95,35 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                 },
               ),
             ),
-            Row(
-              children: [
-                Icon(Icons.filter_alt_outlined),
-                Text("Filters"),
-                Spacer(),
-                Icon(Icons.filter_list_sharp),
-                Text("Sort"),
-              ],
-            )
+            Gap(16),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.filter_alt_outlined),
+                        Text("Filters"),
+                        Spacer(),
+                        Icon(Icons.filter_list_sharp),
+                        Text("Sort"),
+                      ],
+                    ),
+                    Expanded(
+                      child: GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                          ),
+                          itemBuilder: (context, index) {}),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
