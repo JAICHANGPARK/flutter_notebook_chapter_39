@@ -200,7 +200,9 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Text("Find your best bag in new collection"),
+                                Text(
+                                  "Find your best bag in new collection",
+                                ),
                               ],
                             ),
                           );
