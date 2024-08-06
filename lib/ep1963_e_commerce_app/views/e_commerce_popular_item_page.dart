@@ -27,7 +27,18 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                 ),
                 Expanded(
                   child: Column(
-                    children: [],
+                    children: [
+                      Text(
+                        "Popular items",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      Text(
+                        "124 555 items",
+                      )
+                    ],
                   ),
                 ),
                 IconButton(
