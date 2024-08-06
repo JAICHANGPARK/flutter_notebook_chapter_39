@@ -194,7 +194,12 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                   ),
                                 ),
                                 Gap(12),
-                                Text("New bags"),
+                                Text(
+                                  "New bags",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 Text("Find your best bag in new collection"),
                               ],
                             ),
