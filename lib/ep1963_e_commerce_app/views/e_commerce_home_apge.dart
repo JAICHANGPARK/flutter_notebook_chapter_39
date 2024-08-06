@@ -208,9 +208,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                 Expanded(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                          image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/05/10/02/17/girl-1382947_1280.jpg",
+                                          ),
+                                        )),
                                   ),
                                 ),
                                 const Gap(12),
