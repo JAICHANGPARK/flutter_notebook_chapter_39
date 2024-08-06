@@ -10,6 +10,15 @@ class ECommercePopularItemPage extends StatefulWidget {
 class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body:SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
