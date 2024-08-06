@@ -66,6 +66,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
             ),
             Container(
               height: 42,
+              margin: EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
@@ -76,15 +77,31 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                       color: index == 0 ? Colors.black : Colors.transparent,
                       borderRadius: BorderRadius.circular(32),
                     ),
+                    margin: EdgeInsets.only(
+                      right: 8,
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Center(
                       child: Text(
                         tabs[index],
+                        style: TextStyle(
+                          color: index == 0 ? Colors.white : Colors.black,
+                        ),
                       ),
                     ),
                   );
                 },
               ),
             ),
+            Row(
+              children: [
+                Icon(Icons.filter_alt_outlined),
+                Text("Filters"),
+                Spacer(),
+                Icon(Icons.filter_list_sharp),
+                Text("Sort"),
+              ],
+            )
           ],
         ),
       ),
