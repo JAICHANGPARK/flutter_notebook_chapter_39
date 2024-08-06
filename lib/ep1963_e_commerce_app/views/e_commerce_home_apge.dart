@@ -168,7 +168,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                 ),
               ),
               const Gap(24),
-               Row(
+              Row(
                 children: [
                   Text(
                     "Popular items",
@@ -180,9 +180,13 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                   Spacer(),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                        return ECommercePopularItemPage();
-                      }));
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return ECommercePopularItemPage();
+                          },
+                        ),
+                      );
                     },
                     child: Row(
                       children: [
