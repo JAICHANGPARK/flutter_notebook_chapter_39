@@ -198,6 +198,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                   "New bags",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 16,
                                   ),
                                 ),
                                 Text(
