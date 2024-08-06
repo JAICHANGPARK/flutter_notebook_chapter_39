@@ -96,6 +96,9 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                     color: Colors.red[50],
                                     shape: BoxShape.circle,
                                   ),
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                  ),
                                 )
                               ],
                             )
