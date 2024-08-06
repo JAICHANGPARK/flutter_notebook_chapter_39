@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
@@ -70,8 +71,9 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration: const BoxDecoration(
+                                    decoration: BoxDecoration(
                                       color: Colors.white,
+                                      borderRadius: BorderRadius.circular(24),
                                     ),
                                     height: 42,
                                     child: Center(
@@ -91,6 +93,8 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                     border: Border.all(
                                       color: Colors.red,
                                     ),
+                                    color: Colors.red[50],
+                                    shape: BoxShape.circle,
                                   ),
                                 )
                               ],
