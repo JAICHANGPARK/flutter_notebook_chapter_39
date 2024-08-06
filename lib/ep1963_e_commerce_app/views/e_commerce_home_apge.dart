@@ -73,6 +73,7 @@ class _ECommerceHomeApgeState extends State<ECommerceHomeApge> {
                                     decoration: const BoxDecoration(
                                       color: Colors.white,
                                     ),
+                                    height: 42,
                                     child: Center(
                                       child: const Text(
                                         "WOMEN",
