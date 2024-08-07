@@ -166,7 +166,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                   ),
                                 ),
                               ),
-                              Gap(12),
+                              Gap(6),
                               Text(
                                 "Dream",
                                 style: TextStyle(
