@@ -53,22 +53,24 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                       ],
                     ),
                   ),
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Popular items",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                  Positioned.fill(
+                    child: Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Popular items",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "124 555 items",
-                        )
-                      ],
+                          Text(
+                            "124 555 items",
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
