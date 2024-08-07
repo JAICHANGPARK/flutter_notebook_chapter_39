@@ -187,7 +187,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                               Text(
                                 "\$ 175.00",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16,
                                 ),
                               )
                             ],
