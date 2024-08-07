@@ -26,14 +26,31 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
           children: [
             SizedBox(
               height: 64,
-              child: Row(
+              child: Stack(
                 children: [
-                  IconButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                    icon: Icon(
-                      Icons.arrow_back,
+                  Positioned.fill(
+                    child: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          icon: Icon(
+                            Icons.arrow_back,
+                          ),
+                        ),
+
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.search,
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.file_upload_outlined),
+                        ),
+                      ],
                     ),
                   ),
                   Expanded(
@@ -51,16 +68,6 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         )
                       ],
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.search,
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.file_upload_outlined),
                   ),
                 ],
               ),
