@@ -55,6 +55,8 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                   ),
                   Expanded(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           "Popular items",
