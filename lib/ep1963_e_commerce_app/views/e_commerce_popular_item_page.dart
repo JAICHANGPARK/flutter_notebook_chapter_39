@@ -116,10 +116,20 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                     Row(
                       children: [
                         Icon(Icons.filter_alt_outlined),
-                        Text("Filters"),
+                        Gap(6),
+                        Text(
+                          "Filters",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Spacer(),
                         Icon(Icons.filter_list_sharp),
-                        Text("Sort"),
+                        Gap(6),
+                        Text("Sort",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
                       ],
                     ),
                     Gap(12),
