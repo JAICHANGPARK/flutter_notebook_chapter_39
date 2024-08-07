@@ -126,10 +126,12 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         Spacer(),
                         Icon(Icons.filter_list_sharp),
                         Gap(6),
-                        Text("Sort",
+                        Text(
+                          "Sort",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                          ),),
+                          ),
+                        ),
                       ],
                     ),
                     Gap(12),
@@ -142,7 +144,23 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                           childAspectRatio: .7,
                         ),
                         itemBuilder: (context, index) {
-                          return Placeholder();
+                          return Column(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  child: Stack(
+                                    children: [],
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "Dream",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
+                          );
                         },
                       ),
                     ),
