@@ -39,7 +39,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                             Icons.arrow_back,
                           ),
                         ),
-
+                        Spacer(),
                         IconButton(
                           onPressed: () {},
                           icon: Icon(
