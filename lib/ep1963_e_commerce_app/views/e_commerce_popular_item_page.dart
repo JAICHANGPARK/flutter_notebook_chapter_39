@@ -145,6 +145,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         ),
                         itemBuilder: (context, index) {
                           return Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
                                 child: Container(
@@ -158,6 +159,15 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
+                              ),
+                              Text(
+                                "Bag",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Text(
+                                "\$ 175.00",
                               )
                             ],
                           );
