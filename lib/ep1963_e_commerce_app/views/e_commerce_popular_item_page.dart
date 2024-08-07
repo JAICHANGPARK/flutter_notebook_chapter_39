@@ -149,6 +149,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                             children: [
                               Expanded(
                                 child: Container(
+                                  
                                   child: Stack(
                                     children: [],
                                   ),
