@@ -160,6 +160,9 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                         top: 8,
                                         child: CircleAvatar(
                                           backgroundColor: Colors.white,
+                                          child: Icon(
+                                            Icons.favorite_outline,
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -178,10 +181,14 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                 "Bag",
                                 style: TextStyle(
                                   color: Colors.grey,
+                                  fontSize: 13,
                                 ),
                               ),
                               Text(
                                 "\$ 175.00",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                ),
                               )
                             ],
                           );
