@@ -171,6 +171,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                 "Dream",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 16,
                                 ),
                               ),
                               Text(
