@@ -157,12 +157,16 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                     children: [
                                       Positioned(
                                         right: 8,
-                                        child: CircleAvatar(),
+                                        top: 8,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.white,
+                                        ),
                                       ),
                                     ],
                                   ),
                                 ),
                               ),
+                              Gap(12),
                               Text(
                                 "Dream",
                                 style: TextStyle(
