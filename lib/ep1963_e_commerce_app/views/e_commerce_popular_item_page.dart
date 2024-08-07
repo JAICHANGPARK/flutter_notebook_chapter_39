@@ -149,9 +149,17 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                             children: [
                               Expanded(
                                 child: Container(
-                                  
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                   child: Stack(
-                                    children: [],
+                                    children: [
+                                      Positioned(
+                                        right: 8,
+                                        child: CircleAvatar(),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
