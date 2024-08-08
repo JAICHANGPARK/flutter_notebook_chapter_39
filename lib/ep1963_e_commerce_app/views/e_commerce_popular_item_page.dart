@@ -35,25 +35,25 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                           onPressed: () {
                             Navigator.of(context).pop();
                           },
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.arrow_back,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.search,
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.file_upload_outlined),
+                          icon: const Icon(Icons.file_upload_outlined),
                         ),
                       ],
                     ),
                   ),
-                  Positioned.fill(
+                  const Positioned.fill(
                     child: Expanded(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -76,10 +76,10 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Container(
               height: 42,
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: tabs.length,
@@ -90,10 +90,10 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                       color: index == 0 ? Colors.black : Colors.transparent,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       right: 8,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Center(
                       child: Text(
                         tabs[index],
@@ -106,14 +106,14 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                 },
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    const Row(
                       children: [
                         Icon(Icons.filter_alt_outlined),
                         Gap(6),
@@ -134,10 +134,10 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         ),
                       ],
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Expanded(
                       child: GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
@@ -153,7 +153,7 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                     color: Colors.grey,
                                     borderRadius: BorderRadius.circular(16),
                                   ),
-                                  child: Stack(
+                                  child: const Stack(
                                     children: [
                                       Positioned(
                                         right: 8,
@@ -169,22 +169,22 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                                   ),
                                 ),
                               ),
-                              Gap(6),
-                              Text(
+                              const Gap(6),
+                              const Text(
                                 "Dream",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "Bag",
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontSize: 13,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "\$ 175.00",
                                 style: TextStyle(
                                   fontSize: 16,
