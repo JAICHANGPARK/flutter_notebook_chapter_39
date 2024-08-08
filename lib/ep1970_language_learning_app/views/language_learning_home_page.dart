@@ -88,7 +88,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                     Text(
                       "6/8 Tasks",
                       style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                        // fontWeight: FontWeight.bold,
                         fontSize: 26,
                       ),
                     ),
