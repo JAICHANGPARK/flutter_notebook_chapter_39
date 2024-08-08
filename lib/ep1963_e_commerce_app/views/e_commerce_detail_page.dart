@@ -101,13 +101,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
             ),
           ),
           SizedBox(
-            height: 72,
+            height: 64,
             child: Row(
               children: [
                 Expanded(
                     child: Container(
                   decoration: BoxDecoration(
                     color: Colors.red,
+                    borderRadius: BorderRadius.circular(32),
                   ),
                   child: Center(
                     child: Text(
@@ -118,7 +119,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     ),
                   ),
                 )),
-                Expanded(child: Container()),
+                Expanded(
+                    child: Container(
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                  ),
+                )),
               ],
             ),
           )
