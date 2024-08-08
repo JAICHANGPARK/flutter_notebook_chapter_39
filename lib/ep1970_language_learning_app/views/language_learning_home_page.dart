@@ -25,6 +25,18 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               HugeIcons.strokeRoundedBook02,
             ),
             label: "Course",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedMessage02,
+            ),
+            label: "Chatbot",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedUser,
+            ),
+            label: "Profile",
           )
         ],
       ),
