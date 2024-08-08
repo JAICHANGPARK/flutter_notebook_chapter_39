@@ -54,11 +54,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                             right: 12,
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(.2),
+                                color: Colors.white.withOpacity(.4),
+                                borderRadius: BorderRadius.circular(8),
                               ),
                               child: IconButton(
                                 icon: Icon(Icons.zoom_out_map),
                                 onPressed: () {},
+                                color: Colors.white,
                               ),
                             ),
                           )
