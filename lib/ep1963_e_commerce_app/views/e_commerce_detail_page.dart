@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ECommerceDetailPage extends StatefulWidget {
   const ECommerceDetailPage({super.key});
@@ -59,27 +60,35 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 ),
               ),
               Text("Select size:"),
-
             ],
           ),
           Row(
             children: [
-              ...["XS", "S", "M", "L", "XL"].map((e){
-                return  Container(
+              ...["XS", "S", "M", "L", "XL"].map((e) {
+                return Container(
+                  height: 36,
+                  width: 36,
                   margin: EdgeInsets.only(right: 4),
                   decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[300]!,
                       ),
-                      borderRadius: BorderRadius.circular(6)
-                  ),
-                  padding: EdgeInsets.all(8),
-                  child: Text("$e"),
+                      borderRadius: BorderRadius.circular(6)),
+                  // padding: EdgeInsets.all(8),
+                  child: Center(child: Text("$e")),
                 );
               }),
-
-              Text("Size Guide"),
-              Icon(Icons.zoom_out_map),
+              Gap(12),
+              Text(
+                "Size Guide",
+                style: TextStyle(
+                  color: Colors.red,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.red,
+                ),
+              ),
+              Gap(5),
+              Icon(Icons.zoom_out_map, color: Colors.red,),
             ],
           ),
         ],
