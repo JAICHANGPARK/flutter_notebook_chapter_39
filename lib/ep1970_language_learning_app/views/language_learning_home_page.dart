@@ -58,7 +58,14 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Container(
                 height: 160,
                 child: Placeholder(),
-              )
+              ),
+              Gap(16),
+              Text("Course Progress"),
+              Gap(16),
+              Container(
+                height: 160,
+                child: Placeholder(),
+              ),
             ],
           ),
         ),
