@@ -57,7 +57,6 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                 "English for business",
                 style: TextStyle(
                   fontSize: 18,
-
                 ),
               ),
               Gap(16),
@@ -66,7 +65,10 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                 child: Placeholder(),
               ),
               Gap(16),
-              Text("Course Progress"),
+              Text("Course Progress",
+                style: TextStyle(
+                  fontSize: 18,
+                ),),
               Gap(16),
               Container(
                 height: 160,
