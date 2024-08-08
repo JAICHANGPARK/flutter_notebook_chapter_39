@@ -69,8 +69,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   border: Border.all(
                     color: Colors.grey[300]!,
                   ),
+                  borderRadius: BorderRadius.circular(6)
                 ),
-                padding: EdgeInsets.all(12),
+                padding: EdgeInsets.all(8),
                 child: Text("XS"),
               ),
             ],
