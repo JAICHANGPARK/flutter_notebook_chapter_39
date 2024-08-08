@@ -17,12 +17,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.favorite),
+            icon: const Icon(Icons.favorite),
             color: Colors.red,
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.file_upload_outlined),
+            icon: const Icon(Icons.file_upload_outlined),
           ),
         ],
       ),
@@ -33,26 +33,26 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           children: [
             Container(
               height: 420,
-              child: Placeholder(),
+              child: const Placeholder(),
             ),
-            Gap(12),
-            Text(
+            const Gap(12),
+            const Text(
               "DREAM",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.grey,
               ),
             ),
-            Gap(8),
-            Text(
+            const Gap(8),
+            const Text(
               "Tie dye print satin effect shirt",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
               ),
             ),
-            Gap(8),
-            Row(
+            const Gap(8),
+            const Row(
               children: [
                 Text(
                   "\$ 175.00",
@@ -75,21 +75,21 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 ),
               ],
             ),
-            Gap(16),
-            Text(
+            const Gap(16),
+            const Text(
               "Select size:",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Gap(8),
+            const Gap(8),
             Row(
               children: [
                 ...["XS", "S", "M", "L", "XL"].map((e) {
                   return Container(
                     height: 36,
                     width: 36,
-                    margin: EdgeInsets.only(right: 4),
+                    margin: const EdgeInsets.only(right: 4),
                     decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
@@ -99,24 +99,26 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     child: Center(child: Text("$e")),
                   );
                 }),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   "Size Guide",
                   style: TextStyle(
                     color: Colors.red,
                     decoration: TextDecoration.underline,
                     decorationColor: Colors.red,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                Gap(5),
-                Icon(
+                const Gap(5),
+                const Icon(
                   Icons.zoom_out_map,
                   color: Colors.red,
                 ),
               ],
             ),
-            Gap(12),
-            Text(
+            const Gap(12),
+            const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -124,8 +126,8 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ),
               maxLines: 2,
             ),
-            Gap(12),
-            Spacer(),
+            const Gap(12),
+            const Spacer(),
             SizedBox(
               height: 58,
               child: Row(
@@ -136,7 +138,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Buy now",
                         style: TextStyle(
@@ -147,14 +149,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                     ),
                   )),
-                  Gap(6),
+                  const Gap(6),
                   Expanded(
                     child: Container(
-                      decoration: ShapeDecoration(
+                      decoration: const ShapeDecoration(
                         shape: StadiumBorder(),
                         color: Colors.black,
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
