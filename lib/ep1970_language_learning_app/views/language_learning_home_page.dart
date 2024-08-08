@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class LanguageLearningHomePage extends StatefulWidget {
@@ -16,13 +17,38 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                CircleAvatar(),
+                Spacer(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.teal,
+                  ),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 14,
+                        backgroundColor: Colors.white,
+                      ),
+                      Gap(8),
+                      Text("12"),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    HugeIcons.strokeRoundedNotification03,
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
-
         type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
