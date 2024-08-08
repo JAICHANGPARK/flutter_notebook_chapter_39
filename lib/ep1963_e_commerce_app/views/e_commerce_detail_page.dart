@@ -99,7 +99,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     child: Center(child: Text("$e")),
                   );
                 }),
-                Gap(12),
+                Spacer(),
                 Text(
                   "Size Guide",
                   style: TextStyle(
@@ -120,12 +120,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                fontSize: 15,
               ),
               maxLines: 2,
             ),
             Gap(12),
+            Spacer(),
             SizedBox(
-              height: 64,
+              height: 58,
               child: Row(
                 children: [
                   Expanded(
@@ -139,10 +141,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         "Buy now",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 16,
                         ),
                       ),
                     ),
                   )),
+                  Gap(6),
                   Expanded(
                     child: Container(
                       decoration: ShapeDecoration(
