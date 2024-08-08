@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1963_e_commerce_app/views/e_commerce_detail_page.dart';
 import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
 
 class ECommercePopularItemPage extends StatefulWidget {
   const ECommercePopularItemPage({super.key});
@@ -145,8 +147,10 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                         ),
                         itemBuilder: (context, index) {
                           return GestureDetector(
-                            onTap: (){
-                              context.push();
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                                return ECommerceDetailPage();
+                              }));
                             },
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
