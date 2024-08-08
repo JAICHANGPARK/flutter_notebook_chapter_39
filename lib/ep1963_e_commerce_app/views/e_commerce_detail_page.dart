@@ -64,18 +64,20 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           ),
           Row(
             children: [
-              ["XS", ""]
-              Container(
-                margin: EdgeInsets.only(right: 4),
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey[300]!,
+              ...["XS", "S", "M", "L", "XL"].map((e){
+                return  Container(
+                  margin: EdgeInsets.only(right: 4),
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(6)
                   ),
-                  borderRadius: BorderRadius.circular(6)
-                ),
-                padding: EdgeInsets.all(8),
-                child: Text("XS"),
-              ),
+                  padding: EdgeInsets.all(8),
+                  child: Text("$e"),
+                );
+              }),
+
               Text("Size Guide"),
               Icon(Icons.zoom_out_map),
             ],
