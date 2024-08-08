@@ -33,7 +33,21 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           children: [
             Container(
               height: 420,
-              child: const Placeholder(),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                  Gap(8),
+                  Container(
+                    width: 100,
+                  )
+                ],
+              ),
             ),
             const Gap(12),
             const Text(
