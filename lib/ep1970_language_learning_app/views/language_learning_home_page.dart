@@ -68,11 +68,16 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+
+                        ),
+                        Gap(12),
                         Text("Today's Goal"),
                         Spacer(),
                         Icon(
@@ -80,7 +85,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                         ),
                       ],
                     ),
-                    Text("6/8 Tasks"),
+                    Text(
+                      "6/8 Tasks",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26,
+                      ),
+                    ),
                     Container(
                       height: 42,
                       child: Placeholder(),
