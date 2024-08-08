@@ -26,7 +26,27 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
         ],
       ),
       body: Column(
-        children: [],
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            height: 400,
+            child: Placeholder(),
+          ),
+          Text(
+            "DREAM",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.grey,
+            ),
+          ),
+          Text("Tie dye print satin effect shirt"),
+          Row(
+            children: [
+              Text("\$ 175.00"),
+
+            ],
+          )
+        ],
       ),
     );
   }
