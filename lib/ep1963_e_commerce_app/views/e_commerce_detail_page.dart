@@ -57,7 +57,22 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
-              )
+              ),
+              Text("Select size:"),
+
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                  ),
+                ),
+                padding: EdgeInsets.all(12),
+                child: Text("XS"),
+              ),
             ],
           )
         ],
