@@ -73,11 +73,16 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     fontSize: 16,
                   ),
                 ),
-
               ],
             ),
             Gap(16),
-            Text("Select size:"),
+            Text(
+              "Select size:",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Gap(8),
             Row(
               children: [
                 ...["XS", "S", "M", "L", "XL"].map((e) {
@@ -110,6 +115,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 ),
               ],
             ),
+            Gap(12),
             Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
               style: TextStyle(
