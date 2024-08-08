@@ -57,9 +57,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       return Expanded(
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/01/21/17/45/woman-3946473_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                              )),
                           margin: EdgeInsets.only(bottom: 6),
                         ),
                       );
