@@ -45,7 +45,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   ),
                   Gap(8),
                   Container(
-                    width: 100,
+                    width: 96,
                     child: Column(
                         children: List.generate(4, (index) {
                       return Expanded(
