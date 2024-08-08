@@ -70,11 +70,14 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   "4.9",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ),
-                Text("Select size:"),
+
               ],
             ),
+            Gap(16),
+            Text("Select size:"),
             Row(
               children: [
                 ...["XS", "S", "M", "L", "XL"].map((e) {
