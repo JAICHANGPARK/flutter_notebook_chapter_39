@@ -44,11 +44,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               ),
             ),
             Gap(8),
-            Text("Tie dye print satin effect shirt", style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-
-            ),),
+            Text(
+              "Tie dye print satin effect shirt",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
             Gap(8),
             Row(
               children: [
@@ -56,6 +58,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   "\$ 175.00",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 16,
                   ),
                 ),
                 Gap(16),
@@ -136,12 +139,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                         color: Colors.black,
                       ),
                       child: Center(
-
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.shopping_cart_outlined,
-                            color: Colors.white,),
+                            Icon(
+                              Icons.shopping_cart_outlined,
+                              color: Colors.white,
+                            ),
                             Gap(8),
                             Text(
                               "Add to cart",
