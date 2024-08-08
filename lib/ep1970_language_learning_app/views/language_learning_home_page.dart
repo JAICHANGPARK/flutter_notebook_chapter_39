@@ -64,14 +64,32 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                 height: 160,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [],
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("Today's Goal"),
+                        Spacer(),
+                        Icon(
+                          HugeIcons.strokeRoundedEdit01,
+                        ),
+                      ],
+                    ),
+                    Text("6/8 Tasks"),
+                    Container(
+                      height: 42,
+                      child: Placeholder(),
+                    )
+                  ],
                 ),
               ),
               Gap(16),
-              Text("Course Progress",
+              Text(
+                "Course Progress",
                 style: TextStyle(
                   fontSize: 18,
-                ),),
+                ),
+              ),
               Gap(16),
               Container(
                 height: 160,
