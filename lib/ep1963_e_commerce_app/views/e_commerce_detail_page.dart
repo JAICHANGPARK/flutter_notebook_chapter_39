@@ -49,12 +49,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       ),
                       child: Stack(
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(.2),
-                            ),
-                            child: IconButton(
-                              icon: Icon(Icons.zoom_out_map), onPressed: () {  },
+                          Positioned(
+                            bottom: 12,
+                            right: 12,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(.2),
+                              ),
+                              child: IconButton(
+                                icon: Icon(Icons.zoom_out_map),
+                                onPressed: () {},
+                              ),
                             ),
                           )
                         ],
