@@ -144,53 +144,58 @@ class _ECommercePopularItemPageState extends State<ECommercePopularItemPage> {
                           childAspectRatio: .6,
                         ),
                         itemBuilder: (context, index) {
-                          return Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                  child: const Stack(
-                                    children: [
-                                      Positioned(
-                                        right: 8,
-                                        top: 8,
-                                        child: CircleAvatar(
-                                          backgroundColor: Colors.white,
-                                          child: Icon(
-                                            Icons.favorite_outline,
+                          return GestureDetector(
+                            onTap: (){
+                              context.push();
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: const Stack(
+                                      children: [
+                                        Positioned(
+                                          right: 8,
+                                          top: 8,
+                                          child: CircleAvatar(
+                                            backgroundColor: Colors.white,
+                                            child: Icon(
+                                              Icons.favorite_outline,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                              const Gap(6),
-                              const Text(
-                                "Dream",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
+                                const Gap(6),
+                                const Text(
+                                  "Dream",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
-                              ),
-                              const Text(
-                                "Bag",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 13,
+                                const Text(
+                                  "Bag",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                    fontSize: 13,
+                                  ),
                                 ),
-                              ),
-                              const Text(
-                                "\$ 175.00",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                ),
-                              )
-                            ],
+                                const Text(
+                                  "\$ 175.00",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
