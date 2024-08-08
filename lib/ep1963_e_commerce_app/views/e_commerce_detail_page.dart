@@ -125,17 +125,22 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                       shape: StadiumBorder(),
                       color: Colors.black,
                     ),
-                    child: Row(
-                      children: [
-                        Icon(Icons.shopping_cart_outlined),
-                        Text(
-                          "Add to cart",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        )
-                      ],
+                    child: Center(
+
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.shopping_cart_outlined),
+                          Gap(8),
+                          Text(
+                            "Add to cart",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
