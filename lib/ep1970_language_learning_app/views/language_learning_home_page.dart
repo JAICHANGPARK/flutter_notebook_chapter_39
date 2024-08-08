@@ -23,6 +23,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
             0,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -51,7 +52,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   ),
                 ],
               ),
-              Text("English for business")
+              Gap(16),
+              Text("English for business"),
+              Gap(16),
+              Container(
+                height: 160,
+                child: Placeholder(),
+              )
             ],
           ),
         ),
