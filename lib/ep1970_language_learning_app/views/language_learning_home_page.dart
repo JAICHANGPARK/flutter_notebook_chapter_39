@@ -15,37 +15,45 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.teal,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(
+            16,
+            16,
+            16,
+            0,
+          ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.teal,
+                    ),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 14,
+                          backgroundColor: Colors.white,
+                        ),
+                        Gap(8),
+                        Text("12"),
+                      ],
+                    ),
                   ),
-                  child: Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 14,
-                        backgroundColor: Colors.white,
-                      ),
-                      Gap(8),
-                      Text("12"),
-                    ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      HugeIcons.strokeRoundedNotification03,
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    HugeIcons.strokeRoundedNotification03,
-                  ),
-                ),
-              ],
-            ),
-            Text("English for business")
-          ],
+                ],
+              ),
+              Text("English for business")
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
