@@ -1,5 +1,13 @@
 # flutter_notebook_chapter_39
 
+## EP1970
+
+- Mingle - Learning Language App
+- Hafiza☁️ for Kretya Studio
+- https://dribbble.com/shots/24649149-Mingle-Learning-Language-App
+
+<img src="https://cdn.dribbble.com/userupload/15708411/file/original-68258d43526d46ed34744099d908a81e.png?resize=1905x1429"/>
+
 ## EP1963-1969
 
 - E-commerce Mobile App
