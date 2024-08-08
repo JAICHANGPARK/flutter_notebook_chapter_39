@@ -32,9 +32,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 400,
+              height: 420,
               child: Placeholder(),
             ),
+            Gap(12),
             Text(
               "DREAM",
               style: TextStyle(
