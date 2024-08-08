@@ -13,6 +13,7 @@ dependencies:
   google_fonts: ^6.2.1
   gap: ^3.0.1
   hugeicons: ^0.0.7
+  go_router:
 
 dev_dependencies:
   flutter_test:
