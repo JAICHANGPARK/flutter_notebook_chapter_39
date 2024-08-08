@@ -62,7 +62,10 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Gap(16),
               Container(
                 height: 160,
-                child: Placeholder(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [],
+                ),
               ),
               Gap(16),
               Text("Course Progress",
