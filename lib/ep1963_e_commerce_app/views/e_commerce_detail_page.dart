@@ -13,11 +13,20 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.favorite),
+            color: Colors.red,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.file_upload_outlined),
+          ),
+        ],
       ),
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
     );
   }
