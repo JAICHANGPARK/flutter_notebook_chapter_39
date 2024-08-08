@@ -6,7 +6,7 @@
 - Hafiza☁️ for Kretya Studio
 - https://dribbble.com/shots/24649149-Mingle-Learning-Language-App
 
-<img src="https://cdn.dribbble.com/userupload/15708411/file/original-68258d43526d46ed34744099d908a81e.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15969297/file/original-9e7eea10a5307d1d471e01da1c2e0817.png?resize=1905x1429"/>
 
 ## EP1963-1969
 
