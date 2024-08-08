@@ -48,9 +48,12 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     width: 100,
                     child: Column(
                       children: List.generate(4, (index){
-                        return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
+                        return Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                            ),
+                            margin: EdgeInsets.only(bottom: 6),
                           ),
                         );
                       })
