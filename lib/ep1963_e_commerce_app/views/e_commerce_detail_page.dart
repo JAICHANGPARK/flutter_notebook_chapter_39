@@ -47,17 +47,17 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Container(
                     width: 100,
                     child: Column(
-                      children: List.generate(4, (index){
-                        return Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                            ),
-                            margin: EdgeInsets.only(bottom: 6),
+                        children: List.generate(4, (index) {
+                      return Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(16),
                           ),
-                        );
-                      })
-                    ),
+                          margin: EdgeInsets.only(bottom: 6),
+                        ),
+                      );
+                    })),
                   )
                 ],
               ),
