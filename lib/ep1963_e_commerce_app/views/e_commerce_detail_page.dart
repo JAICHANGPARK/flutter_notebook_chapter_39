@@ -121,7 +121,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
+              maxLines: 2,
             ),
+            Gap(12),
             SizedBox(
               height: 64,
               child: Row(
