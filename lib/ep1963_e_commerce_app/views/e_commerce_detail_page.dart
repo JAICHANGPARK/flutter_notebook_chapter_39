@@ -43,7 +43,13 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 color: Colors.grey,
               ),
             ),
-            Text("Tie dye print satin effect shirt"),
+            Gap(8),
+            Text("Tie dye print satin effect shirt", style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+
+            ),),
+            Gap(8),
             Row(
               children: [
                 Text(
@@ -52,6 +58,7 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                Gap(16),
                 Icon(
                   Icons.star,
                   color: Colors.red,
