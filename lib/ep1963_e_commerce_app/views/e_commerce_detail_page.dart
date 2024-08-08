@@ -42,8 +42,22 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           Text("Tie dye print satin effect shirt"),
           Row(
             children: [
-              Text("\$ 175.00"),
-
+              Text(
+                "\$ 175.00",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.red,
+              ),
+              Text(
+                "4.9",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              )
             ],
           )
         ],
