@@ -16,13 +16,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(
-              HugeIcons.strokeRoundedHome01,
+              HugeIcons.strokeRoundedHome13,
             ),
             label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              HugeIcons.strokeRoundedAudioBook02,
+              HugeIcons.strokeRoundedBook02,
             ),
             label: "Course",
           )
