@@ -64,7 +64,9 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
           ),
           Row(
             children: [
+              ["XS", ""]
               Container(
+                margin: EdgeInsets.only(right: 4),
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.grey[300]!,
@@ -74,8 +76,10 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 padding: EdgeInsets.all(8),
                 child: Text("XS"),
               ),
+              Text("Size Guide"),
+              Icon(Icons.zoom_out_map),
             ],
-          )
+          ),
         ],
       ),
     );
