@@ -47,6 +47,18 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                           fit: BoxFit.cover,
                         ),
                       ),
+                      child: Stack(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                            ),
+                            child: IconButton(
+                              icon: Icon(Icons.zoom_out_map), onPressed: () {  },
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Gap(8),
