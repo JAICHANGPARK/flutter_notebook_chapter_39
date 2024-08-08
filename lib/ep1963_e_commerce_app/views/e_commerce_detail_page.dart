@@ -46,6 +46,15 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                   Gap(8),
                   Container(
                     width: 100,
+                    child: Column(
+                      children: List.generate(4, (index){
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                          ),
+                        );
+                      })
+                    ),
                   )
                 ],
               ),
