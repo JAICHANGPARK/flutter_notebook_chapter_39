@@ -88,9 +88,40 @@ class _ECommerceDetailPageState extends State<ECommerceDetailPage> {
                 ),
               ),
               Gap(5),
-              Icon(Icons.zoom_out_map, color: Colors.red,),
+              Icon(
+                Icons.zoom_out_map,
+                color: Colors.red,
+              ),
             ],
           ),
+          Text(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 72,
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Buy now",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )),
+                Expanded(child: Container()),
+              ],
+            ),
+          )
         ],
       ),
     );
