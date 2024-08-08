@@ -53,7 +53,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                 ],
               ),
               Gap(16),
-              Text("English for business"),
+              Text(
+                "English for business",
+                style: TextStyle(
+                  fontSize: 18,
+
+                ),
+              ),
               Gap(16),
               Container(
                 height: 160,
@@ -73,7 +79,6 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               ),
               Gap(16),
               Expanded(child: Placeholder())
-
             ],
           ),
         ),
