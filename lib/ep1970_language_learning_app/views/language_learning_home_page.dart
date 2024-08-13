@@ -41,7 +41,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           radius: 14,
                           backgroundColor: Colors.white,
                         ),
-                        Gap(8),
+                        Gap(6),
                         Text(
                           "12",
                           style: TextStyle(
@@ -126,9 +126,22 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               ),
               Gap(16),
               Container(
-                height: 160,
-                child: Placeholder(),
-              ),
+                  height: 160,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Total"),
+                          Text(
+                            "12/20",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  )),
               Gap(16),
               Container(
                 height: 42,
