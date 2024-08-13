@@ -32,8 +32,9 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.teal,
-                      borderRadius: BorderRadius.circular(24)
+                      borderRadius: BorderRadius.circular(24),
                     ),
+                    padding: EdgeInsets.all(2),
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -41,7 +42,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           backgroundColor: Colors.white,
                         ),
                         Gap(8),
-                        Text("12"),
+                        Text(
+                          "12",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Gap(6),
                       ],
                     ),
                   ),
