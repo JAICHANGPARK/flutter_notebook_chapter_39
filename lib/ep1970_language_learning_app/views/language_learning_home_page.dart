@@ -151,10 +151,19 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       ),
                       Gap(18),
                       Container(
-                        height: 16,
+                        height: 12,
                         decoration: BoxDecoration(
                           color: Colors.green,
                         ),
+                      ),
+                      Row(
+                        children: [
+                          CircleAvatar(radius: 8,),
+                          Text("Beginner"),
+                          Text("(45%)"),
+                          CircleAvatar(radius: 6,),
+                          Text("Intermediate")
+                        ],
                       )
                     ],
                   )),
