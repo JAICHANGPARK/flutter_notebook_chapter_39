@@ -75,7 +75,6 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       children: [
                         CircleAvatar(
                           backgroundColor: Colors.white,
-
                         ),
                         Gap(12),
                         Text("Today's Goal"),
@@ -95,10 +94,14 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                     Container(
                       height: 42,
                       child: Row(
-                        children: List.generate(20, (index){
+                        children: List.generate(20, (index) {
                           return Container(
                             width: 4,
-                            decoration: BoxDecoration(),
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: BoxDecoration(
+                              color: Colors.green[400]!,
+                              borderRadius: BorderRadius.circular(6),
+                            ),
                           );
                         }),
                       ),
