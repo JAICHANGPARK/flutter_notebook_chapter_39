@@ -92,12 +92,12 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       ),
                     ),
                     Container(
-                      height: 32,
+                      height: 28,
                       child: Row(
-                        children: List.generate(19, (index) {
+                        children: List.generate(25, (index) {
                           return Container(
                             width: 6,
-                            margin: EdgeInsets.only(right: 12),
+                            margin: EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(
                               color: Colors.green[400]!,
                               borderRadius: BorderRadius.circular(6),
