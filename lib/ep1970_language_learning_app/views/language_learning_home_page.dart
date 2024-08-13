@@ -160,9 +160,14 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                         children: [
                           CircleAvatar(radius: 8,),
                           Text("Beginner"),
-                          Text("(45%)"),
+                          Text("(45%)", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
                           CircleAvatar(radius: 6,),
-                          Text("Intermediate")
+                          Text("Intermediate"),
+                          Text("(20%)", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
                         ],
                       )
                     ],
