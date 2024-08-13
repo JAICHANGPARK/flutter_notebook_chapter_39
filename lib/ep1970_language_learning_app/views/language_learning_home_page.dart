@@ -175,6 +175,26 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                             fontWeight: FontWeight.bold,
                           ),),
                         ],
+                      ),
+                      Gap(12),
+                      Row(
+                        children: [
+                          CircleAvatar(radius: 6,),
+                          Gap(4),
+                          Text("Advanced"),
+                          Gap(4),
+                          Text("(26%)", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Gap(24),
+                          CircleAvatar(radius: 6,),
+                          Gap(4),
+                          Text("Expert"),
+                          Gap(4),
+                          Text("(15%)", style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),),
+                        ],
                       )
                     ],
                   )),
