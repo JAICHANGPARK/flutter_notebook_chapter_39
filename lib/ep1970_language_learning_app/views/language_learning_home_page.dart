@@ -159,41 +159,61 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       Gap(24),
                       Row(
                         children: [
-                          CircleAvatar(radius: 6,),
+                          CircleAvatar(
+                            radius: 6,
+                          ),
                           Gap(4),
                           Text("Beginner"),
                           Gap(4),
-                          Text("(45%)", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "(45%)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Gap(24),
-                          CircleAvatar(radius: 6,),
+                          CircleAvatar(
+                            radius: 6,
+                          ),
                           Gap(4),
                           Text("Intermediate"),
                           Gap(4),
-                          Text("(20%)", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "(20%)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       ),
                       Gap(12),
                       Row(
                         children: [
-                          CircleAvatar(radius: 6,),
+                          CircleAvatar(
+                            radius: 6,
+                          ),
                           Gap(4),
                           Text("Advanced"),
                           Gap(4),
-                          Text("(26%)", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "(26%)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Gap(24),
-                          CircleAvatar(radius: 6,),
+                          CircleAvatar(
+                            radius: 6,
+                          ),
                           Gap(4),
                           Text("Expert"),
                           Gap(4),
-                          Text("(15%)", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "(15%)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ],
                       )
                     ],
@@ -201,7 +221,22 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Gap(16),
               Container(
                 height: 42,
-                child: Placeholder(),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 5,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                      ),
+                      child: Text(
+                        "Beginner",
+                      ),
+                    );
+                  },
+                ),
               ),
               Gap(16),
               Expanded(child: Placeholder())
@@ -215,7 +250,6 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         items: [
-
           BottomNavigationBarItem(
             icon: Icon(
               HugeIcons.strokeRoundedHome13,
