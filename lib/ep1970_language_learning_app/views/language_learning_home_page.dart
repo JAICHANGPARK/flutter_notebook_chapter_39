@@ -32,6 +32,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.teal,
+                      borderRadius: BorderRadius.circular(24)
                     ),
                     child: Row(
                       children: [
