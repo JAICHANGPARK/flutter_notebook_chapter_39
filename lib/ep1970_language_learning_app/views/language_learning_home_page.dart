@@ -156,15 +156,21 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           color: Colors.green,
                         ),
                       ),
+                      Gap(24),
                       Row(
                         children: [
-                          CircleAvatar(radius: 8,),
+                          CircleAvatar(radius: 6,),
+                          Gap(4),
                           Text("Beginner"),
+                          Gap(4),
                           Text("(45%)", style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),),
+                          Gap(24),
                           CircleAvatar(radius: 6,),
+                          Gap(4),
                           Text("Intermediate"),
+                          Gap(4),
                           Text("(20%)", style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),),
@@ -189,6 +195,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         items: [
+
           BottomNavigationBarItem(
             icon: Icon(
               HugeIcons.strokeRoundedHome13,
