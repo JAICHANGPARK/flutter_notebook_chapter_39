@@ -99,7 +99,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                             width: 6,
                             margin: EdgeInsets.only(right: 8),
                             decoration: BoxDecoration(
-                              color: Colors.green[400]!,
+                              color: index < 20 ? Colors.green[400]! : Colors.green[100]!,
                               borderRadius: BorderRadius.circular(6),
                             ),
                           );
