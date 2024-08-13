@@ -127,15 +127,24 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Gap(16),
               Container(
                   height: 160,
+                  padding: EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("Total"),
                           Text(
                             "12/20",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 16,
                             ),
                           )
                         ],
