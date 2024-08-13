@@ -92,11 +92,11 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       ),
                     ),
                     Container(
-                      height: 42,
+                      height: 32,
                       child: Row(
-                        children: List.generate(20, (index) {
+                        children: List.generate(19, (index) {
                           return Container(
-                            width: 4,
+                            width: 6,
                             margin: EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               color: Colors.green[400]!,
