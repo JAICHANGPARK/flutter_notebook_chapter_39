@@ -94,7 +94,14 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                     ),
                     Container(
                       height: 42,
-                      child: Placeholder(),
+                      child: Row(
+                        children: List.generate(20, (index){
+                          return Container(
+                            width: 4,
+                            decoration: BoxDecoration(),
+                          );
+                        }),
+                      ),
                     )
                   ],
                 ),
