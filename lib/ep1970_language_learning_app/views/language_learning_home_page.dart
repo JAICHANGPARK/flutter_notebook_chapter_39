@@ -296,13 +296,35 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
                   ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(
-                        color: Colors.grey,
+                  child: Column(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      Row(
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedBook01,
+                          ),
+                          Text("Basic Sentence"),
+                          Spacer(),
+                          Text("0/6"),
+                          CircleAvatar(
+                            radius: 12,
+                            child: Icon(
+                              Icons.keyboard_arrow_down,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
                   ),
                 ),
               )
