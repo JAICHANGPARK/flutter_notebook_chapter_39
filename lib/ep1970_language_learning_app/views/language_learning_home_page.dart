@@ -347,6 +347,27 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                 ),
                               ),
                               Divider(),
+                              Padding(
+                                padding: const EdgeInsets.all(12.0),
+                                child: Row(
+                                  children: [
+                                    Icon(HugeIcons.strokeRoundedAudioBook02),
+                                    Gap(8),
+                                    Text("Introduction"),
+                                    Spacer(),
+
+                                    CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.transparent,
+                                      child: Icon(
+                                        Icons.lock,
+                                      ),
+                                    )
+
+
+                                  ],
+                                ),
+                              ),
                             ],
                           )
                         ),
