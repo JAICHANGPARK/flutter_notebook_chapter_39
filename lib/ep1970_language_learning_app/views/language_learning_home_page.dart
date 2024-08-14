@@ -224,7 +224,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 10,
-                  itemBuilder: (contex , index) {
+                  itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: 16,
