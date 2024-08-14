@@ -10,7 +10,7 @@ class LanguageLearningHomePage extends StatefulWidget {
 }
 
 class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
-  Future getTabs() async {
+  Future<List<String>> getTabs() async {
     await Future.delayed(Duration(milliseconds: 500));
     return [
       "Beginner",
@@ -231,13 +231,13 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Gap(16),
               Container(
                 height: 42,
-                child: FutureBuilder(
+                child: FutureBuilder<List<String>>(
                     future: getTabs(),
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {
                         return ListView.builder(
                           scrollDirection: Axis.horizontal,
-                          itemCount: 10,
+                          itemCount: snapshot.data?.length,
                           itemBuilder: (context, index) {
                             return Container(
                               padding: EdgeInsets.symmetric(
@@ -248,7 +248,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                 color: Colors.teal,
                               ),
                               child: Text(
-                                "Beginner",
+                                snapshot.data?[index] ?? "",
                               ),
                             );
                           },
