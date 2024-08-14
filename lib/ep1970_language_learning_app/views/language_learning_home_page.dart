@@ -165,6 +165,22 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.green,
                         ),
+                        child: Row(
+                          children: [
+                            Expanded(child: Container(
+                              color: Colors.teal,
+                            )),
+                            Expanded(child: Container(
+                              color: Colors.green,
+                            )),
+                            Expanded(child: Container(
+                              color: Colors.deepOrange,
+                            )),
+                            Expanded(child: Container(
+                              color: Colors.yellow,
+                            )),
+                          ],
+                        ),
                       ),
                       Gap(24),
                       Row(
@@ -253,6 +269,9 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                               child: Center(
                                 child: Text(
                                   snapshot.data?[index] ?? "",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
                             );
