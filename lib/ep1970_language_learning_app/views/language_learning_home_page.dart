@@ -246,7 +246,8 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                               ),
                               margin: EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
-                                color: Colors.teal,
+                                border: Border.all(),
+                                color: index == 0 ? Colors.teal : Colors.white,
                                 borderRadius: BorderRadius.circular(32),
                               ),
                               child: Center(
