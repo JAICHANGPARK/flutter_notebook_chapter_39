@@ -296,6 +296,14 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
                   ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
                 ),
               )
             ],
