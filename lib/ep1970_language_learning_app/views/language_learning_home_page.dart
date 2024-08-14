@@ -301,11 +301,17 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       Expanded(
                         child: Container(
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
                               color: Colors.grey,
                             ),
                           ),
+                          child: Column(
+                            children: [
+                              
+                            ],
+                          )
                         ),
                       ),
                       Padding(
