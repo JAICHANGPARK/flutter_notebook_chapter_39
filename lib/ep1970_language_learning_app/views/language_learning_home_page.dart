@@ -308,21 +308,26 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           ),
                         ),
                       ),
-                      Row(
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedBook01,
-                          ),
-                          Text("Basic Sentence"),
-                          Spacer(),
-                          Text("0/6"),
-                          CircleAvatar(
-                            radius: 12,
-                            child: Icon(
-                              Icons.keyboard_arrow_down,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedBook01,
                             ),
-                          )
-                        ],
+                            Gap(8),
+                            Text("Basic Sentence"),
+                            Spacer(),
+                            Text("0/6"),
+                            Gap(8),
+                            CircleAvatar(
+                              radius: 12,
+                              child: Icon(
+                                Icons.keyboard_arrow_down,
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
