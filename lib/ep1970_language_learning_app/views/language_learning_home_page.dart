@@ -314,6 +314,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                 child: Row(
                                   children: [
                                     Icon(HugeIcons.strokeRoundedAudioBook02),
+                                    Gap(8),
                                     Text("Introduction"),
                                     Spacer(),
                                     Text("1/2"),
@@ -335,10 +336,11 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                 child: Row(
                                   children: [
                                     Icon(HugeIcons.strokeRoundedComputerCheck),
+                                    Gap(8),
                                     Text("Greetings"),
                                     Spacer(),
 
-                                    
+
 
 
                                   ],
