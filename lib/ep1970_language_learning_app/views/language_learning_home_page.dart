@@ -10,6 +10,15 @@ class LanguageLearningHomePage extends StatefulWidget {
 }
 
 class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
+  Future getTabs() async {
+    return [
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Expert",
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
