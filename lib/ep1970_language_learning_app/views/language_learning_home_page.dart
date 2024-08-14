@@ -309,7 +309,27 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           ),
                           child: Column(
                             children: [
-                              
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Icon(HugeIcons.strokeRoundedAudioBook02),
+                                    Text("Introduction"),
+                                    Spacer(),
+                                    Text("1/2"),
+                                    CircleAvatar(
+                                      radius: 12,
+                                      backgroundColor: Colors.grey[200],
+                                      child: Icon(
+                                        Icons.keyboard_arrow_up,
+                                      ),
+                                    )
+
+
+                                  ],
+                                ),
+                              )
+
                             ],
                           )
                         ),
@@ -328,6 +348,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                             Gap(8),
                             CircleAvatar(
                               radius: 12,
+                              backgroundColor: Colors.grey[200],
                               child: Icon(
                                 Icons.keyboard_arrow_down,
                               ),
