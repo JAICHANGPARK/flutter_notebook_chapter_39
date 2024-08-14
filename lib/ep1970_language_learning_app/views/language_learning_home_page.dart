@@ -272,6 +272,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                   snapshot.data?[index] ?? "",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    color: index == 0 ? Colors.white : Colors.black,
                                   ),
                                 ),
                               ),
