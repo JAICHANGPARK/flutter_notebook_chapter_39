@@ -163,6 +163,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       Container(
                         height: 12,
                         child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(child: Container(
                               color: Colors.teal,
