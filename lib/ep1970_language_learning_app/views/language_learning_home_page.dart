@@ -230,23 +230,34 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Gap(16),
               Container(
                 height: 42,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 10,
-                  itemBuilder: (context, index) {
-                    return Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 16,
-                        vertical: 5,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                      ),
-                      child: Text(
-                        "Beginner",
-                      ),
+                child: FutureBuilder(
+                  future: getTabs(),
+                  builder: (context, snapshot) {
+                    if(snapshot.hasData){
+
+                    }
+                    return Center(
+                      child: CircularProgressIndicator.adaptive(),
                     );
-                  },
+                    return ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 5,
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.teal,
+                          ),
+                          child: Text(
+                            "Beginner",
+                          ),
+                        );
+                      },
+                    );
+                  }
                 ),
               ),
               Gap(16),
