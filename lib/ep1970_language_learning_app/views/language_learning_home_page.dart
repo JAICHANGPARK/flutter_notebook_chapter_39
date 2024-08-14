@@ -165,19 +165,23 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               color: Colors.teal,
                             )),
                             Gap(4),
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               color: Colors.green,
                             )),
                             Gap(4),
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               color: Colors.deepOrange,
                             )),
                             Gap(4),
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               color: Colors.yellow,
                             )),
                           ],
@@ -249,41 +253,42 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Container(
                 height: 42,
                 child: FutureBuilder<List<String>>(
-                    future: getTabs(),
-                    builder: (context, snapshot) {
-                      if (snapshot.hasData) {
-                        return ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: snapshot.data?.length,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 5,
-                              ),
-                              margin: EdgeInsets.only(right: 12),
-                              decoration: BoxDecoration(
-                                border: Border.all(),
-                                color: index == 0 ? Colors.teal : Colors.white,
-                                borderRadius: BorderRadius.circular(32),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  snapshot.data?[index] ?? "",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: index == 0 ? Colors.white : Colors.black,
-                                  ),
+                  future: getTabs(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      return ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: snapshot.data?.length,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 5,
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            decoration: BoxDecoration(
+                              border: Border.all(),
+                              color: index == 0 ? Colors.teal : Colors.white,
+                              borderRadius: BorderRadius.circular(32),
+                            ),
+                            child: Center(
+                              child: Text(
+                                snapshot.data?[index] ?? "",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: index == 0 ? Colors.white : Colors.black,
                                 ),
                               ),
-                            );
-                          },
-                        );
-                      }
-                      return Center(
-                        child: CircularProgressIndicator.adaptive(),
+                            ),
+                          );
+                        },
                       );
-                    }),
+                    }
+                    return Center(
+                      child: CircularProgressIndicator.adaptive(),
+                    );
+                  },
+                ),
               ),
               Gap(16),
               Expanded(child: Placeholder())
