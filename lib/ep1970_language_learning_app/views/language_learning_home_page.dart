@@ -244,11 +244,15 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                 horizontal: 16,
                                 vertical: 5,
                               ),
+                              margin: EdgeInsets.only(right: 12),
                               decoration: BoxDecoration(
                                 color: Colors.teal,
+                                borderRadius: BorderRadius.circular(32),
                               ),
-                              child: Text(
-                                snapshot.data?[index] ?? "",
+                              child: Center(
+                                child: Text(
+                                  snapshot.data?[index] ?? "",
+                                ),
                               ),
                             );
                           },
