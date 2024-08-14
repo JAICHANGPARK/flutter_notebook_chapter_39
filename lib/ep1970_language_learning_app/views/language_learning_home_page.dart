@@ -162,20 +162,20 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                       Gap(18),
                       Container(
                         height: 12,
-                        decoration: BoxDecoration(
-                          color: Colors.green,
-                        ),
                         child: Row(
                           children: [
                             Expanded(child: Container(
                               color: Colors.teal,
                             )),
+                            Gap(4),
                             Expanded(child: Container(
                               color: Colors.green,
                             )),
+                            Gap(4),
                             Expanded(child: Container(
                               color: Colors.deepOrange,
                             )),
+                            Gap(4),
                             Expanded(child: Container(
                               color: Colors.yellow,
                             )),
