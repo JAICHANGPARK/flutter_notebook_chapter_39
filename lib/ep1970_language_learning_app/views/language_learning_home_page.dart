@@ -310,7 +310,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Row(
                                   children: [
                                     Icon(HugeIcons.strokeRoundedAudioBook02),
@@ -332,7 +332,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                               ),
                               Divider(),
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Row(
                                   children: [
                                     Icon(HugeIcons.strokeRoundedComputerCheck),
@@ -346,7 +346,7 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
                                   ],
                                 ),
                               ),
-
+                              Divider(),
                             ],
                           )
                         ),
