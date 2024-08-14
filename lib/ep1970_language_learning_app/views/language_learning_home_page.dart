@@ -11,6 +11,7 @@ class LanguageLearningHomePage extends StatefulWidget {
 
 class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
   Future getTabs() async {
+    await Future.delayed(Duration(milliseconds: 500));
     return [
       "Beginner",
       "Intermediate",
@@ -231,34 +232,32 @@ class _LanguageLearningHomePageState extends State<LanguageLearningHomePage> {
               Container(
                 height: 42,
                 child: FutureBuilder(
-                  future: getTabs(),
-                  builder: (context, snapshot) {
-                    if(snapshot.hasData){
-                      return ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.teal,
-                            ),
-                            child: Text(
-                              "Beginner",
-                            ),
-                          );
-                        },
+                    future: getTabs(),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        return ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 16,
+                                vertical: 5,
+                              ),
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                              ),
+                              child: Text(
+                                "Beginner",
+                              ),
+                            );
+                          },
+                        );
+                      }
+                      return Center(
+                        child: CircularProgressIndicator.adaptive(),
                       );
-                    }
-                    return Center(
-                      child: CircularProgressIndicator.adaptive(),
-                    );
-
-                  }
-                ),
+                    }),
               ),
               Gap(16),
               Expanded(child: Placeholder())
