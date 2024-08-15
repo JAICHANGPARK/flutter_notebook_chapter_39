@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class ArticlesMainPage extends StatefulWidget {
   const ArticlesMainPage({super.key});
@@ -35,6 +36,32 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Container(
             height: 80,
             color: Colors.blue,
+            child: Stack(
+              children: [
+                Positioned(
+                    left: 16,
+                    right: 16,
+                    top: 0,
+                    bottom: 0,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedHome01,
+                            ),
+                            Text(
+                              "Home",
+                            ),
+                          ],
+                        )
+                      ],
+                    ))
+              ],
+            ),
           )
         ],
       ),
