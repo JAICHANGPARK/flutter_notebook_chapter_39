@@ -12,7 +12,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         centerTitle: true,
+        
         title: Text("News & Articles"),
         actions: [
           IconButton(
