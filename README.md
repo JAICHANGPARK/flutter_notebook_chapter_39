@@ -2,9 +2,9 @@
 
 ## EP1974
 
-- Mingle - Learning Language App
-- Hafiza☁️ for Kretya Studio
-- https://dribbble.com/shots/24649149-Mingle-Learning-Language-App
+- Mobile Articles - Lookscout Design System
+- Stelian Subotin
+- https://dribbble.com/shots/24681090-Mobile-Articles-Lookscout-Design-System
 
 <img src="https://cdn.dribbble.com/userupload/15969297/file/original-9e7eea10a5307d1d471e01da1c2e0817.png?resize=1905x1429"/>
 
