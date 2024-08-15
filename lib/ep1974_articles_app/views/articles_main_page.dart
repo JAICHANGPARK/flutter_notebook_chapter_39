@@ -13,7 +13,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
     return Scaffold(
       appBar: AppBar(
 
-        centerTitle: true,
 
         title: Text("News & Articles"),
         actions: [
@@ -25,7 +24,17 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           )
         ],
       ),
-      body: Column(),
+      body: Column(
+        children: [
+          Expanded(
+            child: Placeholder(),
+          ),
+          Container(
+            height: 80,
+            color: Colors.blue,
+          )
+        ],
+      ),
     );
   }
 }
