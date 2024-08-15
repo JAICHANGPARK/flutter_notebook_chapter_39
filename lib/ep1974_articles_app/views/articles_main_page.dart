@@ -36,65 +36,69 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
             child: Stack(
               children: [
                 Positioned(
-                  left: 16,
-                  right: 16,
-                  top: 0,
+                  left: 0,
+                  right: 0,
+                  top: 4,
                   bottom: 0,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedHome01,
-                          ),
-                          Text(
-                            "Home",
-                          ),
-                        ],
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedShoppingBag01,
-                          ),
-                          Text(
-                            "Cart",
-                          ),
-                        ],
-                      ),
-                      SizedBox(width: 72,),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedHome01,
-                          ),
-                          Text(
-                            "Home",
-                          ),
-                        ],
-                      )
-                      ,
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Icon(
-                            HugeIcons.strokeRoundedHome01,
-                          ),
-                          Text(
-                            "Home",
-                          ),
-                        ],
-                      )
-                    ],
+                  child: Container(
+                    color: Colors.grey,
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedHome01,
+                            ),
+                            Text(
+                              "Home",
+                            ),
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedShoppingBag01,
+                            ),
+                            Text(
+                              "Cart",
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 72,),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedHome01,
+                            ),
+                            Text(
+                              "Home",
+                            ),
+                          ],
+                        )
+                        ,
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Icon(
+                              HugeIcons.strokeRoundedHome01,
+                            ),
+                            Text(
+                              "Home",
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],
