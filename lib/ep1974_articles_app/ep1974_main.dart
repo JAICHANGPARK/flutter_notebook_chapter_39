@@ -12,12 +12,14 @@ class ArticlesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.black,
-          appBarTheme: AppBarTheme(
-            backgroundColor: Colors.black,
-            elevation: 0,
-            foregroundColor: Colors.white,
-          )),
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.black,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          centerTitle: true,
+        ),
+      ),
       home: ArticlesMainPage(),
     );
   }
