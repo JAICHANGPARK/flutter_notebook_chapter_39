@@ -15,9 +15,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       appBar: AppBar(
         title: Text(
           "News & Articles",
-          style: TextStyle(
-            color: Colors.white,
-          ),
         ),
         actions: [
           IconButton(
@@ -39,27 +36,65 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
             child: Stack(
               children: [
                 Positioned(
-                    left: 16,
-                    right: 16,
-                    top: 0,
-                    bottom: 0,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(
-                              HugeIcons.strokeRoundedHome01,
-                            ),
-                            Text(
-                              "Home",
-                            ),
-                          ],
-                        )
-                      ],
-                    ))
+                  left: 16,
+                  right: 16,
+                  top: 0,
+                  bottom: 0,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedHome01,
+                          ),
+                          Text(
+                            "Home",
+                          ),
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedShoppingBag01,
+                          ),
+                          Text(
+                            "Cart",
+                          ),
+                        ],
+                      ),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedHome01,
+                          ),
+                          Text(
+                            "Home",
+                          ),
+                        ],
+                      )
+                      ,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            HugeIcons.strokeRoundedHome01,
+                          ),
+                          Text(
+                            "Home",
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           )
