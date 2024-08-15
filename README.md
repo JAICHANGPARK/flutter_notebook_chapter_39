@@ -6,7 +6,7 @@
 - Stelian Subotin
 - https://dribbble.com/shots/24681090-Mobile-Articles-Lookscout-Design-System
 
-<img src="https://cdn.dribbble.com/userupload/15969297/file/original-9e7eea10a5307d1d471e01da1c2e0817.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/16061305/file/original-dbc99bfd2f090a679324e686d90c9040.png?resize=1905x1429"/>
 
 ## EP1970-1973
 
