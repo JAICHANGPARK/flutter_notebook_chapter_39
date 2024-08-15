@@ -14,7 +14,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       appBar: AppBar(
 
         centerTitle: true,
-        
+
         title: Text("News & Articles"),
         actions: [
           IconButton(
