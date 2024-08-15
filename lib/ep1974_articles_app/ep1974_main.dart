@@ -16,7 +16,7 @@ class ArticlesApp extends StatelessWidget {
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.black,
           foregroundColor: Colors.white,
-          elevation: 0,
+          // elevation: 0,
           centerTitle: true,
         ),
       ),
