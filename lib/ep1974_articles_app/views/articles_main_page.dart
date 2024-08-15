@@ -38,7 +38,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                 Positioned(
                   left: 0,
                   right: 0,
-                  top: 4,
+                  top: 6,
                   bottom: 0,
                   child: Container(
                     color: Colors.grey,
@@ -71,7 +71,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             ),
                           ],
                         ),
-                        SizedBox(width: 72,),
+                        SizedBox(
+                          width: 72,
+                        ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -83,8 +85,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                               "Home",
                             ),
                           ],
-                        )
-                        ,
+                        ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -100,7 +101,18 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                       ],
                     ),
                   ),
-                )
+                ),
+                Positioned(
+                  bottom: 16,
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  child: Center(
+                    child: CircleAvatar(
+                      radius: 42,
+                    ),
+                  ),
+                ),
               ],
             ),
           )
