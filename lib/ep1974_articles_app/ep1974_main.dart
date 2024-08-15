@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1974_articles_app/views/articles_main_page.dart';
 
 void main() {
   runApp(ArticlesApp());
@@ -10,7 +11,7 @@ class ArticlesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      home: ArticlesMainPage(),
     );
   }
 }
