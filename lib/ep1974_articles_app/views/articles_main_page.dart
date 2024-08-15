@@ -42,6 +42,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   bottom: 0,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -67,6 +68,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                           ),
                         ],
                       ),
+                      SizedBox(width: 72,),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
