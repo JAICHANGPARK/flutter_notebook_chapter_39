@@ -11,6 +11,8 @@ class ArticlesMainPage extends StatefulWidget {
 class _ArticlesMainPageState extends State<ArticlesMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(),
+    );
   }
 }
