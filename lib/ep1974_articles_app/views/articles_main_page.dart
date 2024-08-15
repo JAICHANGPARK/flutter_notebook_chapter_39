@@ -32,7 +32,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           ),
           Container(
             height: 80,
-            color: Colors.blue,
             child: Stack(
               children: [
                 Positioned(
@@ -103,13 +102,14 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   ),
                 ),
                 Positioned(
-                  bottom: 16,
+                  bottom: 8,
                   left: 0,
                   right: 0,
                   top: 0,
                   child: Center(
                     child: CircleAvatar(
-                      radius: 42,
+                      radius: 52,
+                      backgroundColor: Colors.blue,
                     ),
                   ),
                 ),
