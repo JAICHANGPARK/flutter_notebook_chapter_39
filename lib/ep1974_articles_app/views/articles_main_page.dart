@@ -191,6 +191,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                           children: [
                             Icon(
                               HugeIcons.strokeRoundedHome01,
+                              color:Color.fromRGBO(10, 119, 255, 1),
                             ),
                             Text(
                               "Home",
@@ -248,7 +249,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   child: Center(
                     child: CircleAvatar(
                       radius: 52,
-                      backgroundColor: Color.fromRGBO(200, 191, 231, 1),
+                      backgroundColor: Color.fromRGBO(10, 119, 255, 1),
+
                       foregroundColor: Colors.white,
                       child: Icon(Icons.hive_outlined,
                       size: 32,),
