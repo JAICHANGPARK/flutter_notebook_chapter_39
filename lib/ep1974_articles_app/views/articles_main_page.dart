@@ -31,8 +31,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.start,
+
                 children: [
                   Container(
                       height: 320,
@@ -45,7 +44,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                           fit: BoxFit.cover,
                         ),
                       ),
+                      padding: EdgeInsets.all(24),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
