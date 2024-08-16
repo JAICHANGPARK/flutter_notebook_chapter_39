@@ -49,23 +49,27 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             children: [
                               CircleAvatar(),
                               Text("Dream walker"),
-                              Container(
-                                height: 6,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Container(),
-                                    ),
-                                    Expanded(
-                                      child: Container(),
-                                    ),
-                                    Expanded(
-                                      child: Container(),
-                                    ),
-                                  ],
-                                ),
-                              )
+
                             ],
+                          ),
+                          Container(
+                            height: 6,
+                            width: double.infinity,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    color: Colors.white.withOpacity(.2),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Container(),
+                                ),
+                                Expanded(
+                                  child: Container(),
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       )),
