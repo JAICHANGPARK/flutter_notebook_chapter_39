@@ -62,11 +62,17 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                     color: Colors.white.withOpacity(.2),
                                   ),
                                 ),
+                                Gap(6),
                                 Expanded(
-                                  child: Container(),
+                                  child: Container(
+                                    color: Colors.white,
+                                  ),
                                 ),
+                                Gap(6),
                                 Expanded(
-                                  child: Container(),
+                                  child: Container(
+                                    color: Colors.white.withOpacity(.2),
+                                  ),
                                 ),
                               ],
                             ),
