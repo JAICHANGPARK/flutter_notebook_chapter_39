@@ -34,8 +34,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                 children: [
                   Container(
                     height: 320,
-                    child: Placeholder(),
                     margin: EdgeInsets.all(16),
+                    child: Placeholder(),
+
                   ),
                   ...List.generate(10, (index) {
                     return Column(
