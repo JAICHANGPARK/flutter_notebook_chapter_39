@@ -177,15 +177,30 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                           return Padding(
                             padding: const EdgeInsets.all(16.0),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      radius: 24,
+                                    ),
+                                    Gap(8),
                                     Expanded(
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Dream Walker"),
-                                          Text("23 min ago"),
+                                          Text(
+                                            "Dream Walker",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                          Text(
+                                            "23 min ago",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -195,9 +210,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                         Icons.more_horiz,
                                       ),
                                     ),
-
                                   ],
                                 ),
+                                Gap(12),
                                 Container(
                                   height: 240,
                                   decoration: BoxDecoration(
@@ -209,12 +224,14 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                     ),
                                   ),
                                 ),
+                                Gap(12),
                                 Text(
                                   "${snapshotData?.title}",
                                   style: TextStyle(
                                     color: Colors.white,
+                                    fontSize: 16,
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           );
