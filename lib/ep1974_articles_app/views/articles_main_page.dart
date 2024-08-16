@@ -31,7 +31,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       body: Column(
         children: [
           Expanded(
-            child: buildListTypeWidget(),
+            child: buildTabTypeWidget(),
           ),
           Container(
             height: 80,
@@ -141,12 +141,24 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           TabBar(
             tabs: [
               Tab(text: "All"),
-              Tab(text: "Open (24)",),
-              Tab(text: "Upcoming (8)",),
-              Tab(text: "Closed (9)",),
-
+              Tab(
+                text: "Open (24)",
+              ),
+              Tab(
+                text: "Upcoming (8)",
+              ),
+              Tab(
+                text: "Closed (9)",
+              ),
             ],
-          )
+          ),
+          Expanded(
+            child: TabBarView(
+              children: [
+
+              ],
+            ),
+          ),
         ],
       ),
     );
