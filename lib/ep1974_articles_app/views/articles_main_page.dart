@@ -168,7 +168,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                         ),
                       );
                     }
-                    if (snapshot.hasData) {}
+                    if (snapshot.hasData) {
+                      return ListView.builder(itemBuilder: (context, index){},);
+                    }
                     return Center(
                       child: CircularProgressIndicator.adaptive(),
                     );
