@@ -9,7 +9,7 @@ Future<List<Articles>> getArticles() async {
     "https://jsonplaceholder.typicode.com/posts",
   );
   if (posts.statusCode == 200) {
-    final data2 = posts.data as List<Map<String, dynamic>>;
+    final data2 = posts.data as List<dynamic>;
 
     List<Articles> results = data2.map((e){
       return $ArticlesFromJson(e);
