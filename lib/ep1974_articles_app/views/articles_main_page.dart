@@ -99,6 +99,11 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
                                   borderRadius: BorderRadius.circular(8),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
+                                    ),
+                                  ),
                                 ),
                               ),
                               Gap(16),
