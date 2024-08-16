@@ -35,6 +35,14 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   Container(
                       height: 320,
                       margin: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2024/02/23/22/19/forest-8592899_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -49,7 +57,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             children: [
                               CircleAvatar(),
                               Text("Dream walker"),
-
                             ],
                           ),
                           Container(
