@@ -171,50 +171,52 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                     }
                     if (snapshot.hasData) {
                       return ListView.builder(
-                        itemCount: snapshot.data.length,
-
+                        itemCount: snapshot.data?.length,
                         itemBuilder: (context, index) {
                           final snapshotData = snapshot.data?[index];
-                          return Column(
-                            children: [
-                              Row(
-                                children: [
-                                  CircleAvatar(),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Text("Dream Walker"),
-                                        Text("23 min ago"),
-                                      ],
+                          return Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text("Dream Walker"),
+                                          Text("23 min ago"),
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: Icon(
-                                      Icons.more_horiz,
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(
+                                        Icons.more_horiz,
+                                      ),
                                     ),
-                                  ),
 
-                                ],
-                              ),
-                              Container(
-                                height: 240,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                      "${snapshotData?.thumbnailUrl}",
+                                  ],
+                                ),
+                                Container(
+                                  height: 240,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "${snapshotData?.thumbnailUrl}",
+                                      ),
+                                      fit: BoxFit.cover,
                                     ),
-                                    fit: BoxFit.cover,
                                   ),
                                 ),
-                              ),
-                              Text(
-                                "${snapshotData?.title}",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              )
-                            ],
+                                Text(
+                                  "${snapshotData?.title}",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
                           );
                         },
                       );
