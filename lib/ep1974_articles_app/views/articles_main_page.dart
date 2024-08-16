@@ -54,9 +54,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                   Text(
-                                     snapshot.data?[0].title ?? ">???",
-                                  // Text  "10 Tips for Boosting Your Productivity at the Workplace",
+                                  Text(
+                                    snapshot.data?[0].title ?? ">???",
+                                    // Text  "10 Tips for Boosting Your Productivity at the Workplace",
                                     style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
@@ -104,7 +104,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                   )
                                 ],
                               )),
-                          ...List.generate(10, (index) {
+                          ...?snapshot.data?.sublist(0).map((e) {
                             return Column(
                               children: [
                                 Padding(
@@ -130,9 +130,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                           child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          const Text(
-                                            "Title Title Title Title Title Title Title",
-                                            style: TextStyle(
+                                          Text(
+                                            e.title ?? "Title Title Title Title Title Title Title",
+                                            style: const TextStyle(
                                               fontWeight: FontWeight.bold,
                                               color: Colors.white,
                                               fontSize: 16,
@@ -171,7 +171,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                 const Divider(),
                               ],
                             );
-                          }),
+                          }).toList(),
                         ],
                       ),
                     );
@@ -179,12 +179,12 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   if (snapshot.hasError) {
                     return Text(
                       snapshot.error.toString(),
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.white,
                       ),
                     );
                   }
-                  return Center(
+                  return const Center(
                     child: CircularProgressIndicator.adaptive(),
                   );
                 }),
