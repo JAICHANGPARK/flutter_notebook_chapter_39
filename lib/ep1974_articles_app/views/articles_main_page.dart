@@ -54,9 +54,10 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Text(
-                                    "10 Tips for Boosting Your Productivity at the Workplace",
-                                    style: TextStyle(
+                                   Text(
+                                     snapshot.data?[0].title ?? ">???",
+                                  // Text  "10 Tips for Boosting Your Productivity at the Workplace",
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16,
                                       color: Colors.white,
