@@ -89,3 +89,21 @@ class _$ArticlesCopyWithImpl implements $ArticlesCopyWith {
     );
   }
 }
+
+Articles $ArticlesFromJson(Map<String, dynamic> json) {
+  return Articles(
+    userId: json['userId'] == null ? null : (json['userId'] as num).toInt(),
+    id: json['id'] == null ? null : (json['id'] as num).toInt(),
+    title: json['title'] == null ? null : json['title'] as String?,
+    body: json['body'] == null ? null : json['body'] as String?,
+  );
+}
+
+Map<String, dynamic> $ArticlesToJson(Articles obj) {
+  return {
+    'userId': obj.userId == null ? null : obj.userId!,
+    'id': obj.id == null ? null : obj.id!,
+    'title': obj.title == null ? null : obj.title!,
+    'body': obj.body == null ? null : obj.body!,
+  };
+}
