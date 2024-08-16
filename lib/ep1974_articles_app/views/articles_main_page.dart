@@ -15,13 +15,13 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "News & Articles",
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.tune,
             ),
           )
@@ -31,149 +31,153 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
         children: [
           Expanded(
             child: FutureBuilder(
-              future: getArticles(),
-              builder: (context, snapshot) {
-                return SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Container(
-                          height: 320,
-                          margin: EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2024/02/23/22/19/forest-8592899_1280.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                          padding: EdgeInsets.all(24),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "10 Tips for Boosting Your Productivity at the Workplace",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  color: Colors.white,
+                future: getArticles(),
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Container(
+                              height: 320,
+                              margin: const EdgeInsets.all(16),
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2024/02/23/22/19/forest-8592899_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                              Gap(12),
-                              Row(
+                              padding: const EdgeInsets.all(24),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  CircleAvatar(),
-                                  Gap(12),
-                                  Text(
-                                    "Dream walker",
+                                  const Text(
+                                    "10 Tips for Boosting Your Productivity at the Workplace",
                                     style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
                                       color: Colors.white,
                                     ),
                                   ),
-                                ],
-                              ),
-                              Gap(12),
-                              Container(
-                                height: 4,
-                                width: double.infinity,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Container(
-                                        color: Colors.white.withOpacity(.2),
-                                      ),
-                                    ),
-                                    Gap(6),
-                                    Expanded(
-                                      child: Container(
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    Gap(6),
-                                    Expanded(
-                                      child: Container(
-                                        color: Colors.white.withOpacity(.2),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
-                          )),
-                      ...List.generate(10, (index) {
-                        return Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    height: 80,
-                                    width: 80,
-                                    decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
-                                        image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
-                                        ),
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                  ),
-                                  Gap(16),
-                                  Expanded(
-                                      child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                  const Gap(12),
+                                  const Row(
                                     children: [
+                                      CircleAvatar(),
+                                      Gap(12),
                                       Text(
-                                        "Title Title Title Title Title Title Title",
+                                        "Dream walker",
                                         style: TextStyle(
-                                          fontWeight: FontWeight.bold,
                                           color: Colors.white,
-                                          fontSize: 16,
                                         ),
                                       ),
-                                      Gap(12),
-                                      Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Container(
-                                            decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(.2),
-                                              borderRadius: BorderRadius.circular(4),
+                                    ],
+                                  ),
+                                  const Gap(12),
+                                  Container(
+                                    height: 4,
+                                    width: double.infinity,
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.white.withOpacity(.2),
+                                          ),
+                                        ),
+                                        const Gap(6),
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        const Gap(6),
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.white.withOpacity(.2),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              )),
+                          ...List.generate(10, (index) {
+                            return Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                  child: Row(
+                                    children: [
+                                      Container(
+                                        height: 80,
+                                        width: 80,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
                                             ),
-                                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                            child: Text(
-                                              "Background",
-                                              style: TextStyle(
-                                                color: Colors.white,
-                                              ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      const Gap(16),
+                                      Expanded(
+                                          child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          const Text(
+                                            "Title Title Title Title Title Title Title",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontSize: 16,
                                             ),
                                           ),
-                                          Text(
-                                            "24 min ago",
-                                            style: TextStyle(
-                                              color: Colors.grey,
-                                            ),
+                                          const Gap(12),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(.2),
+                                                  borderRadius: BorderRadius.circular(4),
+                                                ),
+                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                                child: const Text(
+                                                  "Background",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  ),
+                                                ),
+                                              ),
+                                              const Text(
+                                                "24 min ago",
+                                                style: TextStyle(
+                                                  color: Colors.grey,
+                                                ),
+                                              )
+                                            ],
                                           )
                                         ],
-                                      )
+                                      ))
                                     ],
-                                  ))
-                                ],
-                              ),
-                            ),
-                            Divider(),
-                          ],
-                        );
-                      }),
-                    ],
-                  ),
-                );
-              }
-            ),
+                                  ),
+                                ),
+                                const Divider(),
+                              ],
+                            );
+                          }),
+                        ],
+                      ),
+                    );
+                  }
+                  return Center(
+                    child: CircularProgressIndicator.adaptive(),
+                  );
+                }),
           ),
           Container(
             height: 80,
@@ -186,8 +190,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   bottom: 0,
                   child: Container(
                     color: Colors.grey,
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Row(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: const Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -250,7 +254,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   bottom: 8,
                   left: 0,
                   right: 0,
