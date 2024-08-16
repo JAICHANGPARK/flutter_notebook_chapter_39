@@ -28,7 +28,13 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       body: Column(
         children: [
           Expanded(
-            child: Placeholder(),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            ),
           ),
           Container(
             height: 80,
