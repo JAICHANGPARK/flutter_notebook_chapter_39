@@ -21,7 +21,7 @@ Future<List<Articles>> getArticles() async {
   return [];
 }
 
-Future getPhotos() async{
+Future<List<Photos>>  getPhotos() async{
   final dio = Dio();
   final posts = await dio.get(
     "https://jsonplaceholder.typicode.com/photos",
