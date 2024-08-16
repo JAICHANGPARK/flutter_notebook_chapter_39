@@ -31,7 +31,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-
                 children: [
                   Container(
                       height: 320,
@@ -62,9 +61,12 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             children: [
                               CircleAvatar(),
                               Gap(12),
-                              Text("Dream walker", style: TextStyle(
-                                color: Colors.white,
-                              ),),
+                              Text(
+                                "Dream walker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ],
                           ),
                           Gap(12),
@@ -246,7 +248,11 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   child: Center(
                     child: CircleAvatar(
                       radius: 52,
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Color.fromRGBO(200, 191, 231, 1),
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.hive_outlined,
+                      size: 32,),
+
                     ),
                   ),
                 ),
