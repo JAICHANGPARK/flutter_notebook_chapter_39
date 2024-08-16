@@ -31,6 +31,12 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  Container(
+                    height: 320,
+                    child: Placeholder(),
+                    margin: EdgeInsets.all(16),
+                  ),
+                  ...List.generate(10, (index){}),
                   
                 ],
               ),
