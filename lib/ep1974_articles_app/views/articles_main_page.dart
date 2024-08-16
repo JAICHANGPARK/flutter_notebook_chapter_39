@@ -36,8 +36,34 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                     child: Placeholder(),
                     margin: EdgeInsets.all(16),
                   ),
-                  ...List.generate(10, (index){}),
-                  
+                  ...List.generate(10, (index) {
+                    return Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            Expanded(
+                                child: Column(
+                              children: [
+                                Text("Title Title Title Title Title Title Title", style:
+                                  TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    
+                                  ),)
+                              ],
+                            ))
+                          ],
+                        ),
+                        Divider(),
+                      ],
+                    );
+                  }),
                 ],
               ),
             ),
