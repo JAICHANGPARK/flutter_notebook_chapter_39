@@ -31,163 +31,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       body: Column(
         children: [
           Expanded(
-            child: FutureBuilder<List<Articles>>(
-                future: getArticles(),
-                builder: (context, snapshot) {
-                  if (snapshot.hasData) {
-                    return SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          Container(
-                              height: 320,
-                              margin: const EdgeInsets.all(16),
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2024/02/23/22/19/forest-8592899_1280.jpg",
-                                  ),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              padding: const EdgeInsets.all(24),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    snapshot.data?[0].title ?? ">???",
-                                    // Text  "10 Tips for Boosting Your Productivity at the Workplace",
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                  const Gap(12),
-                                  const Row(
-                                    children: [
-                                      CircleAvatar(),
-                                      Gap(12),
-                                      Text(
-                                        "Dream walker",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const Gap(12),
-                                  Container(
-                                    height: 4,
-                                    width: double.infinity,
-                                    child: Row(
-                                      children: [
-                                        Expanded(
-                                          child: Container(
-                                            color: Colors.white.withOpacity(.2),
-                                          ),
-                                        ),
-                                        const Gap(6),
-                                        Expanded(
-                                          child: Container(
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        const Gap(6),
-                                        Expanded(
-                                          child: Container(
-                                            color: Colors.white.withOpacity(.2),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              )),
-                          ...?snapshot.data?.sublist(0).map((e) {
-                            return Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                                  child: Row(
-                                    children: [
-                                      Container(
-                                        height: 80,
-                                        width: 80,
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(8),
-                                          image: const DecorationImage(
-                                            image: NetworkImage(
-                                              "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
-                                            ),
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ),
-                                      const Gap(16),
-                                      Expanded(
-                                          child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            e.title ?? "Title Title Title Title Title Title Title",
-                                            style: const TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              fontSize: 16,
-                                            ),
-                                          ),
-                                          const Gap(12),
-                                          Row(
-                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white.withOpacity(.2),
-                                                  borderRadius: BorderRadius.circular(4),
-                                                ),
-                                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                                child: const Text(
-                                                  "Background",
-                                                  style: TextStyle(
-                                                    color: Colors.white,
-                                                  ),
-                                                ),
-                                              ),
-                                              const Text(
-                                                "24 min ago",
-                                                style: TextStyle(
-                                                  color: Colors.grey,
-                                                ),
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ))
-                                    ],
-                                  ),
-                                ),
-                                const Divider(),
-                              ],
-                            );
-                          }).toList(),
-                        ],
-                      ),
-                    );
-                  }
-                  if (snapshot.hasError) {
-                    return Text(
-                      snapshot.error.toString(),
-                      style: const TextStyle(
-                        color: Colors.white,
-                      ),
-                    );
-                  }
-                  return const Center(
-                    child: CircularProgressIndicator.adaptive(),
-                  );
-                }),
+            child: buildListTypeWidget(),
           ),
           Container(
             height: 80,
@@ -287,5 +131,177 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
         ],
       ),
     );
+  }
+
+  buildTabTypeWidget() {
+    return DefaultTabController(
+        length: 4,
+        child: Column(
+          children: [
+            TabBar(
+              tabs: [],
+            )
+          ],
+        ));
+  }
+
+  buildListTypeWidget() {
+    return FutureBuilder<List<Articles>>(
+        future: getArticles(),
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            return SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                      height: 320,
+                      margin: const EdgeInsets.all(16),
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2024/02/23/22/19/forest-8592899_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      padding: const EdgeInsets.all(24),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            snapshot.data?[0].title ?? ">???",
+                            // Text  "10 Tips for Boosting Your Productivity at the Workplace",
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const Gap(12),
+                          const Row(
+                            children: [
+                              CircleAvatar(),
+                              Gap(12),
+                              Text(
+                                "Dream walker",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Gap(12),
+                          Container(
+                            height: 4,
+                            width: double.infinity,
+                            child: Row(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    color: Colors.white.withOpacity(.2),
+                                  ),
+                                ),
+                                const Gap(6),
+                                Expanded(
+                                  child: Container(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const Gap(6),
+                                Expanded(
+                                  child: Container(
+                                    color: Colors.white.withOpacity(.2),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      )),
+                  ...?snapshot.data?.sublist(0).map((e) {
+                    return Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 80,
+                                width: 80,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(8),
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              const Gap(16),
+                              Expanded(
+                                  child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    e.title ?? "Title Title Title Title Title Title Title",
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                    ),
+                                  ),
+                                  const Gap(12),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white.withOpacity(.2),
+                                          borderRadius: BorderRadius.circular(4),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                        child: const Text(
+                                          "Background",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                      const Text(
+                                        "24 min ago",
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ))
+                            ],
+                          ),
+                        ),
+                        const Divider(),
+                      ],
+                    );
+                  }).toList(),
+                ],
+              ),
+            );
+          }
+          if (snapshot.hasError) {
+            return Text(
+              snapshot.error.toString(),
+              style: const TextStyle(
+                color: Colors.white,
+              ),
+            );
+          }
+          return const Center(
+            child: CircularProgressIndicator.adaptive(),
+          );
+        });
   }
 }
