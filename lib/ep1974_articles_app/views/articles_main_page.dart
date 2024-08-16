@@ -55,14 +55,17 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                               Expanded(
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+
                                 children: [
                                   Text(
                                     "Title Title Title Title Title Title Title",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.white,
+                                      fontSize: 16,
                                     ),
                                   ),
+                                  Gap(12),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
