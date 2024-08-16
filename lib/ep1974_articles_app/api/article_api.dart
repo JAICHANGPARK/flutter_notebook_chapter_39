@@ -26,6 +26,7 @@ Future getPhotos() async{
   final posts = await dio.get(
     "https://jsonplaceholder.typicode.com/photos",
   );
+  print(posts.statusCode);
   if (posts.statusCode == 200) {
     final data2 = posts.data as List<dynamic>;
 
