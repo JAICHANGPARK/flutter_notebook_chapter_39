@@ -69,7 +69,9 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                         decoration: BoxDecoration(
                                           color: Colors.white.withOpacity(.2),
                                           borderRadius: BorderRadius.circular(4),
+
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: Text(
                                           "Background",
                                           style: TextStyle(
