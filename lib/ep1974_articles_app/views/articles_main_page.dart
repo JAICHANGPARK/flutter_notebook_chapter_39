@@ -33,11 +33,42 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
               child: Column(
                 children: [
                   Container(
-                    height: 320,
-                    margin: EdgeInsets.all(16),
-                    child: Placeholder(),
-
-                  ),
+                      height: 320,
+                      margin: EdgeInsets.all(16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "10 Tips for Boosting Your Productivity at the Workplace",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(),
+                              Text("Dream walker"),
+                              Container(
+                                height: 6,
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Container(),
+                                    ),
+                                    Expanded(
+                                      child: Container(),
+                                    ),
+                                    Expanded(
+                                      child: Container(),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      )),
                   ...List.generate(10, (index) {
                     return Column(
                       children: [
@@ -57,7 +88,6 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                               Expanded(
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-
                                 children: [
                                   Text(
                                     "Title Title Title Title Title Title Title",
