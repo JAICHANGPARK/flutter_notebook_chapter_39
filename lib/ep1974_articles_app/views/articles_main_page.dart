@@ -49,9 +49,10 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                 width: 80,
                                 decoration: BoxDecoration(
                                   color: Colors.grey,
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              Gap(12),
+                              Gap(16),
                               Expanded(
                                   child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
