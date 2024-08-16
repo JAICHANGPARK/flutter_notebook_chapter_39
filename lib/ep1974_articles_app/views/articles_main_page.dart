@@ -54,16 +54,22 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
+                              color: Colors.white,
                             ),
                           ),
+                          Gap(12),
                           Row(
                             children: [
                               CircleAvatar(),
-                              Text("Dream walker"),
+                              Gap(12),
+                              Text("Dream walker", style: TextStyle(
+                                color: Colors.white,
+                              ),),
                             ],
                           ),
+                          Gap(12),
                           Container(
-                            height: 6,
+                            height: 4,
                             width: double.infinity,
                             child: Row(
                               children: [
