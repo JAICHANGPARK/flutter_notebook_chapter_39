@@ -112,6 +112,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+  genq:
+    dependency: "direct main"
+    description:
+      name: genq
+      sha256: bc8d932cb9f55db100c54088f182393819bf0b0d2c2fef56650c8d1d2e45bb12
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0"
   go_router:
     dependency: "direct main"
     description:
