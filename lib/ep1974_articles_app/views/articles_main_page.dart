@@ -64,12 +64,12 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                     ),
                                   ),
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Container(
                                         decoration: BoxDecoration(
                                           color: Colors.white.withOpacity(.2),
                                           borderRadius: BorderRadius.circular(4),
-
                                         ),
                                         padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                         child: Text(
@@ -77,6 +77,12 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                           style: TextStyle(
                                             color: Colors.white,
                                           ),
+                                        ),
+                                      ),
+                                      Text(
+                                        "24 min ago",
+                                        style: TextStyle(
+                                          color: Colors.grey,
                                         ),
                                       )
                                     ],
