@@ -31,6 +31,8 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                       height: 320,
@@ -103,6 +105,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                     image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2021/12/11/07/50/forest-6862143_1280.jpg",
                                     ),
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),
