@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_39/ep1974_articles_app/api/article_api.dart';
 import 'package:flutter_notebook_chapter_39/ep1974_articles_app/model/articles.dart';
+import 'package:flutter_notebook_chapter_39/ep1974_articles_app/model/photos.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -157,7 +158,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
               children: [
                 FutureBuilder<List<Photos>>(
                   future: getPhotos(),
-                  builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+                  builder: (BuildContext context, AsyncSnapshot<List<Photos>> snapshot) {
                     if (snapshot.hasError) {
                       return Center(
                         child: Text(
