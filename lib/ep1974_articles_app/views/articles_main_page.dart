@@ -155,7 +155,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Expanded(
             child: TabBarView(
               children: [
-                FutureBuilder(
+                FutureBuilder<List<Photos>>(
                   future: getPhotos(),
                   builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
                     if (snapshot.hasError) {
@@ -169,7 +169,39 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                       );
                     }
                     if (snapshot.hasData) {
-                      return ListView.builder(itemBuilder: (context, index){},);
+                      return ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Column(
+                            children: [
+                              Row(
+                                children: [
+                                  CircleAvatar(),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        Text("Dream Walker"),
+                                        Text("23 min ago"),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.more_horiz,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 240,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(image: NetworkImage("${snapshot.data[index].}"))
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          );
+                        },
+                      );
                     }
                     return Center(
                       child: CircularProgressIndicator.adaptive(),
