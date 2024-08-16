@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class ArticlesMainPage extends StatefulWidget {
@@ -39,26 +40,33 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                   ...List.generate(10, (index) {
                     return Column(
                       children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 64,
-                              width: 64,
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 80,
+                                width: 80,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+                                ),
                               ),
-                            ),
-                            Expanded(
-                                child: Column(
-                              children: [
-                                Text("Title Title Title Title Title Title Title", style:
-                                  TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    
-                                  ),)
-                              ],
-                            ))
-                          ],
+                              Gap(12),
+                              Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Title Title Title Title Title Title Title",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  )
+                                ],
+                              ))
+                            ],
+                          ),
                         ),
                         Divider(),
                       ],
