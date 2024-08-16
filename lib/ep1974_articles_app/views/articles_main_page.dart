@@ -171,7 +171,10 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                     }
                     if (snapshot.hasData) {
                       return ListView.builder(
+                        itemCount: snapshot.data.length,
+
                         itemBuilder: (context, index) {
+                          final snapshotData = snapshot.data?[index];
                           return Column(
                             children: [
                               Row(
@@ -191,13 +194,25 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                                       Icons.more_horiz,
                                     ),
                                   ),
-                                  Container(
-                                    height: 240,
-                                    decoration: BoxDecoration(
-                                      image: DecorationImage(image: NetworkImage("${snapshot.data[index].}"))
-                                    ),
-                                  )
+
                                 ],
+                              ),
+                              Container(
+                                height: 240,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "${snapshotData?.thumbnailUrl}",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "${snapshotData?.title}",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               )
                             ],
                           );
