@@ -155,7 +155,28 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
           Expanded(
             child: TabBarView(
               children: [
-
+                FutureBuilder(
+                  future: getPhotos(),
+                  builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot) {
+                    if (snapshot.hasError) {
+                      return Center(
+                        child: Text(
+                          "${snapshot.error}",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      );
+                    }
+                    if (snapshot.hasData) {}
+                    return Center(
+                      child: CircularProgressIndicator.adaptive(),
+                    );
+                  },
+                ),
+                Container(),
+                Container(),
+                Container(),
               ],
             ),
           ),
