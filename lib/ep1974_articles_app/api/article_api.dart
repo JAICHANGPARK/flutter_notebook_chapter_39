@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:flutter_notebook_chapter_39/ep1974_articles_app/model/articles.dart';
 
@@ -7,7 +9,13 @@ Future<List<Articles>> getArticles() async {
     "https://jsonplaceholder.typicode.com/posts",
   );
   if (posts.statusCode == 200) {
-    print(posts.data);
+    final data2 = posts.data as List<Map<String, dynamic>>;
+
+    List<Articles> results = data2.map((e){
+      return $ArticlesFromJson(e);
+    }).toList();
+
+    return results;
   }
   return [];
 }
