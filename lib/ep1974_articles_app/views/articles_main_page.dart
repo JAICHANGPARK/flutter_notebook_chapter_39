@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_39/ep1974_articles_app/api/article_api.dart';
+import 'package:flutter_notebook_chapter_39/ep1974_articles_app/model/articles.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -30,7 +31,7 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
       body: Column(
         children: [
           Expanded(
-            child: FutureBuilder(
+            child: FutureBuilder<List<Articles>>(
                 future: getArticles(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
@@ -171,6 +172,14 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
                             );
                           }),
                         ],
+                      ),
+                    );
+                  }
+                  if (snapshot.hasError) {
+                    return Text(
+                      snapshot.error.toString(),
+                      style: TextStyle(
+                        color: Colors.white,
                       ),
                     );
                   }
