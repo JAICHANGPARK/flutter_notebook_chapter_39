@@ -135,14 +135,21 @@ class _ArticlesMainPageState extends State<ArticlesMainPage> {
 
   buildTabTypeWidget() {
     return DefaultTabController(
-        length: 4,
-        child: Column(
-          children: [
-            TabBar(
-              tabs: [],
-            )
-          ],
-        ));
+      length: 4,
+      child: Column(
+        children: [
+          TabBar(
+            tabs: [
+              Tab(text: "All"),
+              Tab(text: "Open (24)",),
+              Tab(text: "Upcoming (8)",),
+              Tab(text: "Closed (9)",),
+
+            ],
+          )
+        ],
+      ),
+    );
   }
 
   buildListTypeWidget() {
