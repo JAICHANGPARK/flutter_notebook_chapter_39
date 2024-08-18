@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/language_learning_home_page.dart';
 
 void main() {
-  runApp(LanguageLearningApp());
+  runApp(const LanguageLearningApp());
 }
 
 
@@ -12,7 +12,7 @@ class LanguageLearningApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: LanguageLearningHomePage(),
     );
   }
