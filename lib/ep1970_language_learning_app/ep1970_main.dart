@@ -6,7 +6,6 @@ void main() {
   runApp(const LanguageLearningApp());
 }
 
-
 class LanguageLearningApp extends StatelessWidget {
   const LanguageLearningApp({super.key});
 
