@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/e_commerce_home_apge.dart';
 
 void main() {
-  runApp(ECommerceApp());
+  runApp(const ECommerceApp());
 }
 
 class ECommerceApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class ECommerceApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: ECommerceHomeApge(),
+      home: const ECommerceHomeApge(),
     );
   }
 }
