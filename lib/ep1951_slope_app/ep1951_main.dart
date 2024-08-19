@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/slope_main_page.dart';
 
 void main() {
-  runApp(SlopeMobileApp());
+  runApp(const SlopeMobileApp());
 }
 
 class SlopeMobileApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class SlopeMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: SlopeMainPage(),
     );
   }
