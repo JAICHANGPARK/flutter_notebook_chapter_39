@@ -3,10 +3,10 @@
 ## EP1980
 
 - Mobile Travel App
-- Stelian Subotin
+- Debora for Odama
 - https://dribbble.com/shots/24713500-Mobile-Travel-App
 
-<img src="https://cdn.dribbble.com/userupload/16061305/file/original-dbc99bfd2f090a679324e686d90c9040.png?resize=1905x1429"/>
+<img src=""/>
 
 ## EP1974-1979
 
