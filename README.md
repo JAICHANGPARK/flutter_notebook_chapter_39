@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_39
 
-## EP1974
+## EP1974-1979
+
+- Mobile Articles - Lookscout Design System
+- Stelian Subotin
+- https://dribbble.com/shots/24681090-Mobile-Articles-Lookscout-Design-System
+
+<img src="https://cdn.dribbble.com/userupload/16061305/file/original-dbc99bfd2f090a679324e686d90c9040.png?resize=1905x1429"/>
+
+## EP1974-1979
 
 - Mobile Articles - Lookscout Design System
 - Stelian Subotin
