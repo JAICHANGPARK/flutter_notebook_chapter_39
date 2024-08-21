@@ -17,7 +17,16 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
             child: Image.network(
               "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
             ),
-          )
+          ),
+          Positioned(child: Column(children: [
+            Expanded(child: Column(),),
+            Container(
+              height: 320,
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+            )
+          ],))
         ],
       ),
     );
