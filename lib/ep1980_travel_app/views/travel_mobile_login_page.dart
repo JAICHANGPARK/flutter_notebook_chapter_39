@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelMobileLoginPage extends StatefulWidget {
   const TravelMobileLoginPage({super.key});
@@ -58,11 +59,64 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           color: Colors.black,
                         ),
                         child: Center(
-                          child: Text("Continue with Apple", style: TextStyle(
-                            color: Colors.white
-                          ),),
+                          child: Text(
+                            "Continue with Apple",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                         ),
-                      )
+                      ),
+                      Gap(8),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.grey[200],
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Continue with Google",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Gap(8),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.grey[200],
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Sign up with email",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Gap(8),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(
+                            side: BorderSide(
+                              color: Colors.grey
+                            )
+                          ),
+
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Log in",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Gap(8),
                     ],
                   ),
                 )
