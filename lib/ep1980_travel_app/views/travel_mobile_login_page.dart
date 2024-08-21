@@ -42,6 +42,10 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                 height: 320,
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    topRight: Radius.circular(16),
+                  )
                 ),
               )
             ],
