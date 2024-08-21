@@ -11,6 +11,6 @@ class TravelMobileLoginPage extends StatefulWidget {
 class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
