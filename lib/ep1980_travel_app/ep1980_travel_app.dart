@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/travel_mobile_login_page.dart';
+
 
 void main() {
   runApp(TravelMobileApp());
@@ -11,6 +13,8 @@ class TravelMobileApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: TravelMobileLoginPage(),
+    );
   }
 }
