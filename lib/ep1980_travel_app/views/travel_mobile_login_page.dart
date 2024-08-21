@@ -19,37 +19,56 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
             ),
           ),
           Positioned.fill(
-              child: Column(
-            children: [
-              Expanded(
-                child: Column(
-                  children: [
-                    Text(
-                      "Tripter",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
+            child: Column(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text(
+                        "Tripter",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
+                      Expanded(
+                          child: Column(
+                        children: [
+                          Text("Special Spaces for Every Getaway"),
+                          Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
+                        ],
+                      ))
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 320,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(16),
+                      topRight: Radius.circular(16),
                     ),
-                    Expanded(child: Column(children: [
-                      Text("Special Spaces for Every Getaway"),
-                      Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
-                    ],))
-                  ],
-                ),
-              ),
-              Container(
-                height: 320,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  )
-                ),
-              )
-            ],
-          ))
+                  ),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.black,
+                        ),
+                        child: Center(
+                          child: Text("Continue with Apple", style: TextStyle(
+                            color: Colors.white
+                          ),),
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
