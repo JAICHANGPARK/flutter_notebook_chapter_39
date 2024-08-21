@@ -20,107 +20,111 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
             ),
           ),
           Positioned.fill(
-            child: Column(
-              children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text(
-                        "Tripter",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text(
+                          "Tripter",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                          child: Column(
-                        children: [
-                          Text("Special Spaces for Every Getaway"),
-                          Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
-                        ],
-                      ))
-                    ],
-                  ),
-                ),
-                Container(
-                  height: 320,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(16),
-                      topRight: Radius.circular(16),
+                        Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                          
+                          children: [
+                            Text("Special Spaces for Every Getaway"),
+                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
+                          ],
+                        ))
+                      ],
                     ),
                   ),
-                  child: Column(
-                    children: [
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.black,
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Continue with Apple",
-                            style: TextStyle(
-                              color: Colors.white,
+                  Container(
+                    height: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(16),
+                        topRight: Radius.circular(16),
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.black,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Continue with Apple",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Gap(8),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.grey[200],
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Continue with Google",
-                            style: TextStyle(
-                              color: Colors.black,
+                        Gap(8),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[200],
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Continue with Google",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Gap(8),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(),
-                          color: Colors.grey[200],
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Sign up with email",
-                            style: TextStyle(
-                              color: Colors.black,
+                        Gap(8),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.grey[200],
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Sign up with email",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Gap(8),
-                      Container(
-                        decoration: ShapeDecoration(
-                          shape: StadiumBorder(
-                            side: BorderSide(
-                              color: Colors.grey
-                            )
+                        Gap(8),
+                        Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(
+                              side: BorderSide(
+                                color: Colors.grey
+                              )
+                            ),
+              
                           ),
-
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Log in",
-                            style: TextStyle(
-                              color: Colors.black,
+                          child: Center(
+                            child: Text(
+                              "Log in",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Gap(8),
-                    ],
-                  ),
-                )
-              ],
+                        Gap(8),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
