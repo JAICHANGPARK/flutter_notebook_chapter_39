@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelMobileHomePage extends StatefulWidget {
   const TravelMobileHomePage({Key? key}) : super(key: key);
@@ -13,23 +14,34 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(
+          Positioned.fill(top: 16,
             child: SafeArea(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16)
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(child: TextField()),
+                                CircleAvatar(),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                      CircleAvatar(
-                        backgroundColor: Colors.black,
-                      ),
-                    ],
+                        Gap(12),
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                        ),
+                      ],
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
