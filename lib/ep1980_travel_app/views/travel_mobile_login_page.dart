@@ -36,18 +36,23 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Expanded(
-                            child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Special Spaces for\nEvery Getaway",
-                              style: TextStyle(
-                                fontSize: 26,
-                                color: Colors.white,
+                            child: Padding(
+                          padding: const EdgeInsets.all(24.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Special Spaces for\nEvery Getaway",
+                                style: TextStyle(
+                                  fontSize: 26,
+                                  color: Colors.white,
+
+                                ),
+                                textAlign: TextAlign.center,
                               ),
-                            ),
-                            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
-                          ],
+                              Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
+                            ],
+                          ),
                         ))
                       ],
                     ),
