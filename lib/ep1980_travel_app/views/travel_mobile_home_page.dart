@@ -10,6 +10,17 @@ class TravelMobileHomePage extends StatefulWidget {
 class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Column(),
+          ),
+          Column(
+            children: [],
+          ),
+        ],
+      ),
+    );
   }
 }
