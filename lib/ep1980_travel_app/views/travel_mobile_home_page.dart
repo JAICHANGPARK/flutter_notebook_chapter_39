@@ -14,7 +14,24 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Column(),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    CircleAvatar(
+                      backgroundColor: Colors.black,
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
           Positioned(
             bottom: 32,
