@@ -32,13 +32,20 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
+                            fontSize: 18,
                           ),
                         ),
                         Expanded(
                             child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Special Spaces for Every Getaway"),
+                            Text(
+                              "Special Spaces for\nEvery Getaway",
+                              style: TextStyle(
+                                fontSize: 26,
+                                color: Colors.white,
+                              ),
+                            ),
                             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
                           ],
                         ))
@@ -73,7 +80,8 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container( padding: EdgeInsets.symmetric(vertical: 16),
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.grey[200],
@@ -88,7 +96,8 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container( padding: EdgeInsets.symmetric(vertical: 16),
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.grey[200],
@@ -103,7 +112,8 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container( padding: EdgeInsets.symmetric(vertical: 16),
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
                           ),
