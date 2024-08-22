@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'travel_mobile_home_page.dart';
+
 class TravelMobileLoginPage extends StatefulWidget {
   const TravelMobileLoginPage({super.key});
 
@@ -122,16 +124,25 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container(
-                          padding: EdgeInsets.symmetric(vertical: 16),
-                          decoration: ShapeDecoration(
-                            shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Log in",
-                              style: TextStyle(
-                                color: Colors.black,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => TravelMobileHomePage(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            padding: EdgeInsets.symmetric(vertical: 16),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Log in",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
