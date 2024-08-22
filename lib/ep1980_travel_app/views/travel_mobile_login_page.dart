@@ -46,11 +46,16 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                                 style: TextStyle(
                                   fontSize: 26,
                                   color: Colors.white,
-
                                 ),
                                 textAlign: TextAlign.center,
                               ),
-                              Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
+                              Gap(16),
+                              Text(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              )
                             ],
                           ),
                         ))
