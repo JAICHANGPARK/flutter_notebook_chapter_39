@@ -78,15 +78,22 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     ),
                   ),
                   Expanded(
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: ,
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                          ),
-                        );
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        left: 16,
+                        right: 16,
+                        
+                      ),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   )
                 ],
