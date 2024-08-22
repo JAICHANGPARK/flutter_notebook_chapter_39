@@ -40,7 +40,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           "Explore your needs",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                            fontSize: 18,
                           ),
                         ),
                         TextButton(
@@ -65,7 +65,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           "Discover what near you",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                            fontSize: 18,
                           ),
                         ),
                         TextButton(
@@ -77,6 +77,18 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       ],
                     ),
                   ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: ,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                          ),
+                        );
+                      },
+                    ),
+                  )
                 ],
               ),
             ),
