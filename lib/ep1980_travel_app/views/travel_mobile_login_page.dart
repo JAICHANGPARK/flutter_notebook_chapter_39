@@ -17,6 +17,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
           Positioned.fill(
             child: Image.network(
               "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
+              fit: BoxFit.cover,
             ),
           ),
           Positioned.fill(
@@ -35,8 +36,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                         ),
                         Expanded(
                             child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                          
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Special Spaces for Every Getaway"),
                             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, ")
@@ -103,12 +103,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                         Gap(8),
                         Container(
                           decoration: ShapeDecoration(
-                            shape: StadiumBorder(
-                              side: BorderSide(
-                                color: Colors.grey
-                              )
-                            ),
-              
+                            shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
                           ),
                           child: Center(
                             child: Text(
