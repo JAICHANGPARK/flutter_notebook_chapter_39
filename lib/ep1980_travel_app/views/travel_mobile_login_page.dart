@@ -46,7 +46,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                     ),
                   ),
                   Container(
-                    height: 320,
+                    height: 260,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -54,6 +54,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                         topRight: Radius.circular(16),
                       ),
                     ),
+                    padding: EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Container(
