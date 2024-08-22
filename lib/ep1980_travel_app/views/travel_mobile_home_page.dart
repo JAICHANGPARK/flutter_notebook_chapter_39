@@ -82,7 +82,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       padding: const EdgeInsets.only(
                         left: 16,
                         right: 16,
-                        
+
                       ),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
@@ -90,7 +90,9 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             height: 240,
                             decoration: BoxDecoration(
                               color: Colors.red,
+                              borderRadius: BorderRadius.circular(8)
                             ),
+                            margin: EdgeInsets.only(bottom: 16),
                           );
                         },
                       ),
