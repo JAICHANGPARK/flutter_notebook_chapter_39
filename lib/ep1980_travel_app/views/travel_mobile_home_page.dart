@@ -31,19 +31,26 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Explore your needs",
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See all",
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Explore your needs",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
-                      )
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
