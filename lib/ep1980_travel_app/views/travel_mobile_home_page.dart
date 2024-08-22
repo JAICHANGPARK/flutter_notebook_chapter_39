@@ -16,8 +16,18 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
           Positioned.fill(
             child: Column(),
           ),
-          Column(
-            children: [],
+          Positioned(
+            bottom: 32,
+            left: 32,
+            right: 32,
+            child: Container(
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+              ),
+              child: Row(
+                children: [],
+              ),
+            ),
           ),
         ],
       ),
