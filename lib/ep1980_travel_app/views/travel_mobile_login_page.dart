@@ -46,7 +46,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                     ),
                   ),
                   Container(
-                    height: 260,
+                    height: 300,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -58,6 +58,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                     child: Column(
                       children: [
                         Container(
+                          padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.black,
@@ -72,7 +73,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container(
+                        Container( padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.grey[200],
@@ -87,7 +88,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container(
+                        Container( padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.grey[200],
@@ -102,7 +103,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           ),
                         ),
                         Gap(8),
-                        Container(
+                        Container( padding: EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
                           ),
