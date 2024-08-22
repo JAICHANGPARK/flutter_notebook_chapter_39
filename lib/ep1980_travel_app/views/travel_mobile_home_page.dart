@@ -51,7 +51,32 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         )
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    height: 200,
+                    child: Placeholder(),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Discover what near you",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "See all",
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
