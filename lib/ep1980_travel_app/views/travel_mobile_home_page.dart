@@ -14,23 +14,39 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                    CircleAvatar(
-                      backgroundColor: Colors.black,
-                    ),
-                  ],
-                )
-              ],
+                      CircleAvatar(
+                        backgroundColor: Colors.black,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Explore your needs",
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
