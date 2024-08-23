@@ -14,7 +14,8 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(top: 16,
+          Positioned.fill(
+            top: 16,
             child: SafeArea(
               child: Column(
                 children: [
@@ -24,13 +25,12 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       children: [
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(16)
-                            ),
+                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                             child: Row(
                               children: [
-                                Expanded(child: TextField()),
+                                Expanded(
+                                  child: TextField(),
+                                ),
                                 CircleAvatar(),
                               ],
                             ),
@@ -76,9 +76,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           return Container(
                             width: 160,
                             margin: EdgeInsets.only(right: 16),
-                            decoration: BoxDecoration(
-                              color: Colors.white
-                            ),
+                            decoration: BoxDecoration(color: Colors.white),
                           );
                         },
                       ),
