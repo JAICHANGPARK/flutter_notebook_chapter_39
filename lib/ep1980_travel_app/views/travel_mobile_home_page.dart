@@ -25,21 +25,26 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       children: [
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
                             child: Row(
                               children: [
                                 Expanded(
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      icon: Icon(Icons.search),
-                                      border: InputBorder.none,
-                                      hintText: "What do you looking for?"
-                                    ),
+                                        icon: Icon(Icons.search),
+                                        border: InputBorder.none,
+                                        hintText: "What do you looking for?"),
                                   ),
                                 ),
                                 CircleAvatar(
                                   backgroundColor: Colors.grey[200],
                                   foregroundColor: Colors.black,
+                                  child: Icon(
+                                    Icons.tune,
+                                  ),
                                 ),
                               ],
                             ),
@@ -48,6 +53,10 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         Gap(12),
                         CircleAvatar(
                           backgroundColor: Colors.black,
+                          child: Badge(
+                            child: Icon(Icons.mail_outline),
+                            label: Text("2"),
+                          ),
                         ),
                       ],
                     ),
