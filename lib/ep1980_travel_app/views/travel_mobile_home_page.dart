@@ -30,16 +30,17 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                               borderRadius: BorderRadius.circular(32),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.black.withOpacity(.05),
+                                  color: Colors.black.withOpacity(.025),
                                   spreadRadius: 8,
                                   blurRadius: 4,
 
                                 )
                               ],
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8),
+                            padding: EdgeInsets.symmetric(horizontal: 4),
                             child: Row(
                               children: [
+                                Gap(8),
                                 Expanded(
                                   child: TextField(
                                     decoration: InputDecoration(
