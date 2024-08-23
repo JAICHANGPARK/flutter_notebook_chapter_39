@@ -104,7 +104,17 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           return Container(
                             width: 140,
                             margin: EdgeInsets.only(right: 16),
-                            decoration: BoxDecoration(color: Colors.white),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey[50]!,
+                                  blurRadius: 8,
+
+                                )
+                              ],
+                            ),
                             padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
