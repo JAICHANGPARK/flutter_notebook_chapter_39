@@ -187,11 +187,14 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
           ),
           Positioned(
             bottom: 32,
-            left: 32,
-            right: 32,
+            // left: 32,
+            // right: 32,
             child: Container(
+              height: 72,
+              width: 200,
               decoration: ShapeDecoration(
                 shape: StadiumBorder(),
+                color: Colors.white,
               ),
               child: Row(
                 children: [
