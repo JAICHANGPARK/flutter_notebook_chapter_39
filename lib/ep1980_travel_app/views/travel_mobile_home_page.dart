@@ -106,6 +106,12 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             width: 160,
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(color: Colors.white),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                
+                              ],
+                            ),
                           );
                         },
                       ),
