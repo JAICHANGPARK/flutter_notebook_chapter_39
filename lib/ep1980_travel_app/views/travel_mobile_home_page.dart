@@ -212,14 +212,17 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         horizontal: 16,
                         vertical: 8,
                       ),
-
                       child: Row(
                         children: [
                           Icon(
                             Icons.search,
+                            color: Colors.white,
                           ),
                           Text(
                             "Explore",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
                           )
                         ],
                       ),
