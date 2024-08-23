@@ -27,8 +27,17 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(16),
+                              borderRadius: BorderRadius.circular(32),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(.05),
+                                  spreadRadius: 8,
+                                  blurRadius: 4,
+
+                                )
+                              ],
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8),
                             child: Row(
                               children: [
                                 Expanded(
