@@ -109,9 +109,9 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                               borderRadius: BorderRadius.circular(8),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Colors.grey[50]!,
+                                  color: Colors.grey[100]!,
                                   blurRadius: 8,
-
+                                  spreadRadius: 8,
                                 )
                               ],
                             ),
@@ -124,8 +124,18 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                   foregroundColor: Colors.white,
                                 ),
                                 Spacer(),
-                                Text("Beach"),
-                                Text("View")
+                                Text(
+                                  "Beach",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "View",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
                               ],
                             ),
                           );
