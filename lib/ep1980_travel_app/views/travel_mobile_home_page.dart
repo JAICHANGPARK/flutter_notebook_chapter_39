@@ -33,7 +33,6 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                   color: Colors.black.withOpacity(.025),
                                   spreadRadius: 8,
                                   blurRadius: 4,
-
                                 )
                               ],
                             ),
@@ -94,7 +93,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 200,
+                    height: 160,
                     child: Padding(
                       padding: const EdgeInsets.only(
                         left: 16,
@@ -103,13 +102,18 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 160,
+                            width: 140,
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(color: Colors.white),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  foregroundColor: Colors.white,
+                                ),
+                                Text("Beach"),
+                                Text("View")
                               ],
                             ),
                           );
