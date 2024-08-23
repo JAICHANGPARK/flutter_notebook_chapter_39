@@ -29,9 +29,18 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             child: Row(
                               children: [
                                 Expanded(
-                                  child: TextField(),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      icon: Icon(Icons.search),
+                                      border: InputBorder.none,
+                                      hintText: "What do you looking for?"
+                                    ),
+                                  ),
                                 ),
-                                CircleAvatar(),
+                                CircleAvatar(
+                                  backgroundColor: Colors.grey[200],
+                                  foregroundColor: Colors.black,
+                                ),
                               ],
                             ),
                           ),
