@@ -194,7 +194,41 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                 shape: StadiumBorder(),
               ),
               child: Row(
-                children: [],
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.search,
+                        ),
+                        Text(
+                          "Explore",
+                        )
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.favorite_outline,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.calendar_today,
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.person_3_outlined,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
