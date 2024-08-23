@@ -53,6 +53,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         Gap(12),
                         CircleAvatar(
                           backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
                           child: Badge(
                             child: Icon(Icons.mail_outline),
                             label: Text("2"),
