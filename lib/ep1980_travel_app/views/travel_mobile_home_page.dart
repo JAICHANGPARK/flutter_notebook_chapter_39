@@ -105,6 +105,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             width: 140,
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(color: Colors.white),
+                            padding: EdgeInsets.all(16),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -112,6 +113,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                   backgroundColor: Colors.red,
                                   foregroundColor: Colors.white,
                                 ),
+                                Spacer(),
                                 Text("Beach"),
                                 Text("View")
                               ],
