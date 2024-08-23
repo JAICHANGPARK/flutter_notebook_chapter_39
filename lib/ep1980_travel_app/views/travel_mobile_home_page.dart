@@ -187,51 +187,53 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
           ),
           Positioned(
             bottom: 32,
-            // left: 32,
-            // right: 32,
-            child: Container(
-              height: 72,
-              width: 200,
-              decoration: ShapeDecoration(
-                shape: StadiumBorder(),
-                color: Colors.white,
-              ),
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red,
+            left: 32,
+            right: 32,
+            child: Center(
+              child: Container(
+                height: 72,
+                width: 200,
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.white,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.search,
+                          ),
+                          Text(
+                            "Explore",
+                          )
+                        ],
+                      ),
                     ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.search,
-                        ),
-                        Text(
-                          "Explore",
-                        )
-                      ],
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.favorite_outline,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.favorite_outline,
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.calendar_today,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.calendar_today,
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.person_3_outlined,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.person_3_outlined,
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
