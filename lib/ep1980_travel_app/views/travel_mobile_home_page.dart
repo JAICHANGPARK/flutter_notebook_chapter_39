@@ -192,7 +192,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
             child: Center(
               child: Container(
                 height: 54,
-                width: 260,
+                width: 280,
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.white,
@@ -201,6 +201,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                   horizontal: 8,
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       decoration: BoxDecoration(
@@ -208,9 +209,10 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         borderRadius: BorderRadius.circular(32),
                       ),
                       padding: EdgeInsets.symmetric(
-                        horizontal: 6,
+                        horizontal: 16,
                         vertical: 8,
                       ),
+
                       child: Row(
                         children: [
                           Icon(
