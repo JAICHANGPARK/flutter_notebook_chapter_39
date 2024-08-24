@@ -198,11 +198,14 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
+                                  padding: EdgeInsets.all(12),
                                   child: Row(
                                     children: [
                                       Expanded(
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text(
                                               "Wood Manor",
@@ -216,11 +219,14 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                           shape: StadiumBorder(),
                                           color: Colors.grey[200],
                                         ),
+                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                                         child: Text.rich(TextSpan(
                                           children: [
                                             TextSpan(
                                               text: "\$340",
-                                              style: TextStyle()
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
                                             ),
                                             TextSpan(
                                               text: "/night",
