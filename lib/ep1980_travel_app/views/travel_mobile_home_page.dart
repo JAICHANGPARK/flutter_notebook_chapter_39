@@ -196,8 +196,10 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 ),
                                 Spacer(),
                                 Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                   padding: EdgeInsets.all(12),
                                   child: Row(
                                     children: [
