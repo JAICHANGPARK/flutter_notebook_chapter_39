@@ -215,6 +215,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                               "Wood Manor",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
+                                                fontSize: 16,
                                               ),
                                             ),
                                             Text("Grove Lane"),
