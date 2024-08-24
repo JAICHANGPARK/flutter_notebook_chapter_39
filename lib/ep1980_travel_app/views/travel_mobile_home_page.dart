@@ -187,6 +187,13 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             margin: EdgeInsets.only(
                               bottom: 16,
                             ),
+                            child: Column(
+                              children: [
+                                Align(
+                                  alignment: Alignment.centerRight,
+                                  child: CircleAvatar(),),
+                              ],
+                            ),
                           );
                         },
                       ),
