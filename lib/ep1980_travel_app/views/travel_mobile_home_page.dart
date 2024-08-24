@@ -177,6 +177,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/11/20/15/34/mirror-house-4640385_1280.jpg",
+                                ),
+                              ),
                             ),
                             margin: EdgeInsets.only(
                               bottom: 16,
