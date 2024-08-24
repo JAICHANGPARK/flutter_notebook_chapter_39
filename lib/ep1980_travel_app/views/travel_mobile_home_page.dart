@@ -93,7 +93,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     ),
                   ),
                   SizedBox(
-                    height: 160,
+                    height: 140,
                     child: Padding(
                       padding: const EdgeInsets.only(
                         left: 16,
