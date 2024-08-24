@@ -174,8 +174,13 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             height: 240,
-                            decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
-                            margin: EdgeInsets.only(bottom: 16),
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            margin: EdgeInsets.only(
+                              bottom: 16,
+                            ),
                           );
                         },
                       ),
