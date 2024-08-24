@@ -103,7 +103,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 140,
-                            margin: EdgeInsets.only(right: 16),
+                            margin: EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
