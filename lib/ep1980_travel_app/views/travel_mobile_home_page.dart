@@ -214,8 +214,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                       Container(
                                         decoration: ShapeDecoration(
                                           shape: StadiumBorder(),
-                                          
+                                          color: Colors.grey[200],
                                         ),
+                                        child: Text.rich(TextSpan(
+                                          children: [],
+                                        )),
                                       )
                                     ],
                                   ),
