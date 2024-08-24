@@ -217,7 +217,15 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                           color: Colors.grey[200],
                                         ),
                                         child: Text.rich(TextSpan(
-                                          children: [],
+                                          children: [
+                                            TextSpan(
+                                              text: "\$340",
+                                              style: TextStyle()
+                                            ),
+                                            TextSpan(
+                                              text: "/night",
+                                            )
+                                          ],
                                         )),
                                       )
                                     ],
