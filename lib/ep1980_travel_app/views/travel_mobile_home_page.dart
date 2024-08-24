@@ -187,6 +187,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             margin: EdgeInsets.only(
                               bottom: 16,
                             ),
+                            padding: EdgeInsets.all(12),
                             child: Column(
                               children: [
                                 Align(
