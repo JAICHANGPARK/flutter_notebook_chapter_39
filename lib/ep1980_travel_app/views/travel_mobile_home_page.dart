@@ -199,6 +199,26 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                   ),
+                                  child: Row(
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "Wood Manor",
+                                            ),
+                                            Text("Grove Lane"),
+                                          ],
+                                        ),
+                                      ),
+                                      Container(
+                                        decoration: ShapeDecoration(
+                                          shape: StadiumBorder(),
+                                          
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
