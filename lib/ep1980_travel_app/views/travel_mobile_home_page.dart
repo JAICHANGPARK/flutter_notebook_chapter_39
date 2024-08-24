@@ -192,7 +192,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                               children: [
                                 Align(
                                   alignment: Alignment.centerRight,
-                                  child: CircleAvatar(),
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: Colors.black,
+                                    child: Text("4.3"),
+                                  ),
                                 ),
                                 Spacer(),
                                 Container(
