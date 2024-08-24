@@ -181,6 +181,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 image: NetworkImage(
                                   "https://cdn.pixabay.com/photo/2019/11/20/15/34/mirror-house-4640385_1280.jpg",
                                 ),
+                                fit: BoxFit.cover,
                               ),
                             ),
                             margin: EdgeInsets.only(
