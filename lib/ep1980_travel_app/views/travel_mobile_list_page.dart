@@ -38,7 +38,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                           foregroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.arrow_back_ios_new,
                             ),
                           ),
@@ -84,7 +84,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 42,
                     color: Colors.blue,
                     child: ListView.builder(
@@ -96,9 +96,11 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                             color: index == 0 ? Colors.black : Colors.white,
                             borderRadius: BorderRadius.circular(32),
                           ),
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          margin: const EdgeInsets.only(left: 16, right: 4),
                           child: Row(
                             children: [
-                              if (index == 0) Icon(Icons.pin_drop),
+                              if (index == 0) const Icon(Icons.pin_drop),
                               Text(
                                 tabs[index],
                               ),
@@ -206,10 +208,10 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
             right: 32,
             child: Center(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Row(
+                child: const Row(
                   children: [
                     Icon(Icons.map_outlined),
                     Gap(8),
