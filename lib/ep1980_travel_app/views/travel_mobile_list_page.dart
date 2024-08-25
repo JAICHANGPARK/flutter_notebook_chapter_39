@@ -84,7 +84,11 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.symmetric(vertical: 16),
+                    margin: EdgeInsets.only(
+                      left: 16,
+                      bottom: 16,
+                      top: 16,
+                    ),
                     height: 42,
                     color: Colors.blue,
                     child: ListView.builder(
@@ -96,8 +100,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                             color: index == 0 ? Colors.black : Colors.white,
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                          margin: const EdgeInsets.only(left: 16, right: 4),
+                          padding: const EdgeInsets.symmetric(horizontal: 8),
                           child: Row(
                             children: [
                               if (index == 0) const Icon(Icons.pin_drop),
