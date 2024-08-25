@@ -9,8 +9,8 @@ class TravelMobileListPage extends StatefulWidget {
 }
 
 class _TravelMobileListPageState extends State<TravelMobileListPage> {
-  
   List<String> tabs = [
+    "Near me",
     "Cabins",
     "Rooms",
     "Beachfront",
@@ -104,7 +104,13 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                             ),
                           );
                         }
-                        return Container();
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(32),
+                          ),
+                          child: Text(tabs[index],),
+                        );
                       },
                     ),
                   ),
