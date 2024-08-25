@@ -10,7 +10,7 @@ class TravelMobileListPage extends StatefulWidget {
 
 class _TravelMobileListPageState extends State<TravelMobileListPage> {
   List<String> tabs = [
-    "Near me",
+    "Near me",s
     "Cabins",
     "Rooms",
     "Beachfront",
