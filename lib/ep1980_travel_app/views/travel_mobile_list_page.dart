@@ -84,7 +84,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(
+                    margin: const EdgeInsets.only(
                       left: 16,
                       bottom: 16,
                       top: 16,
@@ -100,7 +100,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 12),
-                          margin: EdgeInsets.only(right: 4),
+                          margin: const EdgeInsets.only(right: 4),
                           child: Row(
                             children: [
                               if (index == 0) const Icon(Icons.pin_drop),
@@ -218,7 +218,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24)
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
