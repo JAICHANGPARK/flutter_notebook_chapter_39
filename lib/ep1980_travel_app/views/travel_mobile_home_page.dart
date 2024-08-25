@@ -158,9 +158,13 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                              return TravelMobileListPage();
-                            }));
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return TravelMobileListPage();
+                                },
+                              ),
+                            );
                           },
                           child: Text(
                             "See all",
