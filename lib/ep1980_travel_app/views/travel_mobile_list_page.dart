@@ -90,7 +90,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       top: 16,
                     ),
                     height: 42,
-                    color: Colors.blue,
+                    
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: tabs.length,
@@ -101,6 +101,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                             borderRadius: BorderRadius.circular(32),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 8),
+                          margin: EdgeInsets.only(right: 4),
                           child: Row(
                             children: [
                               if (index == 0) const Icon(Icons.pin_drop),
