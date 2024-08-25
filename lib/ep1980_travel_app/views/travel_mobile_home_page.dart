@@ -37,11 +37,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 )
                               ],
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 4),
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
                             child: Row(
                               children: [
-                                Gap(8),
-                                Expanded(
+                                const Gap(8),
+                                const Expanded(
                                   child: TextField(
                                     decoration: InputDecoration(
                                         icon: Icon(Icons.search),
@@ -52,7 +52,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 CircleAvatar(
                                   backgroundColor: Colors.grey[200],
                                   foregroundColor: Colors.black,
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.tune,
                                   ),
                                 ),
@@ -60,8 +60,8 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             ),
                           ),
                         ),
-                        Gap(12),
-                        CircleAvatar(
+                        const Gap(12),
+                        const CircleAvatar(
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           child: Badge(
@@ -77,7 +77,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Explore your needs",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -86,7 +86,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text(
+                          child: const Text(
                             "See all",
                           ),
                         )
@@ -104,7 +104,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 140,
-                            margin: EdgeInsets.only(right: 12),
+                            margin: const EdgeInsets.only(right: 12),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
@@ -116,8 +116,8 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                 )
                               ],
                             ),
-                            padding: EdgeInsets.all(16),
-                            child: Column(
+                            padding: const EdgeInsets.all(16),
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 CircleAvatar(
@@ -149,7 +149,7 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Discover what near you",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -161,12 +161,12 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             Navigator.of(context).push(
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return TravelMobileListPage();
+                                  return const TravelMobileListPage();
                                 },
                               ),
                             );
                           },
-                          child: Text(
+                          child: const Text(
                             "See all",
                           ),
                         )
@@ -186,20 +186,20 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                             decoration: BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                   "https://cdn.pixabay.com/photo/2019/11/20/15/34/mirror-house-4640385_1280.jpg",
                                 ),
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            margin: EdgeInsets.only(
+                            margin: const EdgeInsets.only(
                               bottom: 16,
                             ),
-                            padding: EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(12),
                             child: Column(
                               children: [
-                                Align(
+                                const Align(
                                   alignment: Alignment.centerRight,
                                   child: CircleAvatar(
                                     backgroundColor: Colors.white,
@@ -207,16 +207,16 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                     child: Text("4.3"),
                                   ),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(8),
                                   ),
-                                  padding: EdgeInsets.all(12),
+                                  padding: const EdgeInsets.all(12),
                                   child: Row(
                                     children: [
-                                      Expanded(
+                                      const Expanded(
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
@@ -233,11 +233,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                                       ),
                                       Container(
                                         decoration: ShapeDecoration(
-                                          shape: StadiumBorder(),
+                                          shape: const StadiumBorder(),
                                           color: Colors.grey[200],
                                         ),
-                                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                                        child: Text.rich(TextSpan(
+                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                        child: const Text.rich(TextSpan(
                                           children: [
                                             TextSpan(
                                               text: "\$340",
@@ -273,11 +273,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
               child: Container(
                 height: 54,
                 width: 280,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.white,
                 ),
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 8,
                 ),
                 child: Row(
@@ -288,11 +288,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(32),
                       ),
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: 16,
                         vertical: 8,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Icon(
                             Icons.search,
@@ -309,19 +309,19 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.favorite_outline,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.calendar_today,
                       ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.person_3_outlined,
                       ),
                     ),
