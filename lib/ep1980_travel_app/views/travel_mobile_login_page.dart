@@ -26,7 +26,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
             child: SafeArea(
               child: Column(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       children: [
                         Text(
@@ -39,7 +39,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                         ),
                         Expanded(
                             child: Padding(
-                          padding: const EdgeInsets.all(24.0),
+                          padding: EdgeInsets.all(24.0),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -66,23 +66,23 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                   ),
                   Container(
                     height: 300,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(16),
                         topRight: Radius.circular(16),
                       ),
                     ),
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 16),
-                          decoration: ShapeDecoration(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          decoration: const ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.black,
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Continue with Apple",
                               style: TextStyle(
@@ -91,14 +91,14 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 16),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
+                            shape: const StadiumBorder(),
                             color: Colors.grey[200],
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Continue with Google",
                               style: TextStyle(
@@ -107,14 +107,14 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 16),
+                          padding: const EdgeInsets.symmetric(vertical: 16),
                           decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
+                            shape: const StadiumBorder(),
                             color: Colors.grey[200],
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Sign up with email",
                               style: TextStyle(
@@ -123,23 +123,23 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                         GestureDetector(
                           onTap: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => TravelMobileHomePage(),
+                                builder: (context) => const TravelMobileHomePage(),
                               ),
                             );
                           },
                           child: Container(
-                            padding: EdgeInsets.symmetric(vertical: 16),
-                            decoration: ShapeDecoration(
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            decoration: const ShapeDecoration(
                               shape: StadiumBorder(
                                 side: BorderSide(color: Colors.grey),
                               ),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "Log in",
                                 style: TextStyle(
@@ -149,7 +149,7 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                             ),
                           ),
                         ),
-                        Gap(8),
+                        const Gap(8),
                       ],
                     ),
                   )
