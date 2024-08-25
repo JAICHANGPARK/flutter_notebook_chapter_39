@@ -83,7 +83,24 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container();
+                        if(index == 0){
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(Icons.pin_drop),
+                                Text("")
+
+                              ],
+                            ),
+                          );
+                        }
+                        return Container(
+
+                        );
                       },
                     ),
                   ),
