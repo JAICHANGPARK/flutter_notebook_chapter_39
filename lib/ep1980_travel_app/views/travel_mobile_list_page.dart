@@ -89,23 +89,21 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     color: Colors.blue,
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
-                      itemCount: 10,
+                      itemCount: tabs.length,
                       itemBuilder: (context, index) {
-
                         return Container(
                           decoration: BoxDecoration(
                             color: index == 0 ? Colors.black : Colors.white,
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          child:
-                          Row(
+                          child: Row(
                             children: [
-                              if(index == 0)
-                              Icon(Icons.pin_drop),
-                              Text(tabs[index],),
+                              if (index == 0) Icon(Icons.pin_drop),
+                              Text(
+                                tabs[index],
+                              ),
                             ],
                           ),
-
                         );
                       },
                     ),
