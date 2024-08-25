@@ -24,6 +24,17 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.black,
+                          foregroundColor: Colors.white,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.arrow_back_ios_new,
+                            ),
+                          ),
+                        ),
+                        const Gap(12),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
@@ -58,15 +69,6 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                                 ),
                               ],
                             ),
-                          ),
-                        ),
-                        const Gap(12),
-                        const CircleAvatar(
-                          backgroundColor: Colors.black,
-                          foregroundColor: Colors.white,
-                          child: Badge(
-                            label: Text("2"),
-                            child: Icon(Icons.mail_outline),
                           ),
                         ),
                       ],
