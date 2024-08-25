@@ -214,10 +214,13 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
             right: 32,
             child: Center(
               child: Container(
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(24)
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 child: const Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Icon(Icons.map_outlined),
                     Gap(8),
