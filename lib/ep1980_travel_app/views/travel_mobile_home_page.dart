@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1980_travel_app/views/travel_mobile_list_page.dart';
 import 'package:gap/gap.dart';
 
 class TravelMobileHomePage extends StatefulWidget {
@@ -156,7 +157,11 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                              return TravelMobileListPage();
+                            }));
+                          },
                           child: Text(
                             "See all",
                           ),
