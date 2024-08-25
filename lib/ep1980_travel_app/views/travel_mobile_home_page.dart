@@ -65,8 +65,8 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                           backgroundColor: Colors.black,
                           foregroundColor: Colors.white,
                           child: Badge(
-                            child: Icon(Icons.mail_outline),
                             label: Text("2"),
+                            child: Icon(Icons.mail_outline),
                           ),
                         ),
                       ],
