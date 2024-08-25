@@ -10,7 +10,7 @@ class TravelMobileListPage extends StatefulWidget {
 
 class _TravelMobileListPageState extends State<TravelMobileListPage> {
   List<String> tabs = [
-    "Near me",s
+    "Near me",
     "Cabins",
     "Rooms",
     "Beachfront",
@@ -91,25 +91,21 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        if (index == 0) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                            ),
-                            child: Row(
-                              children: [
-                                Icon(Icons.pin_drop),
-                                Text("Near me"),
-                              ],
-                            ),
-                          );
-                        }
+
                         return Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: index == 0 ? Colors.black : Colors.white,
                             borderRadius: BorderRadius.circular(32),
                           ),
-                          child: Text(tabs[index],),
+                          child:
+                          Row(
+                            children: [
+                              if(index == 0)
+                              Icon(Icons.pin_drop),
+                              Text(tabs[index],),
+                            ],
+                          ),
+
                         );
                       },
                     ),
