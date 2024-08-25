@@ -75,105 +75,16 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          "Explore your needs",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            "See all",
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 140,
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        left: 16,
-                      ),
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 140,
-                            margin: const EdgeInsets.only(right: 12),
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey[100]!,
-                                  blurRadius: 8,
-                                  spreadRadius: 8,
-                                )
-                              ],
-                            ),
-                            padding: const EdgeInsets.all(16),
-                            child: const Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  foregroundColor: Colors.white,
-                                ),
-                                Spacer(),
-                                Text(
-                                  "Beach",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Text(
-                                  "View",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                )
-                              ],
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          "Discover what near you",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
-                          ),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const TravelMobileListPage();
-                                },
-                              ),
-                            );
-                          },
-                          child: const Text(
-                            "See all",
-                          ),
-                        )
-                      ],
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 42,
+                    color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      },
                     ),
                   ),
                   Expanded(
