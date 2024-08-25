@@ -25,8 +25,9 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                     child: Row(
                       children: [
                         CircleAvatar(
-                          backgroundColor: Colors.black,
-                          foregroundColor: Colors.white,
+                          radius: 24,
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(
