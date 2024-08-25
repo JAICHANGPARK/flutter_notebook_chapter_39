@@ -135,7 +135,9 @@ class _TravelMobileLoginPageState extends State<TravelMobileLoginPage> {
                           child: Container(
                             padding: EdgeInsets.symmetric(vertical: 16),
                             decoration: ShapeDecoration(
-                              shape: StadiumBorder(side: BorderSide(color: Colors.grey)),
+                              shape: StadiumBorder(
+                                side: BorderSide(color: Colors.grey),
+                              ),
                             ),
                             child: Center(
                               child: Text(
