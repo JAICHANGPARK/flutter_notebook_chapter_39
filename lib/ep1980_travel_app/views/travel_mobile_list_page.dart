@@ -125,7 +125,7 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-                            height: 240,
+                            height: 280,
                             decoration: BoxDecoration(
                               color: Colors.red,
                               borderRadius: BorderRadius.circular(8),
