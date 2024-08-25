@@ -9,6 +9,14 @@ class TravelMobileListPage extends StatefulWidget {
 }
 
 class _TravelMobileListPageState extends State<TravelMobileListPage> {
+  
+  List<String> tabs = [
+    "Cabins",
+    "Rooms",
+    "Beachfront",
+    "Garden",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,24 +91,20 @@ class _TravelMobileListPageState extends State<TravelMobileListPage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        if(index == 0){
+                        if (index == 0) {
                           return Container(
                             decoration: BoxDecoration(
                               color: Colors.black,
-
                             ),
                             child: Row(
                               children: [
                                 Icon(Icons.pin_drop),
-                                Text("")
-
+                                Text("Near me"),
                               ],
                             ),
                           );
                         }
-                        return Container(
-
-                        );
+                        return Container();
                       },
                     ),
                   ),
