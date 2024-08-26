@@ -28,7 +28,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: NetworkImage(
                             "https://cdn.pixabay.com/photo/2020/09/20/19/52/landscape-5588115_1280.jpg",
                           ),
@@ -36,10 +36,10 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         ),
                       ),
                     ),
-                    Gap(12),
+                    const Gap(12),
                     Row(
                       children: [
-                        Expanded(
+                        const Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -65,8 +65,8 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         )
                       ],
                     ),
-                    Gap(16),
-                    Row(
+                    const Gap(16),
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Icon(Icons.bed),
@@ -77,23 +77,23 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         Text("3,310 sqft")
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       height: 42,
                     ),
-                    Text(
+                    const Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                     ),
-                    Gap(16),
+                    const Gap(16),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Facillites Available",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: Text("See all"))
+                        TextButton(onPressed: () {}, child: const Text("See all"))
                       ],
                     )
                   ],
