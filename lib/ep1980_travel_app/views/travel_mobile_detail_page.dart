@@ -38,8 +38,8 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         ),
                       ),
                       Container(
-                        height: 100,
-                        width: 120,
+                        height: 82,
+                        width: 140,
                         decoration: BoxDecoration(
                           color: Colors.grey,
                         ),
