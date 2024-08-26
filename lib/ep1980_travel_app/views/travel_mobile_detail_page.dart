@@ -43,7 +43,13 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Blossom Lodge"),
+                              Text(
+                                "Blossom Lodge",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
                               Text("Sunrise Blvd"),
                             ],
                           ),
