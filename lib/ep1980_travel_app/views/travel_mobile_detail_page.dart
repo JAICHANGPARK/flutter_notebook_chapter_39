@@ -14,7 +14,19 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
       body: SafeArea(
         child: Stack(
           children: [
-        
+            Positioned(
+                left: 16,
+                right: 16,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 320,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    )
+                  ],
+                ))
           ],
         ),
       ),
