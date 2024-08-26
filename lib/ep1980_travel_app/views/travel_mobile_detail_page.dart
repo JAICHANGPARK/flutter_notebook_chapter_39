@@ -11,10 +11,12 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+        
+          ],
+        ),
       ),
     );
   }
