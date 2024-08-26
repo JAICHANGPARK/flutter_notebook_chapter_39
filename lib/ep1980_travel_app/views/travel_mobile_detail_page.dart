@@ -49,6 +49,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                       )
                     ],
                   ),
+                  Gap(16),
                   Row(
                     children: [
                       Icon(Icons.bed),
