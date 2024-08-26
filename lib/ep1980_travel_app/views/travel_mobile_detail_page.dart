@@ -104,7 +104,12 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        TextButton(onPressed: () {}, child: const Text("See all"))
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "See all",
+                          ),
+                        )
                       ],
                     )
                   ],
