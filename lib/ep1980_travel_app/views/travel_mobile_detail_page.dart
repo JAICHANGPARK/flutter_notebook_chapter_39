@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelMobileDetailPage extends StatefulWidget {
   const TravelMobileDetailPage({super.key});
@@ -27,10 +28,12 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
+                  Gap(12),
                   Row(
                     children: [
                       Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Blossom Lodge"),
                             Text("Sunrise Blvd"),
