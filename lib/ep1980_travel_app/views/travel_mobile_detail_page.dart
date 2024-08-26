@@ -50,6 +50,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                                   fontSize: 24,
                                 ),
                               ),
+                              Gap(8),
                               Text("Sunrise Blvd"),
                             ],
                           ),
@@ -59,6 +60,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                           width: 140,
                           decoration: BoxDecoration(
                             color: Colors.grey,
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         )
                       ],
