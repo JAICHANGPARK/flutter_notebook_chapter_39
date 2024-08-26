@@ -28,7 +28,12 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(8),
-                        image: 
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2020/09/20/19/52/landscape-5588115_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Gap(12),
