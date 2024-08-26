@@ -29,9 +29,21 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                   ),
                   Row(
                     children: [
-                      Expanded(child: Column(children: [
-                        
-                      ],))
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Blossom Lodge"),
+                            Text("Sunrise Blvd"),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                        ),
+                      )
                     ],
                   )
                 ],
