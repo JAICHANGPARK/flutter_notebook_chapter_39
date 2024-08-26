@@ -48,7 +48,21 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         ),
                       )
                     ],
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Icon(Icons.bed),
+                      Text("4 bedrooms"),
+                      Icon(Icons.bathtub_outlined),
+                      Text("3 bathrooms"),
+                      Icon(Icons.square_outlined),
+                      Text("3,310 sqft")
+                    ],
+                  ),
+                  Divider(),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                  ),
                 ],
               ),
             ),
