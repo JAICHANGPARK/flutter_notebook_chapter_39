@@ -16,18 +16,27 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
           children: [
             Positioned(
               top: 16,
-                left: 16,
-                right: 16,
-                child: Column(
-                  children: [
-                    Container(
-                      height: 420,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                      ),
-                    )
-                  ],
-                ))
+              left: 16,
+              right: 16,
+              child: Column(
+                children: [
+                  Container(
+                    height: 420,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: Column(children: [
+                        
+                      ],))
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
