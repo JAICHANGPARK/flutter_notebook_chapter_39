@@ -1,2 +1,21 @@
 import 'package:flutter/material.dart';
 
+class TravelMobileDetailPage extends StatefulWidget {
+  const TravelMobileDetailPage({super.key});
+
+  @override
+  State<TravelMobileDetailPage> createState() => _TravelMobileDetailPageState();
+}
+
+class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+
+        ],
+      ),
+    );
+  }
+}
