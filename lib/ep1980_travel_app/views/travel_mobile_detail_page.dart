@@ -35,6 +35,20 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                           fit: BoxFit.cover,
                         ),
                       ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 16,
+                            right: 16,
+                            child: CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
+                              child: Text("4.4"),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     const Gap(12),
                     Row(
@@ -58,10 +72,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                         Container(
                           height: 82,
                           width: 140,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                          decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
                         )
                       ],
                     ),
