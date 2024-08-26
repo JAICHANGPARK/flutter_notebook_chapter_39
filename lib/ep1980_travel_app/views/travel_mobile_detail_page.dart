@@ -63,6 +63,13 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Facillites Available"),
+                      TextButton(onPressed: (){}, child: Text("See all"))
+                    ],
+                  )
                 ],
               ),
             ),
