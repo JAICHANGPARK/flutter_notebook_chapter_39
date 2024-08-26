@@ -15,12 +15,13 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
         child: Stack(
           children: [
             Positioned(
+              top: 16,
                 left: 16,
                 right: 16,
                 child: Column(
                   children: [
                     Container(
-                      height: 320,
+                      height: 420,
                       decoration: BoxDecoration(
                         color: Colors.grey,
                       ),
