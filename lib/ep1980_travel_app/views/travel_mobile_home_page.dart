@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_39/ep1980_travel_app/views/travel_mobile_list_page.dart';
 import 'package:gap/gap.dart';
 
+import 'travel_mobile_detail_page.dart';
+
 class TravelMobileHomePage extends StatefulWidget {
   const TravelMobileHomePage({Key? key}) : super(key: key);
 
@@ -181,80 +183,89 @@ class _TravelMobileHomePageState extends State<TravelMobileHomePage> {
                       ),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Container(
-                            height: 280,
-                            decoration: BoxDecoration(
-                              color: Colors.red,
-                              borderRadius: BorderRadius.circular(8),
-                              image: const DecorationImage(
-                                image: NetworkImage(
-                                  "https://cdn.pixabay.com/photo/2019/11/20/15/34/mirror-house-4640385_1280.jpg",
+                          return GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => TravelMobileDetailPage(),
                                 ),
-                                fit: BoxFit.cover,
+                              );
+                            },
+                            child: Container(
+                              height: 280,
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(8),
+                                image: const DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2019/11/20/15/34/mirror-house-4640385_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
-                            ),
-                            margin: const EdgeInsets.only(
-                              bottom: 16,
-                            ),
-                            padding: const EdgeInsets.all(12),
-                            child: Column(
-                              children: [
-                                const Align(
-                                  alignment: Alignment.centerRight,
-                                  child: CircleAvatar(
-                                    backgroundColor: Colors.white,
-                                    foregroundColor: Colors.black,
-                                    child: Text("4.3"),
+                              margin: const EdgeInsets.only(
+                                bottom: 16,
+                              ),
+                              padding: const EdgeInsets.all(12),
+                              child: Column(
+                                children: [
+                                  const Align(
+                                    alignment: Alignment.centerRight,
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.white,
+                                      foregroundColor: Colors.black,
+                                      child: Text("4.3"),
+                                    ),
                                   ),
-                                ),
-                                const Spacer(),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  padding: const EdgeInsets.all(12),
-                                  child: Row(
-                                    children: [
-                                      const Expanded(
-                                        child: Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Wood Manor",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 16,
+                                  const Spacer(),
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    padding: const EdgeInsets.all(12),
+                                    child: Row(
+                                      children: [
+                                        const Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Wood Manor",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 16,
+                                                ),
                                               ),
-                                            ),
-                                            Text("Grove Lane"),
-                                          ],
+                                              Text("Grove Lane"),
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                      Container(
-                                        decoration: ShapeDecoration(
-                                          shape: const StadiumBorder(),
-                                          color: Colors.grey[200],
-                                        ),
-                                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                                        child: const Text.rich(TextSpan(
-                                          children: [
-                                            TextSpan(
-                                              text: "\$340",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
+                                        Container(
+                                          decoration: ShapeDecoration(
+                                            shape: const StadiumBorder(),
+                                            color: Colors.grey[200],
+                                          ),
+                                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                                          child: const Text.rich(TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "\$340",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                ),
                                               ),
-                                            ),
-                                            TextSpan(
-                                              text: "/night",
-                                            )
-                                          ],
-                                        )),
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
+                                              TextSpan(
+                                                text: "/night",
+                                              )
+                                            ],
+                                          )),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
