@@ -51,6 +51,7 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                   ),
                   Gap(16),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Icon(Icons.bed),
                       Text("4 bedrooms"),
@@ -60,15 +61,23 @@ class _TravelMobileDetailPageState extends State<TravelMobileDetailPage> {
                       Text("3,310 sqft")
                     ],
                   ),
-                  Divider(),
+                  Divider(
+                    height: 42,
+                  ),
                   Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                   ),
+                  Gap(16),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Facillites Available"),
-                      TextButton(onPressed: (){}, child: Text("See all"))
+                      Text(
+                        "Facillites Available",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextButton(onPressed: () {}, child: Text("See all"))
                     ],
                   )
                 ],
