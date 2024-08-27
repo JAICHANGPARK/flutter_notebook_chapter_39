@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  
+  runApp(FreelanceMarketApp());
 }
 
 class FreelanceMarketApp extends StatelessWidget {
