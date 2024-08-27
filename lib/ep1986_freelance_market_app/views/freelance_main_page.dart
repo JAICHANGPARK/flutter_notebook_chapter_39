@@ -21,35 +21,41 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
               children: [
                 SizedBox(
                   height: 52,
-                  child: Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey[200]!,
-                          
-                        ),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            HugeIcons.strokeRoundedNotification01,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200]!,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              HugeIcons.strokeRoundedNotification01,
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Center(
-                          child: Text("People"),
-                        ),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            HugeIcons.strokeRoundedMenu01,
+                        Expanded(
+                          child: Center(
+                            child: Text("People"),
                           ),
                         ),
-                      ),
-                    ],
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200]!,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              HugeIcons.strokeRoundedMenu01,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],
