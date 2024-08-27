@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/freelance_main_page.dart';
+
 void main() {
   runApp(FreelanceMarketApp());
 }
@@ -9,6 +11,8 @@ class FreelanceMarketApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: FreelanceMainPage(),
+    );
   }
 }
