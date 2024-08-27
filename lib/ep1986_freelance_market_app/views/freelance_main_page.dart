@@ -20,7 +20,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                 child: Column(
               children: [
                 SizedBox(
-                  height: 64,
+                  height: 82,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
