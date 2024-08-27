@@ -12,10 +12,13 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          
-        ],
+      backgroundColor: Color.fromRGBO(245, 244, 240, 1),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
