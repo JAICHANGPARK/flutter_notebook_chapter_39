@@ -17,57 +17,74 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
         child: Stack(
           children: [
             Positioned.fill(
-                child: Column(
-              children: [
-                SizedBox(
-                  height: 82,
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200]!,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              HugeIcons.strokeRoundedNotification01,
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 82,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200]!,
+                              borderRadius: BorderRadius.circular(8),
                             ),
-                          ),
-                        ),
-                        Expanded(
-                          child: Center(
-                            child: Text(
-                              "People",
-                              style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                HugeIcons.strokeRoundedNotification01,
                               ),
                             ),
                           ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200]!,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              HugeIcons.strokeRoundedMenu01,
+                          Expanded(
+                            child: Center(
+                              child: Text(
+                                "People",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200]!,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                HugeIcons.strokeRoundedMenu01,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                )
-              ],
-            ))
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: TextField(),
+                        ),
+                      ),
+                      Container(
+                        width: 64,
+                        height: 64,
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
