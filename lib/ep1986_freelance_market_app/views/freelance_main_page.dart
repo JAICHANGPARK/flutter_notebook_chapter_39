@@ -20,7 +20,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                 child: Column(
               children: [
                 SizedBox(
-                  height: 52,
+                  height: 64,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
@@ -41,7 +41,13 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                         ),
                         Expanded(
                           child: Center(
-                            child: Text("People"),
+                            child: Text(
+                              "People",
+                              style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ),
                         ),
                         Container(
