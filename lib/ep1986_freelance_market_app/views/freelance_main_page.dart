@@ -24,6 +24,8 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
                           decoration: BoxDecoration(
