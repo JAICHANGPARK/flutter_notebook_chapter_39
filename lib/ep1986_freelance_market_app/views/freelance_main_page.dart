@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class FreelanceMainPage extends StatefulWidget {
   const FreelanceMainPage({super.key});
@@ -23,13 +24,31 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                   child: Row(
                     children: [
                       Container(
-                        decoration: BoxDecoration(),
+                        decoration: BoxDecoration(
+                          color: Colors.grey[200]!,
+                          
+                        ),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            HugeIcons.strokeRoundedNotification01,
+                          ),
+                        ),
                       ),
                       Expanded(
                         child: Center(
                           child: Text("People"),
                         ),
-                      )
+                      ),
+                      Container(
+                        decoration: BoxDecoration(),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            HugeIcons.strokeRoundedMenu01,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 )
