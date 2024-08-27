@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class FreelanceMainPage extends StatefulWidget {
@@ -81,10 +82,14 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                       )
                     ],
                   ),
+                  Gap(12),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Card(
+                          color: Colors.white,
+                          surfaceTintColor: Colors.white,
+                          elevation: 3,
                           child: Container(
                             height: 260,
 
