@@ -81,6 +81,18 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                       )
                     ],
                   ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Card(
+                          child: Container(
+                            height: 260,
+
+                          ),
+                        );
+                      },
+                    ),
+                  )
                 ],
               ),
             )
