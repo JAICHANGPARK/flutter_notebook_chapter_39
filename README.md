@@ -6,7 +6,7 @@
 - Ronas IT | UI/UX Team
 - https://dribbble.com/shots/24658132-Freelance-Marketplace-App
 
-<img src="https://cdn.dribbble.com/userupload/16156868/file/original-6280f51d0f1c8deace770d39685c0ed3.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/15994753/file/original-bf1dfc14e350a4d79d2a03e668345e0c.png?resize=1905x1429"/>
 
 ## EP1980-1985
 
