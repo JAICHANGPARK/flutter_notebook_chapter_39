@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_39
 
-## EP1980
+## EP1986
+
+- Freelance Marketplace App
+- Ronas IT | UI/UX Team
+- https://dribbble.com/shots/24658132-Freelance-Marketplace-App
+
+<img src="https://cdn.dribbble.com/userupload/16156868/file/original-6280f51d0f1c8deace770d39685c0ed3.png?resize=1905x1429"/>
+
+## EP1980-1985
 
 - Mobile Travel App
 - Debora for Odama
