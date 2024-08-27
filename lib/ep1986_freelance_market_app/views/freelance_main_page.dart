@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FreelanceMainPage extends StatefulWidget {
   const FreelanceMainPage({super.key});
 
@@ -16,7 +15,26 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
       body: SafeArea(
         child: Stack(
           children: [
-            
+            Positioned.fill(
+                child: Column(
+              children: [
+                SizedBox(
+                  height: 52,
+                  child: Row(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(),
+                      ),
+                      Expanded(
+                        child: Center(
+                          child: Text("People"),
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ))
           ],
         ),
       ),
