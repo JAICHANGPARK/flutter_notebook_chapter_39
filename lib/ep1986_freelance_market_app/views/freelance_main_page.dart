@@ -72,6 +72,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(6),
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 12),
                           child: TextField(
