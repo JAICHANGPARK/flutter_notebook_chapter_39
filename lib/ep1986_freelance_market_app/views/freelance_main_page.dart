@@ -81,6 +81,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                 HugeIcons.strokeRoundedSearch01,
                               ),
                               border: InputBorder.none,
+                              hintText: "Search..."
                             ),
                           ),
                         ),
