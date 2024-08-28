@@ -187,6 +187,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                       ),
                                       decoration: BoxDecoration(
                                         color: Colors.black,
+                                        borderRadius: BorderRadius.circular(25),
                                       ),
                                       child: Text.rich(
                                         TextSpan(
