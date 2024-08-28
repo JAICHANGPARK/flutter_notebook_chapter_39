@@ -73,7 +73,15 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                           ),
-                          child: TextField(),
+                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              icon: Icon(
+                                HugeIcons.strokeRoundedSearch01,
+                              ),
+                              border: InputBorder.none,
+                            ),
+                          ),
                         ),
                       ),
                       Gap(12),
