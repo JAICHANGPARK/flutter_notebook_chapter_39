@@ -138,11 +138,14 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           elevation: 3,
                           child: Container(
                             height: 260,
+                            padding: EdgeInsets.all(14),
                             child: Column(
                               children: [
                                 Row(
                                   children: [
-                                    CircleAvatar(),
+                                    CircleAvatar(
+                                      radius: 26,
+                                    ),
                                     Expanded(
                                       child: Column(
                                         children: [
