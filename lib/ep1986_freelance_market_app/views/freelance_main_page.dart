@@ -79,6 +79,22 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                       Container(
                         width: 64,
                         height: 64,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 4,
+                              right: 4,
+                              top: 4,
+                              bottom: 4,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.lightGreenAccent,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
@@ -92,7 +108,6 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           elevation: 3,
                           child: Container(
                             height: 260,
-
                           ),
                         );
                       },
