@@ -148,8 +148,15 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                     ),
                                     Expanded(
                                       child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
-                                          Text("Sandra Walker"),
+                                          Text(
+                                            "Sandra Walker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                            ),
+                                          ),
                                           Text(
                                             "Copywriter",
                                           ),
