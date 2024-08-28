@@ -137,9 +137,10 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           surfaceTintColor: Colors.white,
                           elevation: 3,
                           child: Container(
-                            height: 260,
+                            height: 240,
                             padding: EdgeInsets.all(14),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
@@ -177,6 +178,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   maxLines: 3,
                                 ),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
                                       decoration: BoxDecoration(
