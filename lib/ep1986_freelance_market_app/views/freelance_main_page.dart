@@ -77,12 +77,11 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           padding: EdgeInsets.symmetric(horizontal: 12),
                           child: TextField(
                             decoration: InputDecoration(
-                              icon: Icon(
-                                HugeIcons.strokeRoundedSearch01,
-                              ),
-                              border: InputBorder.none,
-                              hintText: "Search..."
-                            ),
+                                icon: Icon(
+                                  HugeIcons.strokeRoundedSearch01,
+                                ),
+                                border: InputBorder.none,
+                                hintText: "Search..."),
                           ),
                         ),
                       ),
@@ -139,6 +138,31 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           elevation: 3,
                           child: Container(
                             height: 260,
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    CircleAvatar(),
+                                    Expanded(
+                                      child: Column(
+                                        children: [
+                                          Text("Sandra Walker"),
+                                          Text(
+                                            "Copywriter",
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    OutlinedButton(
+                                      onPressed: () {},
+                                      child: Text(
+                                        "Online",
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           ),
                         );
                       },
