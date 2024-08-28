@@ -182,7 +182,22 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.black,
                                       ),
-                                      child: Text("\$12"),
+                                      child: Text.rich(
+                                        TextSpan(
+                                          children: [
+                                            TextSpan(
+                                              text: "\$12",
+                                            ),
+                                            TextSpan(
+                                              text: " /hour",
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.lightGreenAccent,
+                                      child: Icon(Icons.star_border),
                                     )
                                   ],
                                 )
