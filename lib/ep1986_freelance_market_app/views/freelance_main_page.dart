@@ -76,9 +76,10 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           child: TextField(),
                         ),
                       ),
+                      Gap(12),
                       Container(
-                        width: 64,
-                        height: 64,
+                        width: 58,
+                        height: 58,
                         child: Stack(
                           children: [
                             Positioned(
@@ -91,6 +92,25 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   color: Colors.lightGreenAccent,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
+                              ),
+                            ),
+                            
+                            Positioned(
+                              right: 0,
+                              top: 0,
+                              child: Container(
+                                height: 14,
+                                width: 14,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color:  Color.fromRGBO(245, 244, 240, 1),
+                                ),
+                                padding: EdgeInsets.all(3),
+                                child: CircleAvatar(
+                                  radius: 2,
+                                  backgroundColor: Colors.black,
+                                ),
+
                               ),
                             )
                           ],
