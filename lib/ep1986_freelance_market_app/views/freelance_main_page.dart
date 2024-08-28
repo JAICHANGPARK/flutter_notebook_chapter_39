@@ -92,9 +92,11 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   color: Colors.lightGreenAccent,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
+                                child: Icon(
+                                  HugeIcons.strokeRoundedFilter,
+                                ),
                               ),
                             ),
-                            
                             Positioned(
                               right: 0,
                               top: 0,
@@ -103,14 +105,13 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                 width: 14,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color:  Color.fromRGBO(245, 244, 240, 1),
+                                  color: Color.fromRGBO(245, 244, 240, 1),
                                 ),
                                 padding: EdgeInsets.all(3),
                                 child: CircleAvatar(
                                   radius: 2,
                                   backgroundColor: Colors.black,
                                 ),
-
                               ),
                             )
                           ],
