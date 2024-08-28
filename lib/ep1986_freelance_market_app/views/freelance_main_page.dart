@@ -192,13 +192,20 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                         TextSpan(
                                           children: [
                                             TextSpan(
-                                                text: "\$12",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  color: Colors.white,
-                                                ),),
+                                              text: "\$12",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                fontSize: 20,
+                                              ),
+                                            ),
                                             TextSpan(
                                               text: " /hour",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 14,
+                                              ),
                                             )
                                           ],
                                         ),
