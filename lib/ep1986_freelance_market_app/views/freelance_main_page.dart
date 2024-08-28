@@ -146,6 +146,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                     CircleAvatar(
                                       radius: 26,
                                     ),
+                                    Gap(12),
                                     Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
