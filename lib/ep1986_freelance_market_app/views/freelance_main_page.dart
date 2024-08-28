@@ -181,6 +181,10 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 16,
+                                        vertical: 6,
+                                      ),
                                       decoration: BoxDecoration(
                                         color: Colors.black,
                                       ),
@@ -188,8 +192,11 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                         TextSpan(
                                           children: [
                                             TextSpan(
-                                              text: "\$12",
-                                            ),
+                                                text: "\$12",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.white,
+                                                ),),
                                             TextSpan(
                                               text: " /hour",
                                             )
