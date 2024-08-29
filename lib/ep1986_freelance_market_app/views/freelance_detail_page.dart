@@ -31,22 +31,41 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                             color: Colors.grey[100],
                           ),
                           child: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.arrow_back_ios_new,
                             ),
                             onPressed: () {},
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.lightGreenAccent,
                           ),
                           child: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.star_border,
                             ),
                             onPressed: () {},
                           ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Positioned(
+                    top: 24,
+                    left: 16,
+                    right: 16,
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          radius: 64,
+                        ),
+                        Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 4,
+                            ),
+                          ],
                         )
                       ],
                     ),
