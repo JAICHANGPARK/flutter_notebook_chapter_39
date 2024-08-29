@@ -17,7 +17,6 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
           children: [
             Container(
               height: 260,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
@@ -29,7 +28,8 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                       children: [
                         Container(
                           decoration: BoxDecoration(
-                            color: Colors.grey[100],
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
                             icon: const Icon(
@@ -40,7 +40,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                         ),
                         Container(
                           decoration: const BoxDecoration(
-                            color: Colors.lightGreenAccent,
+                            color: Colors.lightGreenAccent, borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
                             icon: const Icon(
