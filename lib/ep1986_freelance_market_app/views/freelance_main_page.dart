@@ -136,89 +136,98 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           color: Colors.white,
                           surfaceTintColor: Colors.white,
                           elevation: 3,
-                          child: Container(
-                            height: 240,
-                            padding: const EdgeInsets.all(14),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(
-                                  children: [
-                                    const CircleAvatar(
-                                      radius: 26,
-                                    ),
-                                    const Gap(12),
-                                    const Expanded(
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            "Sandra Walker",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              fontSize: 20,
-                                            ),
-                                          ),
-                                          Text(
-                                            "Copywriter",
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    OutlinedButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        "Online",
-                                      ),
-                                    )
-                                  ],
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => FreelanceDetailPage(),
                                 ),
-                                const Text(
-                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                                  maxLines: 3,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.symmetric(
-                                        horizontal: 16,
-                                        vertical: 6,
+                              );
+                            },
+                            child: Container(
+                              height: 240,
+                              padding: const EdgeInsets.all(14),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: [
+                                      const CircleAvatar(
+                                        radius: 26,
                                       ),
-                                      decoration: BoxDecoration(
-                                        color: Colors.black,
-                                        borderRadius: BorderRadius.circular(25),
-                                      ),
-                                      child: const Text.rich(
-                                        TextSpan(
+                                      const Gap(12),
+                                      const Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
-                                            TextSpan(
-                                              text: "\$12",
+                                            Text(
+                                              "Sandra Walker",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                color: Colors.white,
                                                 fontSize: 20,
                                               ),
                                             ),
-                                            TextSpan(
-                                              text: " /hour",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.grey,
-                                                fontSize: 14,
-                                              ),
-                                            )
+                                            Text(
+                                              "Copywriter",
+                                            ),
                                           ],
                                         ),
                                       ),
-                                    ),
-                                    const CircleAvatar(
-                                      backgroundColor: Colors.lightGreenAccent,
-                                      child: Icon(Icons.star_border),
-                                    )
-                                  ],
-                                )
-                              ],
+                                      OutlinedButton(
+                                        onPressed: () {},
+                                        child: const Text(
+                                          "Online",
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  const Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                                    maxLines: 3,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Container(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 16,
+                                          vertical: 6,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                          borderRadius: BorderRadius.circular(25),
+                                        ),
+                                        child: const Text.rich(
+                                          TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "\$12",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                ),
+                                              ),
+                                              TextSpan(
+                                                text: " /hour",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.grey,
+                                                  fontSize: 14,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      const CircleAvatar(
+                                        backgroundColor: Colors.lightGreenAccent,
+                                        child: Icon(Icons.star_border),
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         );
