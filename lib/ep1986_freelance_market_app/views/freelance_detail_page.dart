@@ -20,7 +20,11 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               child: Stack(
                 children: [
                   Positioned(
+                    top: 16,
+                    left: 16,
+                    right: 16,
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
                           decoration: BoxDecoration(
