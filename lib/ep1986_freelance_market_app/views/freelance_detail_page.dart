@@ -32,6 +32,17 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                             ),
                             onPressed: () {},
                           ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.star_border,
+                            ),
+                            onPressed: () {},
+                          ),
                         )
                       ],
                     ),
