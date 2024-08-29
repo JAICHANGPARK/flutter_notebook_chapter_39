@@ -55,18 +55,27 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     top: 24,
                     left: 16,
                     right: 16,
+                    bottom: 0,
                     child: Column(
                       children: [
                         CircleAvatar(
                           radius: 64,
                         ),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(
                               radius: 4,
                             ),
+                            Text(
+                              "Sandra Walker",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
                           ],
-                        )
+                        ),
+                        Text("Copywriter")
                       ],
                     ),
                   )
