@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FreelanceDetailPage extends StatefulWidget {
   const FreelanceDetailPage({super.key});
 
@@ -14,14 +13,23 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-        
           children: [
             Container(
               height: 260,
               color: Colors.blue,
-              child: Column(
+              child: Stack(
                 children: [
-                  
+                  Positioned(
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
