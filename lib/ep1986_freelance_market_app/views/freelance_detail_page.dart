@@ -26,6 +26,12 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey[100],
                           ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_back_ios_new,
+                            ),
+                            onPressed: () {},
+                          ),
                         )
                       ],
                     ),
