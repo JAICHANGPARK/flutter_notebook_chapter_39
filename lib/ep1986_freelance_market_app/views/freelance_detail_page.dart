@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FreelanceDetailPage extends StatefulWidget {
   const FreelanceDetailPage({super.key});
@@ -61,20 +62,24 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                         CircleAvatar(
                           radius: 64,
                         ),
+                        Gap(16),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(
                               radius: 4,
                             ),
+                            Gap(6),
                             Text(
                               "Sandra Walker",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 24,
                               ),
                             )
                           ],
                         ),
+                        Gap(6),
                         Text("Copywriter")
                       ],
                     ),
