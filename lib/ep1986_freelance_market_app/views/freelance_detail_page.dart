@@ -12,10 +12,21 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+        
+          children: [
+            Container(
+              height: 260,
+              color: Colors.blue,
+              child: Column(
+                children: [
+                  
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
