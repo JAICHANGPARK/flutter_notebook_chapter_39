@@ -13,7 +13,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(245, 244, 240, 1),
+      backgroundColor: const Color.fromRGBO(245, 244, 240, 1),
       body: SafeArea(
         child: Stack(
           children: [
@@ -35,12 +35,12 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               HugeIcons.strokeRoundedNotification01,
                             ),
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                           child: Center(
                             child: Text(
                               "People",
@@ -58,7 +58,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               HugeIcons.strokeRoundedMenu01,
                             ),
                           ),
@@ -74,8 +74,8 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(6),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12),
-                          child: TextField(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          child: const TextField(
                             decoration: InputDecoration(
                                 icon: Icon(
                                   HugeIcons.strokeRoundedSearch01,
@@ -85,7 +85,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           ),
                         ),
                       ),
-                      Gap(12),
+                      const Gap(12),
                       Container(
                         width: 58,
                         height: 58,
@@ -101,7 +101,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   color: Colors.lightGreenAccent,
                                   borderRadius: BorderRadius.circular(12),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   HugeIcons.strokeRoundedFilter,
                                 ),
                               ),
@@ -112,12 +112,12 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                               child: Container(
                                 height: 14,
                                 width: 14,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Color.fromRGBO(245, 244, 240, 1),
                                 ),
-                                padding: EdgeInsets.all(3),
-                                child: CircleAvatar(
+                                padding: const EdgeInsets.all(3),
+                                child: const CircleAvatar(
                                   radius: 2,
                                   backgroundColor: Colors.black,
                                 ),
@@ -128,7 +128,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                       )
                     ],
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Expanded(
                     child: ListView.builder(
                       itemBuilder: (context, index) {
@@ -138,17 +138,17 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                           elevation: 3,
                           child: Container(
                             height: 240,
-                            padding: EdgeInsets.all(14),
+                            padding: const EdgeInsets.all(14),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   children: [
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       radius: 26,
                                     ),
-                                    Gap(12),
-                                    Expanded(
+                                    const Gap(12),
+                                    const Expanded(
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
@@ -167,13 +167,13 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                     ),
                                     OutlinedButton(
                                       onPressed: () {},
-                                      child: Text(
+                                      child: const Text(
                                         "Online",
                                       ),
                                     )
                                   ],
                                 ),
-                                Text(
+                                const Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                                   maxLines: 3,
                                 ),
@@ -181,7 +181,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                         horizontal: 16,
                                         vertical: 6,
                                       ),
@@ -189,7 +189,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                         color: Colors.black,
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text.rich(
+                                      child: const Text.rich(
                                         TextSpan(
                                           children: [
                                             TextSpan(
@@ -212,7 +212,7 @@ class _FreelanceMainPageState extends State<FreelanceMainPage> {
                                         ),
                                       ),
                                     ),
-                                    CircleAvatar(
+                                    const CircleAvatar(
                                       backgroundColor: Colors.lightGreenAccent,
                                       child: Icon(Icons.star_border),
                                     )
