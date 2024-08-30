@@ -97,7 +97,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                       shape: StadiumBorder(),
                       color: Colors.grey[200]!,
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     child: Row(
                       children: [
                         Icon(
