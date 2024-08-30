@@ -159,6 +159,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               Row(
                 children: [
                   Text("Read more"),
+                  Gap(8),
                   Icon(Icons.arrow_forward),
                 ],
               ),
@@ -166,6 +167,29 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               Container(
                 height: 72,
                 color: Colors.white,
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.lightGreenAccent,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        child: Center(
+                          child: Text("Terms"),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                        child: Container(
+                      child: Center(
+                        child: Text(
+                          "Reviews",
+                        ),
+                      ),
+                    ))
+                  ],
+                ),
               ),
               Gap(16),
               Expanded(
