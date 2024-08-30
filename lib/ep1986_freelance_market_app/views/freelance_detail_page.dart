@@ -92,7 +92,6 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               ),
               Container(
                 height: 42,
-                padding: EdgeInsets.only(left: 16, right: 16),
                 child: Row(
                   children: [
                     Container(
