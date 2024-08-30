@@ -13,164 +13,167 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              height: 260,
-              child: Stack(
-                children: [
-                  Positioned(
-                    top: 16,
-                    left: 16,
-                    right: 16,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: IconButton(
-                            icon: const Icon(
-                              Icons.arrow_back_ios_new,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Container(
+                height: 260,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(8),
                             ),
-                            onPressed: () {},
-                          ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: IconButton(
-                            icon: const Icon(
-                              Icons.star_border,
-                            ),
-                            onPressed: () {},
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  Positioned(
-                    top: 24,
-                    left: 16,
-                    right: 16,
-                    bottom: 0,
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 64,
-                        ),
-                        Gap(16),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CircleAvatar(
-                              radius: 4,
-                            ),
-                            Gap(6),
-                            Text(
-                              "Sandra Walker",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24,
+                            child: IconButton(
+                              icon: const Icon(
+                                Icons.arrow_back_ios_new,
                               ),
-                            )
-                          ],
-                        ),
-                        Gap(6),
-                        Text("Copywriter")
-                      ],
+                              onPressed: () {},
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.lightGreenAccent,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: IconButton(
+                              icon: const Icon(
+                                Icons.star_border,
+                              ),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  )
-                ],
+                    Positioned(
+                      top: 24,
+                      left: 16,
+                      right: 16,
+                      bottom: 0,
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 64,
+                          ),
+                          Gap(16),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                radius: 4,
+                              ),
+                              Gap(6),
+                              Text(
+                                "Sandra Walker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              )
+                            ],
+                          ),
+                          Gap(6),
+                          Text("Copywriter")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
-            Container(
-              height: 42,
-              padding: EdgeInsets.only(left: 16, right: 16),
-              child: Row(
+              Container(
+                height: 42,
+                padding: EdgeInsets.only(left: 16, right: 16),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.grey[200]!,
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.star_outline,
+                            size: 16,
+                          ),
+                          Gap(2),
+                          Text("4.3"),
+                        ],
+                      ),
+                    ),
+                    Gap(8),
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.grey[200]!,
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.thumb_up_alt_outlined,
+                            size: 16,
+                          ),
+                          Gap(4),
+                          Text("part-time"),
+                        ],
+                      ),
+                    ),
+                    Gap(8),
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.grey[200]!,
+                      ),
+                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.inventory_2_outlined,
+                            size: 16,
+                          ),
+                          Gap(4),
+                          Text("4+years"),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Gap(16),
+              const Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                maxLines: 3,
+              ),
+              Gap(16),
+              Row(
                 children: [
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.grey[200]!,
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.star_outline,
-                          size: 16,
-                        ),
-                        Gap(2),
-                        Text("4.3"),
-                      ],
-                    ),
-                  ),
-                  Gap(8),
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.grey[200]!,
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.thumb_up_alt_outlined,
-                          size: 16,
-                        ),
-                        Gap(4),
-                        Text("part-time"),
-                      ],
-                    ),
-                  ),
-                  Gap(8),
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.grey[200]!,
-                    ),
-                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.inventory_2_outlined,
-                          size: 16,
-                        ),
-                        Gap(4),
-                        Text("4+years"),
-                      ],
-                    ),
-                  )
+                  Text("Read more"),
+                  Icon(Icons.arrow_forward),
                 ],
               ),
-            ),
-            Gap(16),
-            const Text(
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-              maxLines: 3,
-            ),
-            Gap(16),
-            Row(
-              children: [
-                Text("Read more"),
-                Icon(Icons.arrow_forward),
-              ],
-            ),
-            Gap(16),
-            Container(
-              height: 72,
-              color: Colors.white,
-            ),
-            Gap(16),
-            Expanded(
-              child: Placeholder(),
-            ),
-          ],
+              Gap(16),
+              Container(
+                height: 72,
+                color: Colors.white,
+              ),
+              Gap(16),
+              Expanded(
+                child: Placeholder(),
+              ),
+            ],
+          ),
         ),
       ),
     );
