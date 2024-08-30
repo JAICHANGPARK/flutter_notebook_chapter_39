@@ -159,9 +159,17 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               Gap(16),
               Row(
                 children: [
-                  Text("Read more"),
+                  Text(
+                    "Read more",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Gap(8),
-                  Icon(Icons.arrow_forward),
+                  Icon(
+                    Icons.arrow_forward,
+                    size: 16,
+                  ),
                 ],
               ),
               Gap(16),
@@ -203,8 +211,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                 ),
               ),
               Gap(16),
-              Expanded(
-                  child: ListView.builder(
+              Expanded(child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Card(
                     color: Colors.white,
