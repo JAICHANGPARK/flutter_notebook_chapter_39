@@ -128,7 +128,10 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     child: Row(
                       children: [
-                        Icon(Icons.inventory_2_outlined),
+                        Icon(
+                          Icons.inventory_2_outlined,
+                          size: 16,
+                        ),
                         Gap(2),
                         Text("4+years"),
                       ],
