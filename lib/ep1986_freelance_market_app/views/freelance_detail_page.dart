@@ -165,7 +165,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               ),
               Gap(16),
               Container(
-                height: 52,
+                height: 56,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(42),
@@ -180,7 +180,13 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                           borderRadius: BorderRadius.circular(32),
                         ),
                         child: Center(
-                          child: Text("Terms"),
+                          child: Text(
+                            "Terms",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
                         ),
                       ),
                     ),
