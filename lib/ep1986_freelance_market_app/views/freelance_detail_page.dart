@@ -90,12 +90,22 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
             ),
             Container(
               height: 42,
-              child: Placeholder(),
-            ), Gap(16),
+              child: Row(
+                children: [
+                  ActionChip(
+                    backgroundColor: Colors.grey,
+                    avatar: Icon(Icons.star_outline),
+                    label: Text("4.3"),
+                  )
+                ],
+              ),
+            ),
+            Gap(16),
             const Text(
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
               maxLines: 3,
-            ), Gap(16),
+            ),
+            Gap(16),
             Row(
               children: [
                 Text("Read more"),
@@ -106,7 +116,8 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
             Container(
               height: 72,
               color: Colors.white,
-            ), Gap(16),
+            ),
+            Gap(16),
             Expanded(
               child: Placeholder(),
             ),
