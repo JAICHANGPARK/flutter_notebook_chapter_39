@@ -12,6 +12,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(245, 244, 240, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
