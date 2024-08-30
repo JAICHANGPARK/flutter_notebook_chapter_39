@@ -165,8 +165,12 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               ),
               Gap(16),
               Container(
-                height: 72,
-                color: Colors.white,
+                height: 52,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(42),
+                ),
+                padding: EdgeInsets.all(8),
                 child: Row(
                   children: [
                     Expanded(
