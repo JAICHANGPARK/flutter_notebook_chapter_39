@@ -100,12 +100,16 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     child: Row(
                       children: [
-                        Icon(Icons.star_outline),
+                        Icon(
+                          Icons.star_outline,
+                          size: 16,
+                        ),
                         Gap(2),
                         Text("4.3"),
                       ],
                     ),
                   ),
+                  Gap(8),
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
@@ -114,13 +118,16 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     child: Row(
                       children: [
-                        Icon(Icons.thumb_up_alt_outlined,
-                          size: 16,),
+                        Icon(
+                          Icons.thumb_up_alt_outlined,
+                          size: 16,
+                        ),
                         Gap(4),
                         Text("part-time"),
                       ],
                     ),
                   ),
+                  Gap(8),
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(),
