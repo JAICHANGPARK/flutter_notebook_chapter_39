@@ -203,8 +203,24 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
               ),
               Gap(16),
               Expanded(
-                child: Placeholder(),
-              ),
+                  child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Card(
+                    color: Colors.white,
+                    surfaceTintColor: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 24),
+                      child: Row(
+                        children: [
+                          Icon(Icons.chat_outlined),
+                          Gap(12),
+                          Text("The freelancer request\nxxxxx xxxxx xxxxx xxxx.")
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              )),
             ],
           ),
         ),
