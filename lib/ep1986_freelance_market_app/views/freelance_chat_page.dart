@@ -26,7 +26,7 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
                     ),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.more_horiz),
+                      icon: Icon(Icons.arrow_back_ios_new),
                     ),
                   ),
                   Gap(12),
