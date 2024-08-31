@@ -44,10 +44,15 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
               Expanded(child: Placeholder()),
               Row(
                 children: [
-                  Expanded(child: Container(
-                      decoration: BoxDecoration(),
-                      child: TextField())),
-                  Gap(8)
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: TextField(),
+                    ),
+                  ),
+                  Gap(8),
                   CircleAvatar(
                     backgroundColor: Colors.lightGreenAccent,
                     child: Icon(Icons.send_outlined),
