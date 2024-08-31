@@ -19,9 +19,23 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
             children: [
               Row(
                 children: [
-                  CircleAvatar(),
-                  CircleAvatar(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]!,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.more_horiz),
+                    ),
+                  ),
+                  Gap(12),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
+                  Gap(8),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Sandra Walker"),
                       Container(
@@ -33,7 +47,10 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
                   ),
                   Spacer(),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]!,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.more_horiz),
