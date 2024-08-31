@@ -69,10 +69,15 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
                     children: [
                       SizedBox(width: 64,),
                       Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreenAccent,
-                          ),
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.lightGreenAccent,
+                              ),
+                            ),
+                            Text("11:35 am")
+                          ],
                         ),
                       ),
                       
