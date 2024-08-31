@@ -235,6 +235,12 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                   ],
                 ),
               ),
+              Positioned(
+                bottom: 32,
+                left: 32,
+                right: 32,
+                child: Container(),
+              )
             ],
           ),
         ),
