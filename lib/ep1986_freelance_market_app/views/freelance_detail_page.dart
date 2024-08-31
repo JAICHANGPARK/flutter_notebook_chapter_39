@@ -236,8 +236,8 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                 ),
               ),
               Positioned(
-                bottom: 32,
-                left: 32,
+                bottom: 16,
+                left: 16,
                 right: 32,
                 child: Container(
                   height: 72,
@@ -245,6 +245,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     shape: StadiumBorder(),
                     color: Colors.black,
                   ),
+                  padding: EdgeInsets.all(8),
                   child: Row(
                     children: [
                       Expanded(
