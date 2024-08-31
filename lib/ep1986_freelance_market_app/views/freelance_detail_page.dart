@@ -265,20 +265,29 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                       )),
                       Gap(8),
                       Expanded(
-                          child: Container(
-                            decoration: ShapeDecoration(
-                              shape: StadiumBorder(),
-                              color: Colors.white,
+                          child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => FreelanceChatPage(),
                             ),
-                            child: Center(
-                              child: Text(
-                                "Contact",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                          );
+                        },
+                        child: Container(
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Contact",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          )),
+                          ),
+                        ),
+                      )),
                     ],
                   ),
                 ),
