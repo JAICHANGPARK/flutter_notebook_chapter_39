@@ -240,7 +240,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                 left: 16,
                 right: 32,
                 child: Container(
-                  height: 72,
+                  height: 62,
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
                     color: Colors.black,
