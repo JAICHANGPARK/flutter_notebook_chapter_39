@@ -255,12 +255,29 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                           color: Colors.lightGreenAccent,
                         ),
                         child: Center(
-                          child: Text("Hire"),
+                          child: Text(
+                            "Hire",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       )),
                       Expanded(
-                        child: Placeholder(),
-                      ),
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.white,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Contact",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          )),
                     ],
                   ),
                 ),
