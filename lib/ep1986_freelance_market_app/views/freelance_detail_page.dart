@@ -263,6 +263,7 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                           ),
                         ),
                       )),
+                      Gap(8),
                       Expanded(
                           child: Container(
                             decoration: ShapeDecoration(
