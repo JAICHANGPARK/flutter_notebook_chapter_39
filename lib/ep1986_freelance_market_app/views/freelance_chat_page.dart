@@ -58,7 +58,29 @@ class _FreelanceChatPageState extends State<FreelanceChatPage> {
                   )
                 ],
               ),
-              Expanded(child: Placeholder()),
+              Gap(16),
+              Expanded(
+                  child: Column(
+                children: [
+                  Container(
+                    child: Text("Thu, 27 Jun"),
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(width: 64,),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.lightGreenAccent,
+                          ),
+                        ),
+                      ),
+                      
+                    ],
+                  )
+                ],
+              )),
+              Gap(16),
               Row(
                 children: [
                   Expanded(
