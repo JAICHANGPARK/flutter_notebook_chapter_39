@@ -249,9 +249,17 @@ class _FreelanceDetailPageState extends State<FreelanceDetailPage> {
                     children: [
                       Expanded(
                           child: Container(
-                        decoration: ShapeDecoration(shape: StadiumBorder()),
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.lightGreenAccent,
+                        ),
+                        child: Center(
+                          child: Text("Hire"),
+                        ),
                       )),
-                      Expanded(child: Placeholder()),
+                      Expanded(
+                        child: Placeholder(),
+                      ),
                     ],
                   ),
                 ),
