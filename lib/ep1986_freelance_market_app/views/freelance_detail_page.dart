@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1986_freelance_market_app/views/freelance_chat_page.dart';
 import 'package:gap/gap.dart';
 
 class FreelanceDetailPage extends StatefulWidget {
