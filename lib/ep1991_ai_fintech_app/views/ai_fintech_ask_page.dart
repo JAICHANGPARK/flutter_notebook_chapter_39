@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class AiFintechAskPage extends StatefulWidget {
   const AiFintechAskPage({super.key});
@@ -29,9 +30,18 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                       ),
                     ),
                   ),
-                  Text("Fintech AI"),
+                  Gap(12),
+                  Text(
+                    "Fintech AI",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Spacer(),
                   CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
