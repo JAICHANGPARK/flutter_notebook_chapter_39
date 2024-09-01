@@ -76,6 +76,23 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               Expanded(
                 child: Placeholder(),
               ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      child: TextField(),
+                    ),
+                  ),
+                  Container(
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.arrow_upward,
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
