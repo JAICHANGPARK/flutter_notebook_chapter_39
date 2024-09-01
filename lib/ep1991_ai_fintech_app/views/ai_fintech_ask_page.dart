@@ -62,6 +62,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Sure, here you go"),
                   IconButton(
@@ -71,7 +72,10 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                     ),
                   ),
                 ],
-              )
+              ),
+              Expanded(
+                child: Placeholder(),
+              ),
             ],
           ),
         ),
