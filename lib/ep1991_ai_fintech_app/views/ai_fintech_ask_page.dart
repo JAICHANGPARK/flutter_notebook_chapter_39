@@ -21,6 +21,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               Row(
                 children: [
                   CircleAvatar(
+                    radius: 24,
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.black,
                     child: IconButton(
@@ -40,6 +41,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   ),
                   Spacer(),
                   CircleAvatar(
+                    radius: 24,
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.black,
                     child: IconButton(
