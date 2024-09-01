@@ -20,10 +20,22 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               Row(
                 children: [
                   CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
                         Icons.arrow_back,
+                      ),
+                    ),
+                  ),
+                  Text("Fintech AI"),
+                  Spacer(),
+                  CircleAvatar(
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.menu,
                       ),
                     ),
                   ),
