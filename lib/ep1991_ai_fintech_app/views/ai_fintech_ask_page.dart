@@ -12,6 +12,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -35,7 +36,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   Text(
                     "Fintech AI",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -49,6 +50,24 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                       icon: Icon(
                         Icons.menu,
                       ),
+                    ),
+                  ),
+                ],
+              ),
+              Gap(12),
+              Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+              ),
+              Row(
+                children: [
+                  Text("Sure, here you go"),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.keyboard_arrow_down_sharp,
                     ),
                   ),
                 ],
