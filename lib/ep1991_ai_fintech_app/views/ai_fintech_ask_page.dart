@@ -16,7 +16,20 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [],
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.arrow_back,
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),
