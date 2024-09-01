@@ -2,11 +2,11 @@
 
 ## EP1991
 
-- Freelance Marketplace App
-- Ronas IT | UI/UX Team
-- https://dribbble.com/shots/24658132-Freelance-Marketplace-App
+- Finster: Result Page AI Feature Mobile App Fintech Banking 💳
+- Keitoto
+- https://dribbble.com/shots/24711934-Finster-Result-Page-AI-Feature-Mobile-App-Fintech-Banking
 
-<img src="https://cdn.dribbble.com/userupload/15994753/file/original-bf1dfc14e350a4d79d2a03e668345e0c.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/16151559/file/original-01a16daedc824a9bfe943ed57bfff147.png?resize=1905x1429"/>
 
 ## EP1986-1990
 
