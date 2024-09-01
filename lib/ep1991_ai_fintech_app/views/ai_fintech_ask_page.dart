@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AiFintechAskPage extends StatefulWidget {
   const AiFintechAskPage({super.key});
 
@@ -11,6 +10,13 @@ class AiFintechAskPage extends StatefulWidget {
 class _AiFintechAskPageState extends State<AiFintechAskPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [],
+        ),
+      ),
+    );
   }
 }
