@@ -109,9 +109,11 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   ),
                 ],
               ),
+              Gap(8),
               Expanded(
                 child: Placeholder(),
               ),
+              Gap(8),
               Row(
                 children: [
                   Expanded(
