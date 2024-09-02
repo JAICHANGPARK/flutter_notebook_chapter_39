@@ -113,12 +113,16 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               Expanded(
                 child: Stack(
                   children: [
-                    Positioned(
-                        child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.white,
+                          
+                        ),
+                        child: Center(),
                       ),
-                    ))
+                    )
                   ],
                 ),
               ),
