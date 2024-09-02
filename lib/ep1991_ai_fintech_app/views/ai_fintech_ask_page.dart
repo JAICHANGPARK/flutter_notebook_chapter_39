@@ -116,6 +116,10 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                 children: [
                   Expanded(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: TextField(),
                     ),
                   ),
