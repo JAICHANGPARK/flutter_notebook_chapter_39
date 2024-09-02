@@ -64,15 +64,21 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   children: [
                     Row(
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+
+                        ),
+                        G
                         Text("You"),
                         Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: Colors.grey[100]!,
-                              )),
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey[100]!,
+                            ),
+                          ),
+                          padding: EdgeInsets.all(6),
+                          child: Icon(Icons.edit_outlined),
                         )
                       ],
                     )
