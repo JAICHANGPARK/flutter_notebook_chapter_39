@@ -120,7 +120,13 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: TextField(),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.mic),
+                          border: InputBorder.none,
+                          hintText: "Ask something..."
+                        ),
+                      ),
                     ),
                   ),
                   Container(
