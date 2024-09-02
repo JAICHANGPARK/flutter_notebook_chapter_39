@@ -56,7 +56,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               ),
               Gap(12),
               Container(
-                height: 100,
+                
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
@@ -82,7 +82,8 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                           child: Icon(Icons.edit_outlined),
                         )
                       ],
-                    )
+                    ),
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",)
                   ],
                 ),
               ),
