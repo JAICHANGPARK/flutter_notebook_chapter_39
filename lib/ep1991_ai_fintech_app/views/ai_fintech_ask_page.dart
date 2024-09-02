@@ -120,7 +120,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                           BoxShadow(
                             color: Colors.grey[300]!,
                             blurRadius: 3,
-                            spreadRadius: 2,
+                            spreadRadius: 2,offset: Offset(0, 2),
                           )
                         ]),
                         child: Center(),
@@ -134,7 +134,22 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                           BoxShadow(
                             color: Colors.grey[300]!,
                             blurRadius: 3,
+                            spreadRadius: 2,offset: Offset(0, 2),
+                          )
+                        ]),
+                        child: Center(),
+                      ),
+                    ),
+                    Positioned.fill(
+                      bottom: 24,
+                      child: Container(
+                        decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white, boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[300]!,
+                            blurRadius: 3,
                             spreadRadius: 2,
+                            offset: Offset(0, 2),
                           )
                         ]),
                         child: Center(),
