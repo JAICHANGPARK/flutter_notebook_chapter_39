@@ -158,7 +158,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   ],
                 ),
               ),
-              Gap(8),
+              Gap(12),
               Row(
                 children: [
                   Expanded(
