@@ -60,6 +60,15 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+                  ],
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
