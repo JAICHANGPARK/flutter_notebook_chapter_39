@@ -94,7 +94,12 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Sure, here you go"),
+                  Text(
+                    "Sure, here you go",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(
