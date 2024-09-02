@@ -91,6 +91,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   ],
                 ),
               ),
+              Gap(16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
