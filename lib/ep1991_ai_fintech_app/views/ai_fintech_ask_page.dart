@@ -60,14 +60,15 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
                     Row(
                       children: [
                         CircleAvatar(
-
+                          radius: 18,
                         ),
-                        G
+                        Gap(12),
                         Text("You"),
                         Spacer(),
                         Container(
