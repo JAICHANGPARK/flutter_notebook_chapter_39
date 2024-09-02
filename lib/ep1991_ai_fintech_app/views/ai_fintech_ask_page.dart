@@ -116,20 +116,22 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                 children: [
                   Expanded(
                     child: Container(
+                      padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: TextField(
                         decoration: InputDecoration(
-                          icon: Icon(Icons.mic),
-                          border: InputBorder.none,
-                          hintText: "Ask something..."
-                        ),
+                            icon: Icon(Icons.mic), border: InputBorder.none, hintText: "Ask something..."),
                       ),
                     ),
                   ),
                   Container(
+                    decoration: BoxDecoration(
+                      color: Colors.teal,
+                    ),
+                    padding: EdgeInsets.all(8),
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(
