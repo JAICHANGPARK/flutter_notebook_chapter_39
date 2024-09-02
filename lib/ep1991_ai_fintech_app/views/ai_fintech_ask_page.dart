@@ -111,7 +111,16 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
               ),
               Gap(8),
               Expanded(
-                child: Placeholder(),
+                child: Stack(
+                  children: [
+                    Positioned(
+                        child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ))
+                  ],
+                ),
               ),
               Gap(8),
               Row(
@@ -131,10 +140,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                   ),
                   Gap(4),
                   Container(
-                    decoration: BoxDecoration(
-                      color: Colors.teal,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(8)),
                     padding: EdgeInsets.all(8),
                     child: IconButton(
                       onPressed: () {},
