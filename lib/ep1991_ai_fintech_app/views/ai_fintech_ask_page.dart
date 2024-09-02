@@ -118,7 +118,21 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                         decoration:
                             BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white, boxShadow: [
                           BoxShadow(
-                            color: Colors.grey[200]!,
+                            color: Colors.grey[300]!,
+                            blurRadius: 3,
+                            spreadRadius: 2,
+                          )
+                        ]),
+                        child: Center(),
+                      ),
+                    ),
+                    Positioned.fill(
+                      bottom: 12,
+                      child: Container(
+                        decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.white, boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[300]!,
                             blurRadius: 3,
                             spreadRadius: 2,
                           )
