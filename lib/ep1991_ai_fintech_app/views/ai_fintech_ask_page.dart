@@ -127,9 +127,11 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                       ),
                     ),
                   ),
+                  Gap(4),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.teal,
+                      borderRadius: BorderRadius.circular(8)
                     ),
                     padding: EdgeInsets.all(8),
                     child: IconButton(
