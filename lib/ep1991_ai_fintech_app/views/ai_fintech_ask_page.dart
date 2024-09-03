@@ -162,7 +162,8 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.blueGrey[100]!,
+                                      color: Colors.blueGrey[50]!,
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
                                     padding: EdgeInsets.all(10),
                                     child: Icon(
@@ -175,13 +176,19 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Visa card",style: TextStyle(
-                                          fontSize: 18,
-                                        ),),
+                                        Text(
+                                          "Visa card",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                          ),
+                                        ),
                                         Gap(8),
-                                        Text("**** **** **** 784",style: TextStyle(
-                                          fontSize: 16,
-                                        ),),
+                                        Text(
+                                          "**** **** **** 784",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   )
