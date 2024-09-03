@@ -175,9 +175,13 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Visa card"),
+                                        Text("Visa card",style: TextStyle(
+                                          fontSize: 18,
+                                        ),),
                                         Gap(8),
-                                        Text("**** **** **** 784"),
+                                        Text("**** **** **** 784",style: TextStyle(
+                                          fontSize: 16,
+                                        ),),
                                       ],
                                     ),
                                   )
