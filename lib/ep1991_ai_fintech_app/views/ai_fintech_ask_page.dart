@@ -223,18 +223,26 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   )
                                 ],
                               ),
+                              Gap(16),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [Text("Total"), Text("\$ 1,400,512.31")],
+                                children: [
+                                  Text("Total"),
+                                  Text("\$ 1,400,512.31"),
+                                ],
                               ),
-                              Divider(),
+                              Divider(
+                                height: 32,
+                              ),
                               Row(
                                 children: [
                                   Text("Date & time"),
                                   Text("11.02 AM Friday, 19 October 2024"),
                                 ],
                               ),
-                              Divider(),
+                              Divider(
+                                height: 32,
+                              ),
                               Row(
                                 children: [
                                   Text("Category"),
@@ -244,7 +252,9 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   Icon(Icons.keyboard_arrow_down),
                                 ],
                               ),
-                              Divider(),
+                              Divider(
+                                height: 32,
+                              ),
                               Text("Let us know if this category matches")
                             ],
                           ),
