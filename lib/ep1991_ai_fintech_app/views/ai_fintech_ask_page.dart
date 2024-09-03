@@ -168,6 +168,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                       Icons.credit_card,
                                       size: 32,
                                     ),
+
                                   ),
                                   Expanded(
                                     child: Column(
@@ -179,7 +180,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                     ),
                                   )
                                 ],
-                              )
+                              ),
                             ],
                           ),
                         ),
