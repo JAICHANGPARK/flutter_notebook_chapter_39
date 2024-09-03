@@ -194,7 +194,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   )
                                 ],
                               ),
-                              Gap(16),
+                              Gap(24),
                               Row(
                                 children: [
                                  CircleAvatar(
@@ -206,14 +206,14 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Visa card",
+                                          "John doe",
                                           style: TextStyle(
                                             fontSize: 18,
                                           ),
                                         ),
                                         Gap(8),
                                         Text(
-                                          "**** **** **** 784",
+                                          "Visa 344049201",
                                           style: TextStyle(
                                             fontSize: 16,
                                           ),
