@@ -197,9 +197,9 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                               Gap(24),
                               Row(
                                 children: [
-                                 CircleAvatar(
-                                   radius: 26,
-                                 ),
+                                  CircleAvatar(
+                                    radius: 26,
+                                  ),
                                   Gap(12),
                                   Expanded(
                                     child: Column(
@@ -225,15 +225,23 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                               ),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [Text("Total"), Text("\$ 1,400,512.31")],
+                              ),
+                              Divider(),
+                              Row(
                                 children: [
-                                  Text("Total"),
-                                  Text("\$ 1,400,512.31")
+                                  Text("Date & time"),
+                                  Text("11.02 AM Friday, 19 October 2024"),
                                 ],
                               ),
                               Divider(),
                               Row(
                                 children: [
-                                  
+                                  Text("Category"),
+                                  Spacer(),
+                                  CircleAvatar(),
+                                  Text("Shopping"),
+                                  Icon(Icons.keyboard_arrow_down),
                                 ],
                               )
                             ],
