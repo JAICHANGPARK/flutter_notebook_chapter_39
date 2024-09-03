@@ -243,7 +243,9 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   Text("Shopping"),
                                   Icon(Icons.keyboard_arrow_down),
                                 ],
-                              )
+                              ),
+                              Divider(),
+                              Text("Let us know if this category matches")
                             ],
                           ),
                         ),
