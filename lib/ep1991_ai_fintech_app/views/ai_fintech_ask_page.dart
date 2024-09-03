@@ -154,6 +154,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                             offset: Offset(0, 2),
                           )
                         ]),
+                        padding: EdgeInsets.all(16),
                         child: Center(
                           child: Column(
                             children: [
