@@ -223,6 +223,19 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   )
                                 ],
                               ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text("Total"),
+                                  Text("\$ 1,400,512.31")
+                                ],
+                              ),
+                              Divider(),
+                              Row(
+                                children: [
+                                  
+                                ],
+                              )
                             ],
                           ),
                         ),
