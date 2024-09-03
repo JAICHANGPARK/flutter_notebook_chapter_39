@@ -255,7 +255,28 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                               Divider(
                                 height: 32,
                               ),
-                              Text("Let us know if this category matches")
+                              Text("Let us know if this category matches"),
+                              Gap(16),
+                              Expanded(
+                                  child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[100],
+                                      ),
+                                    ),
+                                  ),
+                                  Gap(12),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[100],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ))
                             ],
                           ),
                         ),
