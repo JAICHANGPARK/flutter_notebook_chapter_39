@@ -248,8 +248,12 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                 children: [
                                   Text("Category"),
                                   Spacer(),
-                                  CircleAvatar(),
+                                  CircleAvatar(
+                                    radius: 18,
+                                  ),
+                                  Gap(6),
                                   Text("Shopping"),
+                                  Gap(6),
                                   Icon(Icons.keyboard_arrow_down),
                                 ],
                               ),
