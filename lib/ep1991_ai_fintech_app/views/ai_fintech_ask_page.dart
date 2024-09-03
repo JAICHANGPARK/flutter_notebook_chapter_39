@@ -262,9 +262,14 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
                                         color: Colors.grey[100],
                                       ),
+
+                                      // BoxDecoration(
+                                      //   color: Colors.grey[100],
+                                      // ),
                                     ),
                                   ),
                                   Gap(12),
