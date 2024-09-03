@@ -157,6 +157,7 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                         padding: EdgeInsets.all(16),
                         child: Center(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
@@ -275,7 +276,8 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   Gap(12),
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
                                         color: Colors.grey[100],
                                       ),
                                     ),
