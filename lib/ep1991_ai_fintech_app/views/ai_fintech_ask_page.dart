@@ -163,12 +163,20 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                     decoration: BoxDecoration(
                                       color: Colors.blueGrey[100]!,
                                     ),
-                                    child: Icon(Icons.credit_card),
+                                    child: Icon(
+                                      Icons.credit_card,
+                                      size: 32,
+                                    ),
                                   ),
-                                  Expanded(child: Column(children: [
-                                    Text("Visa card"),
-                                    Text("")
-                                  ],))
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Visa card"),
+                                        Text("**** **** **** 784"),
+                                      ],
+                                    ),
+                                  )
                                 ],
                               )
                             ],
