@@ -154,7 +154,26 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                             offset: Offset(0, 2),
                           )
                         ]),
-                        child: Center(),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blueGrey[100]!,
+                                    ),
+                                    child: Icon(Icons.credit_card),
+                                  ),
+                                  Expanded(child: Column(children: [
+                                    Text("Visa card"),
+                                    Text("")
+                                  ],))
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     )
                   ],
