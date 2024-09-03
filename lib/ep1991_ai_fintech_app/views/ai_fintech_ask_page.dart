@@ -194,6 +194,35 @@ class _AiFintechAskPageState extends State<AiFintechAskPage> {
                                   )
                                 ],
                               ),
+                              Gap(16),
+                              Row(
+                                children: [
+                                 CircleAvatar(
+                                   radius: 26,
+                                 ),
+                                  Gap(12),
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Visa card",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        Gap(8),
+                                        Text(
+                                          "**** **** **** 784",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ],
                           ),
                         ),
