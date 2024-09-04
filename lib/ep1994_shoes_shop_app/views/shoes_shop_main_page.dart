@@ -39,7 +39,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
-                
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
@@ -47,6 +47,18 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                     icon: Icon(Icons.search),
                   ),
                 ),
+              ),
+              Container(
+                height: 120,
+                child: Placeholder(),
+              ),
+              Row(
+                children: [
+                  Text("New Arrival"),
+                  Spacer(),
+                  Text("See all"),
+                  Icon(Icons.keyboard_arrow_right)
+                ],
               )
             ],
           ),
