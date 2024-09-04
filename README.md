@@ -1,9 +1,9 @@
 # flutter_notebook_chapter_39
 
-## EP1991-1993
+## EP1994
 
-- Finster: Result Page AI Feature Mobile App Fintech Banking 💳
-- Keitoto
+- Shoes Shopping Mobile App
+- Towshif Rakib
 - https://dribbble.com/shots/24793790-Shoes-Shopping-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/16390295/file/original-4c68eca38e5507a87d16ec068b6133c8.png?resize=1905x1335"/>
