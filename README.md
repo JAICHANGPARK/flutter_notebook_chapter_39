@@ -8,8 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/16390295/file/original-4c68eca38e5507a87d16ec068b6133c8.png?resize=1905x1335"/>
 
-
-
 ## EP1991-1993
 
 - Finster: Result Page AI Feature Mobile App Fintech Banking 💳
@@ -73,7 +71,6 @@
 - https://dribbble.com/shots/24575052-Social-Media-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/15756184/file/original-b4eea39f07ee6a3d78ed6cf70664939e.png?resize=1600x1200"/>
-
 
 ## EP1951-1954
 
