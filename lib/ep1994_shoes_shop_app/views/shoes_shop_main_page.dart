@@ -56,7 +56,12 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
               ),
               Gap(12),
               Row(
-                children: [Text("New Arrival"), Spacer(), Text("See all"), Icon(Icons.keyboard_arrow_right)],
+                children: [
+                  Text("New Arrival"),
+                  Spacer(),
+                  Text("See all"),
+                  Icon(Icons.keyboard_arrow_right),
+                ],
               ),
               Gap(12),
               Expanded(
