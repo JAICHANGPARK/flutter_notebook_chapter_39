@@ -37,9 +37,13 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                   border: Border.all(
                     color: Colors.grey[300]!,
                   ),
-                  
+                  borderRadius: BorderRadius.circular(32),
                 ),
-                child: TextField(),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                  ),
+                ),
               )
             ],
           ),
