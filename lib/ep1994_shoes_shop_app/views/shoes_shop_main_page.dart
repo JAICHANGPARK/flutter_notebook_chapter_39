@@ -39,9 +39,12 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                   ),
                   borderRadius: BorderRadius.circular(32),
                 ),
+                
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
+                    hintText: "What are you booking for ?",
+                    icon: Icon(Icons.search),
                   ),
                 ),
               )
