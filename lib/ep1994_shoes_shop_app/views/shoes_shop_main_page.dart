@@ -27,17 +27,22 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[100],
-                border: Border.all(
-                  color: Colors.grey,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey[100],
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                  ),
+                  
                 ),
-              ),
-            )
-          ],
+                child: TextField(),
+              )
+            ],
+          ),
         ),
       ),
     );
