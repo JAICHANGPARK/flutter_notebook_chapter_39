@@ -13,15 +13,31 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
     return Scaffold(
       appBar: AppBar(
         leading: CircleAvatar(
+          radius: 20,
           backgroundColor: Colors.grey[100],
           child: Icon(Icons.menu),
         ),
+        actions: [
+          CircleAvatar(
+            backgroundColor: Colors.grey[100],
+            child: Icon(Icons.notifications_active_outlined),
+          ),
+        ],
         title: Text("Logo"),
         centerTitle: true,
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[100],
+                border: Border.all(
+                  color: Colors.grey,
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );
