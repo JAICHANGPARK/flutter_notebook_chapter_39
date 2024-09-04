@@ -6,7 +6,7 @@
 - Keitoto
 - https://dribbble.com/shots/24793790-Shoes-Shopping-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/16151559/file/original-01a16daedc824a9bfe943ed57bfff147.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/16390295/file/original-4c68eca38e5507a87d16ec068b6133c8.png?resize=1905x1335"/>
 
 
 
