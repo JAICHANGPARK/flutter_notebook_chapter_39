@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ShoesShopMainPage extends StatefulWidget {
   const ShoesShopMainPage({super.key});
@@ -48,17 +49,18 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                   ),
                 ),
               ),
+              Gap(12),
               Container(
                 height: 120,
                 child: Placeholder(),
               ),
+              Gap(12),
               Row(
-                children: [
-                  Text("New Arrival"),
-                  Spacer(),
-                  Text("See all"),
-                  Icon(Icons.keyboard_arrow_right)
-                ],
+                children: [Text("New Arrival"), Spacer(), Text("See all"), Icon(Icons.keyboard_arrow_right)],
+              ),
+              Gap(12),
+              Expanded(
+                child: Placeholder(),
               )
             ],
           ),
