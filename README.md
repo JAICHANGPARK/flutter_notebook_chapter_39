@@ -4,6 +4,16 @@
 
 - Finster: Result Page AI Feature Mobile App Fintech Banking 💳
 - Keitoto
+- https://dribbble.com/shots/24793790-Shoes-Shopping-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/16151559/file/original-01a16daedc824a9bfe943ed57bfff147.png?resize=1905x1429"/>
+
+
+
+## EP1991-1993
+
+- Finster: Result Page AI Feature Mobile App Fintech Banking 💳
+- Keitoto
 - https://dribbble.com/shots/24711934-Finster-Result-Page-AI-Feature-Mobile-App-Fintech-Banking
 
 <img src="https://cdn.dribbble.com/userupload/16151559/file/original-01a16daedc824a9bfe943ed57bfff147.png?resize=1905x1429"/>
