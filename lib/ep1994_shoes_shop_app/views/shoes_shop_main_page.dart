@@ -73,9 +73,10 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                         height: 320,
                         child: Placeholder(),
                       ),
+                      Gap(12),
                       Row(
                         children: [
-                          Text("New Arrival"),
+                          Text("Best Seller"),
                           Spacer(),
                           Text("See all"),
                           Icon(Icons.keyboard_arrow_right),
