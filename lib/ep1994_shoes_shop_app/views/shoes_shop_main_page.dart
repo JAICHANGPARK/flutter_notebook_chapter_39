@@ -82,7 +82,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.grey[100]!,
+                                          color: Colors.grey[200]!,
                                         ),
                                         borderRadius: BorderRadius.circular(8),
                                       ),
@@ -101,6 +101,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                       ),
                                     ),
                                   ),
+                                  Gap(12),
                                   Text(
                                     "PREMIUM SHOES",
                                     style: TextStyle(
