@@ -140,56 +140,61 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                             Gap(12),
                             Expanded(
                                 child: Container(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            border: Border.all(
-                                              color: Colors.grey[200]!,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[200]!,
+                                        ),
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            right: 4,
+                                            top: 4,
+                                            child: CircleAvatar(
+                                              child: Icon(
+                                                Icons.favorite_outline,
+                                              ),
                                             ),
-                                            borderRadius: BorderRadius.circular(8),
-                                          ),
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                right: 4,
-                                                top: 4,
-                                                child: CircleAvatar(
-                                                  child: Icon(
-                                                    Icons.favorite_outline,
-                                                  ),
-                                                ),
-                                              )
-                                            ],
-                                          ),
-                                        ),
+                                          )
+                                        ],
                                       ),
-                                      Gap(12),
-                                      Text(
-                                        "PREMIUM SHOES",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        "\$174.00",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                        ),
-                                      )
-                                    ],
+                                    ),
                                   ),
-                                )),
+                                  Gap(12),
+                                  Text(
+                                    "PREMIUM SHOES",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$174.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )),
                           ],
                         ),
                       ),
                       Gap(24),
                       Row(
                         children: [
-                          Text("Best Seller"),
+                          Text(
+                            "Best Seller",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Spacer(),
                           Text("See all"),
                           Icon(Icons.keyboard_arrow_right),
