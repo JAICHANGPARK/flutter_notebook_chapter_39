@@ -84,6 +84,16 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                         border: Border.all(
                                           color: Colors.grey[100]!,
                                         ),
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            child: CircleAvatar(
+                                              
+                                            ),
+                                          )
+                                        ],
                                       ),
                                     ),
                                   ),
