@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'shoes_item_widget.dart';
+
 class ShoesShopMainPage extends StatefulWidget {
   const ShoesShopMainPage({super.key});
 
@@ -228,7 +230,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                         crossAxisCount: 2,
                         children: List.generate(
                           10,
-                          (index) => Container(),
+                          (index) => ShoesItemWidget(),
                         ),
                       ),
                     ],
