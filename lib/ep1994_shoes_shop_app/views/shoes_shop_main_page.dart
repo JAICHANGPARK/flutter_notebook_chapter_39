@@ -73,11 +73,18 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                         height: 280,
                         child: Row(
                           children: [
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               child: Column(
-                                
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(child: Container()),
+                                  Text(
+                                    "PREMIUM SHOES",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
                                 ],
                               ),
                             )),
