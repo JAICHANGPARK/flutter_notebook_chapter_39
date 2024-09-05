@@ -196,8 +196,16 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                             ),
                           ),
                           Spacer(),
-                          Text("See all"),
-                          Icon(Icons.keyboard_arrow_right),
+                          Text(
+                            "See all",
+                            style: TextStyle(
+                              color: Colors.deepOrange,
+                            ),
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Colors.deepOrange,
+                          ),
                         ],
                       ),
                       SizedBox(
