@@ -12,6 +12,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: CircleAvatar(
           radius: 20,
