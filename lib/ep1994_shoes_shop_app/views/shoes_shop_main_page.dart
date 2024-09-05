@@ -70,7 +70,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                       ),
                       Gap(12),
                       Container(
-                        height: 320,
+                        height: 280,
                         child: Row(
                           children: [
                             Expanded(child: Container()),
