@@ -82,6 +82,14 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                           Icon(Icons.keyboard_arrow_right),
                         ],
                       ),
+                      SizedBox(
+                        height: 42,
+                        child: Placeholder(),
+                      ),
+                      GridView.count(
+                        shrinkWrap: true,
+                        crossAxisCount: 2,
+                      ),
                     ],
                   ),
                 ),
