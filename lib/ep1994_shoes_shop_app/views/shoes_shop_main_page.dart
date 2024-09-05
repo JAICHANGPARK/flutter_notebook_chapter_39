@@ -70,7 +70,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                       ),
                       Gap(12),
                       Container(
-                        height: 280,
+                        height: 240,
                         child: Row(
                           children: [
                             Expanded(
@@ -89,6 +89,8 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
+                                            right: 4,
+                                            top: 4,
                                             child: CircleAvatar(
                                               child: Icon(
                                                 Icons.favorite_outline,
