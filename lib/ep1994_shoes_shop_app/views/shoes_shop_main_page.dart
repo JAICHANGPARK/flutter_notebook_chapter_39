@@ -50,12 +50,17 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                   ),
                 ),
               ),
-              Gap(12),
+              Gap(16),
               Container(
                 height: 120,
-                child: Placeholder(),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
               ),
-              Gap(12),
+              Gap(16),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
@@ -76,10 +81,13 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                               color: Colors.deepOrange,
                             ),
                           ),
-                          Icon(Icons.keyboard_arrow_right),
+                          Icon(
+                            Icons.keyboard_arrow_right,
+                            color: Colors.deepOrange,
+                          ),
                         ],
                       ),
-                      Gap(12),
+                      Gap(16),
                       Container(
                         height: 240,
                         child: Row(
