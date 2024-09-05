@@ -71,7 +71,14 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                       Gap(12),
                       Container(
                         height: 320,
-                        child: Placeholder(),
+                        child: Row(
+                          children: [
+                            Expanded(child: Container()),
+                            Expanded(
+                              child: Placeholder(),
+                            ),
+                          ],
+                        ),
                       ),
                       Gap(12),
                       Row(
