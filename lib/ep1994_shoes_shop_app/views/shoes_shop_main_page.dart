@@ -137,6 +137,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                 ],
                               ),
                             )),
+                            Gap(12),
                             Expanded(
                               child: Placeholder(),
                             ),
