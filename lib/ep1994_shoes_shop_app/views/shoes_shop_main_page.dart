@@ -55,20 +55,32 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                 child: Placeholder(),
               ),
               Gap(12),
-              Row(
-                children: [
-                  Text("New Arrival"),
-                  Spacer(),
-                  Text("See all"),
-                  Icon(Icons.keyboard_arrow_right),
-                ],
-              ),
-              Gap(12),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-
+                      Row(
+                        children: [
+                          Text("New Arrival"),
+                          Spacer(),
+                          Text("See all"),
+                          Icon(Icons.keyboard_arrow_right),
+                        ],
+                      ),
+                      Gap(12),
+                      Container(
+                        height: 320,
+                        child: Placeholder(),
+                      ),
+                      Row(
+                        children: [
+                          Text("New Arrival"),
+                          Spacer(),
+                          Text("See all"),
+                          Icon(Icons.keyboard_arrow_right),
+                        ],
+                      ),
                     ],
                   ),
                 ),
