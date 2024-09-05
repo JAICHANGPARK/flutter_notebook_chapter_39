@@ -90,7 +90,9 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                         children: [
                                           Positioned(
                                             child: CircleAvatar(
-                                              
+                                              child: Icon(
+                                                Icons.favorite_outline,
+                                              ),
                                             ),
                                           )
                                         ],
