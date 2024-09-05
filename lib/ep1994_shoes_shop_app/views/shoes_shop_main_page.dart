@@ -63,9 +63,19 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                     children: [
                       Row(
                         children: [
-                          Text("New Arrival"),
+                          Text(
+                            "New Arrival",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Spacer(),
-                          Text("See all"),
+                          Text(
+                            "See all",
+                            style: TextStyle(
+                              color: Colors.deepOrange,
+                            ),
+                          ),
                           Icon(Icons.keyboard_arrow_right),
                         ],
                       ),
