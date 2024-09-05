@@ -78,11 +78,26 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Expanded(child: Container()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[100]!,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                   Text(
                                     "PREMIUM SHOES",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "\$174.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
                                     ),
                                   )
                                 ],
