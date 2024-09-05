@@ -65,7 +65,13 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
               ),
               Gap(12),
               Expanded(
-                child: Placeholder(),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+
+                    ],
+                  ),
+                ),
               )
             ],
           ),
