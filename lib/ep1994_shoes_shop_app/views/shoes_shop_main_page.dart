@@ -218,7 +218,8 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                           itemBuilder: (context, index) {
                             return Container(
                               decoration: BoxDecoration(
-                                color: Colors.deepOrangeAccent,
+                                color: index == 0 ? Colors.deepOrangeAccent : Colors.white,
+                                border: Border.all(color: Colors.orange),
                               ),
                               margin: EdgeInsets.only(right: 12),
                               padding: EdgeInsets.symmetric(horizontal: 8),
