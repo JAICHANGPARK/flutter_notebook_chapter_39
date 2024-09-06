@@ -19,28 +19,31 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
               color: Colors.white,
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 20,
-                        backgroundColor: Colors.grey[200],
-                        child: Icon(
-                          Icons.arrow_back_ios_new_outlined,
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundColor: Colors.grey[200],
+                          child: Icon(
+                            Icons.arrow_back_ios_new_outlined,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        child: Center(
-                          child: Text("Products Details"),
+                        Expanded(
+                          child: Center(
+                            child: Text("Products Details"),
+                          ),
                         ),
-                      ),
-                      CircleAvatar(
-                        radius: 20,
-                        backgroundColor: Colors.grey[200],
-                        child: Icon(
-                          Icons.arrow_back_ios_new_outlined,
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundColor: Colors.grey[200],
+                          child: Icon(
+                            Icons.more_vert,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
