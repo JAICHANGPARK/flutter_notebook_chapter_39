@@ -53,6 +53,26 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                 decoration: BoxDecoration(
                   color: Colors.deepOrange[50],
                 ),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 62,
+                      child: Placeholder(),
+                    ),
+                    Row(
+                      children: [
+                        Text(""),
+                        Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.favorite_outline,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             )
           ],
