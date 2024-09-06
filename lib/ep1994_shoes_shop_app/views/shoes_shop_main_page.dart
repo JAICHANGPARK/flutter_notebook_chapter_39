@@ -250,6 +250,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
@@ -266,13 +267,13 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_filled,
+              Icons.favorite_outline,
             ),
             label: "Home",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_filled,
+              Icons.person_3_outlined,
             ),
             label: "Home",
           )
