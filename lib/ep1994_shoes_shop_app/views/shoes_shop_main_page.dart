@@ -220,7 +220,9 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.deepOrangeAccent,
                               ),
-                              child: Text("All"),
+                              margin: EdgeInsets.only(right: 12),
+                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              child: Center(child: Text("All")),
                             );
                           },
                         ),
