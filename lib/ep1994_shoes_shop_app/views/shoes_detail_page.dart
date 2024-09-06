@@ -14,7 +14,10 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Container(
+              height: 400,
+              color: Colors.white,
+            ),
           ],
         ),
       ),
