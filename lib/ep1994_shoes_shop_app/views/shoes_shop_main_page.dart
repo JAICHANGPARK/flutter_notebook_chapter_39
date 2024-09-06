@@ -222,12 +222,13 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                                 border: Border.all(color: Colors.orange),
                               ),
                               margin: EdgeInsets.only(right: 12),
-                              padding: EdgeInsets.symmetric(horizontal: 8),
+                              padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Center(child: Text("All")),
                             );
                           },
                         ),
                       ),
+                      Gap(12),
                       GridView.count(
                         shrinkWrap: true,
                         crossAxisCount: 2,
