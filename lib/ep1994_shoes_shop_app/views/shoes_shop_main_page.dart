@@ -250,10 +250,12 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        
+        backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
