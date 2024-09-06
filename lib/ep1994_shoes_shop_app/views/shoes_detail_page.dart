@@ -53,6 +53,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                 decoration: BoxDecoration(
                   color: Colors.deepOrange[50],
                 ),
+                padding: EdgeInsets.all(24),
                 child: Column(
                   children: [
                     SizedBox(
@@ -69,6 +70,35 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                             Icons.favorite_outline,
                           ),
                         )
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text(""),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text("\$224.00"),
+                        Text("\$254.00"),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Text("Select Size"),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("Chart"),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 42,
+                      child: Placeholder(),
+                    ),
+                    Row(
+                      children: [
+                        
                       ],
                     )
                   ],
