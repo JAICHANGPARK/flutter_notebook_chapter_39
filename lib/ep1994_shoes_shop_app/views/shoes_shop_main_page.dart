@@ -16,8 +16,12 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.white,
+        leadingWidth: 42,
+        
         leading: CircleAvatar(
-          radius: 20,
+          radius: 18,
           backgroundColor: Colors.grey[100],
           child: Icon(Icons.menu),
         ),
