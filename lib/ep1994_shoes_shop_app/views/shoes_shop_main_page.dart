@@ -220,6 +220,7 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                               decoration: BoxDecoration(
                                 color: index == 0 ? Colors.deepOrangeAccent : Colors.white,
                                 border: Border.all(color: Colors.orange),
+                                borderRadius: BorderRadius.circular(12),
                               ),
                               margin: EdgeInsets.only(right: 12),
                               padding: EdgeInsets.symmetric(horizontal: 16),
@@ -232,6 +233,9 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
                       GridView.count(
                         shrinkWrap: true,
                         crossAxisCount: 2,
+                        crossAxisSpacing: 16,
+                        mainAxisSpacing: 16,
+                        childAspectRatio: 0.85,
                         children: List.generate(
                           10,
                           (index) => ShoesItemWidget(),
