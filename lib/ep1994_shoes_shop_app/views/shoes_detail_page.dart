@@ -61,12 +61,46 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 62,
+                      height: 54,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             width: 62,
                             decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            width: 62,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            width: 62,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            width: 62,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Container(
+                            width: 62,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
                               border: Border.all(color: Colors.deepOrange),
                               borderRadius: BorderRadius.circular(8),
                             ),
