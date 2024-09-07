@@ -188,7 +188,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                           8,
                           (index) => Container(
                             decoration: BoxDecoration(
-                              
+                              borderRadius: BorderRadius.circular(6),
                             ),
                             width: 42,
                             child: Center(
