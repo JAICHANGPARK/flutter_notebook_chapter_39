@@ -184,12 +184,15 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     SizedBox(
                       height: 42,
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: List.generate(
                           8,
                           (index) => Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(6),
-                            ),
+                                borderRadius: BorderRadius.circular(6),
+                                border: Border.all(
+                                  color: Colors.grey[100]!,
+                                )),
                             width: 42,
                             child: Center(
                               child: Text("${36 + index}"),
