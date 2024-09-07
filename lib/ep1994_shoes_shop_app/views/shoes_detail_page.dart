@@ -157,9 +157,10 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                         ),
                         Gap(16),
                         Text(
-                          "\$254.00,",
+                          "\$254.00",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            decoration: TextDecoration.lineThrough,
                           ),
                         ),
                       ],
