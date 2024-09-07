@@ -45,6 +45,10 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       ],
                     ),
                   ),
+                  Expanded(
+                    child:
+                        Image.network("https://cdn.pixabay.com/photo/2013/05/31/20/33/running-shoes-115149_1280.jpg"),
+                  )
                 ],
               ),
             ),
@@ -107,9 +111,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       child: Placeholder(),
                     ),
                     Row(
-                      children: [
-                        
-                      ],
+                      children: [],
                     )
                   ],
                 ),
