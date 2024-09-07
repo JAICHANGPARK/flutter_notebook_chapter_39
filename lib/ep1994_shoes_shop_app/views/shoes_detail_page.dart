@@ -124,9 +124,17 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     Row(
                       children: [
-                        Icon(Icons.star),
-                        Text("4.8 (335)"),
-                        Text(""),
+                        Icon(
+                          Icons.star,
+                          size: 14,
+                          color: Colors.orange,
+                        ),
+                        Text(
+                          "4.8 (335)",
+                        ),
+                        Text(
+                          "212 reviews",
+                        ),
                       ],
                     ),
                     Row(
