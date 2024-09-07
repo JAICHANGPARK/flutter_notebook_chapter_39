@@ -135,9 +135,11 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                           size: 14,
                           color: Colors.orange,
                         ),
+                        Gap(5),
                         Text(
                           "4.8 (335)",
                         ),
+                        Gap(5),
                         Text(
                           "212 reviews",
                         ),
@@ -145,7 +147,13 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     Row(
                       children: [
-                        Text("\$224.00"),
+                        Text(
+                          "\$224.00",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                        ),
                         Text("\$254.00"),
                       ],
                     ),
