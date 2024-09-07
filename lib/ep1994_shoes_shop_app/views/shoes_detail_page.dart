@@ -201,8 +201,29 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                         ),
                       ),
                     ),
+                    Spacer(),
                     Row(
-                      children: [],
+                      children: [
+                        Container(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.message_outlined,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Icon(Icons.add_shopping_cart),
+                              Text('Add to Cart'),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Text("Buy Now"),
+                        )
+                      ],
                     )
                   ],
                 ),
