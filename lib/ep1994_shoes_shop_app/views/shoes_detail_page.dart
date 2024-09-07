@@ -145,6 +145,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                         ),
                       ],
                     ),
+                    Gap(16),
                     Row(
                       children: [
                         Text(
@@ -154,7 +155,13 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                             fontSize: 20,
                           ),
                         ),
-                        Text("\$254.00"),
+                        Gap(16),
+                        Text(
+                          "\$254.00,",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     ),
                     Row(
