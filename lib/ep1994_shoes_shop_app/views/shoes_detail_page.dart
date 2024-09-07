@@ -15,7 +15,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
         child: Column(
           children: [
             Container(
-              height: 380,
+              height: 420,
               color: Colors.white,
               child: Column(
                 children: [
