@@ -243,7 +243,12 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                                 color: Colors.deepOrange,
                               ),
                               child: Center(
-                                child: Text("Buy Now"),
+                                child: Text(
+                                  "Buy Now",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             ),
                           )
