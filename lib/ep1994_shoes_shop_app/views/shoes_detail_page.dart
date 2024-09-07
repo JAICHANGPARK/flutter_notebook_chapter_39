@@ -183,7 +183,20 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     SizedBox(
                       height: 42,
-                      child: Row(children: List.generate(8, (index) => Container())),
+                      child: Row(
+                        children: List.generate(
+                          8,
+                          (index) => Container(
+                            decoration: BoxDecoration(
+                              
+                            ),
+                            width: 42,
+                            child: Center(
+                              child: Text("${36 + index}"),
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
                     Row(
                       children: [],
