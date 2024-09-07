@@ -166,8 +166,15 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Select Size"),
+                        Text(
+                          "Select Size",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text("Chart"),
@@ -176,7 +183,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     SizedBox(
                       height: 42,
-                      child: Placeholder(),
+                      child: Row(children: List.generate(8, (index) => Container())),
                     ),
                     Row(
                       children: [],
