@@ -60,7 +60,13 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       height: 62,
                       child: Row(
                         children: [
-                          
+                          Container(
+                            width: 62,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.deepOrange),
+                              b
+                            ),
+                          )
                         ],
                       ),
                     ),
