@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ShoesDetailPage extends StatefulWidget {
   const ShoesDetailPage({super.key});
@@ -108,6 +109,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                         ],
                       ),
                     ),
+                    Gap(12),
                     Row(
                       children: [
                         Text(
