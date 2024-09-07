@@ -58,7 +58,11 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                   children: [
                     SizedBox(
                       height: 62,
-                      child: Placeholder(),
+                      child: Row(
+                        children: [
+                          
+                        ],
+                      ),
                     ),
                     Row(
                       children: [
