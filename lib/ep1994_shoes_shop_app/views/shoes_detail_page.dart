@@ -191,7 +191,7 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(6),
                                 border: Border.all(
-                                  color: Colors.grey[100]!,
+                                  color: Colors.deepOrange[100]!,
                                 )),
                             width: 42,
                             child: Center(
