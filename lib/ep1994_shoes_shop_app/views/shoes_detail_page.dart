@@ -202,28 +202,48 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       ),
                     ),
                     Spacer(),
-                    Row(
-                      children: [
-                        Container(
-                          child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.message_outlined,
+                    SizedBox(
+                      height: 48,
+                      child: Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.message_outlined,
+                              ),
                             ),
                           ),
-                        ),
-                        Container(
-                          child: Row(
-                            children: [
-                              Icon(Icons.add_shopping_cart),
-                              Text('Add to Cart'),
-                            ],
+                          Gap(16),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 24),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.deepOrange),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Row(
+                                children: [
+                                  Icon(Icons.add_shopping_cart),
+                                  Text('Add to Cart'),
+                                ],
+                              ),
+                            ),
                           ),
-                        ),
-                        Container(
-                          child: Text("Buy Now"),
-                        )
-                      ],
+                          Gap(16),
+                          Expanded(
+                            child: Container(
+                              child: Center(
+                                child: Text("Buy Now"),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
