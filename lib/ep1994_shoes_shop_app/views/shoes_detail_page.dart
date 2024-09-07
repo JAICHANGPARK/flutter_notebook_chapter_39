@@ -110,7 +110,9 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     Row(
                       children: [
-                        Text(""),
+                        Text(
+                          "Shoes Ultra Lightweight Casual Sport",
+                        ),
                         Spacer(),
                         IconButton(
                           onPressed: () {},
@@ -122,6 +124,8 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                     ),
                     Row(
                       children: [
+                        Icon(Icons.star),
+                        Text("4.8 (335)"),
                         Text(""),
                       ],
                     ),
