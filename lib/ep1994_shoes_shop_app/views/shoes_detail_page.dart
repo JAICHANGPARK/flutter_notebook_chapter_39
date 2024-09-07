@@ -114,6 +114,10 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                       children: [
                         Text(
                           "Shoes Ultra Lightweight Casual Sport",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                         Spacer(),
                         IconButton(
