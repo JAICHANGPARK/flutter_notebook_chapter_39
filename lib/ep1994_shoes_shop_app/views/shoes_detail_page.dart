@@ -237,6 +237,11 @@ class _ShoesDetailPageState extends State<ShoesDetailPage> {
                           Gap(16),
                           Expanded(
                             child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.deepOrange),
+                                borderRadius: BorderRadius.circular(8),
+                                color: Colors.deepOrange,
+                              ),
                               child: Center(
                                 child: Text("Buy Now"),
                               ),
