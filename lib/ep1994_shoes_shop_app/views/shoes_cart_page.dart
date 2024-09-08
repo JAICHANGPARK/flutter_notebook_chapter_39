@@ -29,9 +29,10 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                 ),
                 CircleAvatar(
                   radius: 20,
-                  child: Icon(Icons.arrow_back_ios_new),
+                  child: Icon(
+                    Icons.more_vert,
+                  ),
                 ),
-                
               ],
             )
           ],
