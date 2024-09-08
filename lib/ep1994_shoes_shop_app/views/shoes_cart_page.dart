@@ -52,7 +52,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                       height: 120,
                       width: 160,
                       decoration: BoxDecoration(
-                        color: Colors.orange,
+                        color: Colors.white,
                         border: Border.all(
                           color: Colors.orange[100]!,
                         ),
@@ -62,7 +62,29 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                     Expanded(
                         child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [],
+                      children: [
+                        Row(
+                          children: [
+                            Text("Shoes Casual Sport"),
+                            Icon(
+                              Icons.delete_outline,
+                              color: Colors.orange,
+                            )
+                          ],
+                        ),
+                        Text("Woman's Shoes"),
+                        Row(
+                          children: [
+                            Text("\$224.00"),
+                            Container(
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                color: Colors.grey[100]!,
+                              )),
+                            )
+                          ],
+                        )
+                      ],
                     ))
                   ],
                 ),
