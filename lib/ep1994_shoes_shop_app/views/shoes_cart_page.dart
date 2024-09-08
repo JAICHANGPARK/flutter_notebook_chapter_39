@@ -10,6 +10,12 @@ class ShoesCartPage extends StatefulWidget {
 class _ShoesCartPageState extends State<ShoesCartPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
