@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_39/ep1994_shoes_shop_app/views/shoes_cart_page.dart';
 import 'package:gap/gap.dart';
 
 import 'shoes_item_widget.dart';
@@ -19,7 +20,6 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
         leadingWidth: 42,
-        
         leading: CircleAvatar(
           radius: 18,
           backgroundColor: Colors.grey[100],
@@ -260,6 +260,15 @@ class _ShoesShopMainPageState extends State<ShoesShopMainPage> {
         showUnselectedLabels: false,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black,
+        onTap: (idx) {
+          if (idx == 1) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => ShoesCartPage(),
+              ),
+            );
+          }
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(
