@@ -46,7 +46,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.c,
+              Icons.shopping_bag_outlined,
             ),
             label: "Home",
           ),
