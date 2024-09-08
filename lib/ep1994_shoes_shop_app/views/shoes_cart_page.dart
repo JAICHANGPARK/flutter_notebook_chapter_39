@@ -15,7 +15,26 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                CircleAvatar(
+                  radius: 20,
+                  child: Icon(Icons.arrow_back_ios_new),
+                ),
+                Expanded(
+                  child: Center(
+                    child: Text("My Cart"),
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 20,
+                  child: Icon(Icons.arrow_back_ios_new),
+                ),
+                
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -25,9 +44,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
         showUnselectedLabels: false,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.black,
-        onTap: (idx) {
-
-        },
+        onTap: (idx) {},
         items: [
           BottomNavigationBarItem(
             icon: Icon(
