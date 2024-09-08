@@ -51,14 +51,19 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                     Container(
                       height: 120,
                       width: 160,
-                      color: Colors.orange,
                       decoration: BoxDecoration(
+                        color: Colors.orange,
                         border: Border.all(
                           color: Colors.orange[100]!,
                         ),
                         borderRadius: BorderRadius.circular(8),
                       ),
-                    )
+                    ),
+                    Expanded(
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [],
+                    ))
                   ],
                 ),
               )
