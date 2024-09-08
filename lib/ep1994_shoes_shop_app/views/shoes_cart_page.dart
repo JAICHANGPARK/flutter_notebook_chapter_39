@@ -54,8 +54,8 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                       child: Row(
                         children: [
                           Container(
-                            height: 120,
-                            width: 160,
+                            height: 100,
+                            width: 140,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               border: Border.all(
@@ -112,6 +112,24 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   itemCount: 5,
                 ),
               ),
+              Row(
+                children: [
+                  Text("Subtotal :"),
+                  Text("\$600.00"),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("Subtotal :"),
+                  Text("\$600.00"),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("Subtotal :"),
+                  Text("\$600.00"),
+                ],
+              )
             ],
           ),
         ),
