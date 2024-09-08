@@ -18,7 +18,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              Row(
+              const Row(
                 children: [
                   CircleAvatar(
                     radius: 20,
@@ -45,68 +45,70 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
               ),
               Expanded(
                 child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      
-                    }, separatorBuilder: (context, index) => Divider(), itemCount: 5),
-              ),
-              Container(
-                color: Colors.blue,
-                padding: EdgeInsets.all(8),
-                child: Row(
-                  children: [
-                    Container(
-                      height: 120,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        border: Border.all(
-                          color: Colors.orange[100]!,
-                        ),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.blue,
+                      padding: const EdgeInsets.all(8),
+                      child: Row(
                         children: [
-                          Row(
-                            children: [
-                              Text("Shoes Casual Sport"),
-                              Icon(
-                                Icons.delete_outline,
-                                color: Colors.orange,
-                              )
-                            ],
+                          Container(
+                            height: 120,
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(
+                                color: Colors.orange[100]!,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
                           ),
-                          Text("Woman's Shoes"),
-                          Row(
-                            children: [
-                              Text("\$224.00"),
-                              Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.grey[100]!,
-                                  ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Row(
+                                  children: [
+                                    Text("Shoes Casual Sport"),
+                                    Icon(
+                                      Icons.delete_outline,
+                                      color: Colors.orange,
+                                    )
+                                  ],
                                 ),
-                                child: Icon(Icons.remove),
-                              ),
-                              Text("01"),
-                              Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: Colors.deepOrange,
-                                  ),
-                                ),
-                                child: Icon(Icons.add),
-                              ),
-                            ],
+                                const Text("Woman's Shoes"),
+                                Row(
+                                  children: [
+                                    const Text("\$224.00"),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[100]!,
+                                        ),
+                                      ),
+                                      child: const Icon(Icons.remove),
+                                    ),
+                                    const Text("01"),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.deepOrange,
+                                        ),
+                                      ),
+                                      child: const Icon(Icons.add),
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
-                    )
-                  ],
+                    );
+                  },
+                  separatorBuilder: (context, index) => const Divider(),
+                  itemCount: 5,
                 ),
-              )
+              ),
             ],
           ),
         ),
@@ -120,29 +122,29 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
         unselectedItemColor: Colors.black,
         onTap: (idx) {},
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               HugeIcons.strokeRoundedHome01,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: "Cart",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_outline,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.shopping_bag_outlined,
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.person_3_outlined,
             ),
