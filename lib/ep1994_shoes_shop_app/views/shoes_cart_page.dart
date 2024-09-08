@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class ShoesCartPage extends StatefulWidget {
@@ -43,6 +44,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   ),
                 ],
               ),
+              Gap(24),
               Expanded(
                 child: ListView.separated(
                   itemBuilder: (context, index) {
@@ -62,6 +64,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
+                          Gap(12),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
