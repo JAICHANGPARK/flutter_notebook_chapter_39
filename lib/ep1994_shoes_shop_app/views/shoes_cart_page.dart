@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class ShoesCartPage extends StatefulWidget {
   const ShoesCartPage({super.key});
@@ -15,6 +16,47 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
         child: Column(
           children: [],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black,
+        onTap: (idx) {
+
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              HugeIcons.strokeRoundedHome01,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: "Cart",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_outline,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.c,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person_3_outlined,
+            ),
+            label: "Home",
+          )
+        ],
       ),
     );
   }
