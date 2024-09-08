@@ -43,6 +43,12 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   ),
                 ],
               ),
+              Expanded(
+                child: ListView.separated(
+                    itemBuilder: (context, index) {
+                      
+                    }, separatorBuilder: (context, index) => Divider(), itemCount: 5),
+              ),
               Container(
                 color: Colors.blue,
                 padding: EdgeInsets.all(8),
@@ -60,32 +66,44 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                       ),
                     ),
                     Expanded(
-                        child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text("Shoes Casual Sport"),
-                            Icon(
-                              Icons.delete_outline,
-                              color: Colors.orange,
-                            )
-                          ],
-                        ),
-                        Text("Woman's Shoes"),
-                        Row(
-                          children: [
-                            Text("\$224.00"),
-                            Container(
-                              decoration: BoxDecoration(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Text("Shoes Casual Sport"),
+                              Icon(
+                                Icons.delete_outline,
+                                color: Colors.orange,
+                              )
+                            ],
+                          ),
+                          Text("Woman's Shoes"),
+                          Row(
+                            children: [
+                              Text("\$224.00"),
+                              Container(
+                                decoration: BoxDecoration(
                                   border: Border.all(
-                                color: Colors.grey[100]!,
-                              )),
-                            )
-                          ],
-                        )
-                      ],
-                    ))
+                                    color: Colors.grey[100]!,
+                                  ),
+                                ),
+                                child: Icon(Icons.remove),
+                              ),
+                              Text("01"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.deepOrange,
+                                  ),
+                                ),
+                                child: Icon(Icons.add),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )
