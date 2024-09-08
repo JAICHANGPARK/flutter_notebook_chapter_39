@@ -14,28 +14,31 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 20,
-                  child: Icon(Icons.arrow_back_ios_new),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text("My Cart"),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20,
+                    child: Icon(Icons.arrow_back_ios_new),
                   ),
-                ),
-                CircleAvatar(
-                  radius: 20,
-                  child: Icon(
-                    Icons.more_vert,
+                  Expanded(
+                    child: Center(
+                      child: Text("My Cart"),
+                    ),
                   ),
-                ),
-              ],
-            )
-          ],
+                  CircleAvatar(
+                    radius: 20,
+                    child: Icon(
+                      Icons.more_vert,
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
