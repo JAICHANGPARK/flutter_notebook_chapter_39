@@ -26,7 +26,13 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   ),
                   Expanded(
                     child: Center(
-                      child: Text("My Cart"),
+                      child: Text(
+                        "My Cart",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
                     ),
                   ),
                   CircleAvatar(
