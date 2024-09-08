@@ -42,6 +42,18 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                     ),
                   ),
                 ],
+              ),
+              Container(
+                color: Colors.blue,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 160,
+                      width: 100,
+                      color: Colors.orange,
+                    )
+                  ],
+                ),
               )
             ],
           ),
