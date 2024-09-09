@@ -16,6 +16,7 @@ dependencies:
   go_router: ^14.2.7
   dio: ^5.7.0
   genq:
+  signals: ^5.5.0
 
 dev_dependencies:
   flutter_test:
