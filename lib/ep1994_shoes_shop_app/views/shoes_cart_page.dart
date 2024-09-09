@@ -83,12 +83,17 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                     )
                                   ],
                                 ),
-                                Gap(12),
+                                Gap(8),
                                 const Text("Woman's Shoes"),
                                 Gap(12),
                                 Row(
                                   children: [
-                                    const Text("\$224.00"),
+                                    Text(
+                                      "\$224.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
