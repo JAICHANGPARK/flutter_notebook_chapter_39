@@ -18,8 +18,10 @@ class ShoesCartPage extends StatefulWidget {
 }
 
 class _ShoesCartPageState extends State<ShoesCartPage> {
-
-  Signal<ShoesItem> singleItem = createSignal(context, value)
+  late final Signal<ShoesItem> singleItem = createSignal(
+    context,
+    ShoesItem("Shoes Casual Sport", 1),
+  );
 
   @override
   Widget build(BuildContext context) {
