@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
+import 'package:signals/signals_flutter.dart';
 
 class ShoesItem {
   String? title;
@@ -17,6 +18,9 @@ class ShoesCartPage extends StatefulWidget {
 }
 
 class _ShoesCartPageState extends State<ShoesCartPage> {
+
+  Signal<ShoesItem> singleItem = createSignal(context, value)
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
