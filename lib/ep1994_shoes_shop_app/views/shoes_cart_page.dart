@@ -126,7 +126,9 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                       ),
                     );
                   },
-                  separatorBuilder: (context, index) => const Divider(),
+                  separatorBuilder: (context, index) => const Divider(
+                    color: Colors.orange[100]!,
+                  ),
                   itemCount: 5,
                 ),
               ),
