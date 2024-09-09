@@ -196,7 +196,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   ),
                 ],
               ),
-              Gap(16),
+              Gap(24),
               Container(
                 height: 62,
                 decoration: BoxDecoration(
