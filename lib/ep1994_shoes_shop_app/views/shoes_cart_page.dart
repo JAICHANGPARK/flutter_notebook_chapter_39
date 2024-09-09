@@ -203,6 +203,15 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   color: Colors.deepOrange[600]!,
                   borderRadius: BorderRadius.circular(8),
                 ),
+                child: Center(
+                  child: Text(
+                    "Check out for \$580.00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ),
               Gap(16),
             ],
