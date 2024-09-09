@@ -132,15 +132,23 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
                                     Gap(4),
                                      Text("${item.count}",),
                                     Gap(4),
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.deepOrange,
+                                    GestureDetector(
+                                      onTap: (){
+                                        if(singleItem.value[index].count != null){
+                                          singleItem.value[index].count = (singleItem.value[index].count ?? 0) + 1;
+                                        }
+
+                                      },
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.deepOrange,
+                                          ),
+                                          borderRadius: BorderRadius.circular(4),
                                         ),
-                                        borderRadius: BorderRadius.circular(4),
+                                        padding: EdgeInsets.all(4),
+                                        child: const Icon(Icons.add),
                                       ),
-                                      padding: EdgeInsets.all(4),
-                                      child: const Icon(Icons.add),
                                     ),
                                   ],
                                 )
