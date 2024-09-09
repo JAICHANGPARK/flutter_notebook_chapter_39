@@ -139,8 +139,19 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
               Gap(24),
               Row(
                 children: [
-                  Text("Subtotal :"),
-                  Text("\$600.00"),
+                  Text(
+                    "Subtotal :",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "\$600.00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                 ],
               ),
               Gap(16),
