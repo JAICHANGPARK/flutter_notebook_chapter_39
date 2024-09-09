@@ -68,7 +68,9 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
               Gap(24),
               Expanded(
                 child: ListView.separated(
+                  itemCount: singleItem.value.length,
                   itemBuilder: (context, index) {
+                    final item = singleItem.value[index];
                     return Container(
                       padding: const EdgeInsets.all(8),
                       child: Row(
@@ -152,7 +154,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
                   separatorBuilder: (context, index) => Divider(
                     color: Colors.orange[100]!,
                   ),
-                  itemCount: 5,
+
                 ),
               ),
               Gap(24),
