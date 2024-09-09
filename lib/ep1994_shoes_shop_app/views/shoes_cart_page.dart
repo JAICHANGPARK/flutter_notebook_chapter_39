@@ -104,7 +104,9 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                       ),
                                       child: const Icon(Icons.remove),
                                     ),
+                                    Gap(4),
                                     const Text("01"),
+                                    Gap(4),
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
