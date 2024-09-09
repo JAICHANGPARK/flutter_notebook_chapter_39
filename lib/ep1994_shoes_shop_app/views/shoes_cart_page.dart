@@ -20,7 +20,12 @@ class ShoesCartPage extends StatefulWidget {
 class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
   late final Signal<List<ShoesItem>> singleItem = this.createSignal(
     [ShoesItem("Shoes Casual Sport", 1),
-    
+      ShoesItem("Shoes Casual Sport", 1),
+      ShoesItem("Shoes Casual Sport", 1),
+      ShoesItem("Shoes Casual Sport", 1),
+      ShoesItem("Shoes Casual Sport", 1),
+      ShoesItem("Shoes Casual Sport", 1),
+
     ]
   );
 
