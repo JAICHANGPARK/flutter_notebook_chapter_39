@@ -138,6 +138,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
               ),
               Gap(24),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Subtotal :",
@@ -156,16 +157,40 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
               ),
               Gap(16),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Subtotal :"),
-                  Text("\$600.00"),
+                  Text(
+                    "Subtotal :",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "\$600.00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                 ],
               ),
               Gap(16),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Subtotal :"),
-                  Text("\$600.00"),
+                  Text(
+                    "Subtotal :",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "\$600.00",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                 ],
               ),
               Gap(16),
