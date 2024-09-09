@@ -101,6 +101,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                         border: Border.all(
                                           color: Colors.grey[100]!,
                                         ),
+                                        borderRadius: BorderRadius.circular(4),
                                       ),
                                       child: const Icon(Icons.remove),
                                     ),
@@ -112,6 +113,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                         border: Border.all(
                                           color: Colors.deepOrange,
                                         ),
+                                        borderRadius: BorderRadius.circular(4),
                                       ),
                                       child: const Icon(Icons.add),
                                     ),
