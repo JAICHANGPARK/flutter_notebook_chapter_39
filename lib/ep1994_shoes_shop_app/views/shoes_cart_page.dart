@@ -49,7 +49,6 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                 child: ListView.separated(
                   itemBuilder: (context, index) {
                     return Container(
-                      
                       padding: const EdgeInsets.all(8),
                       child: Row(
                         children: [
@@ -69,9 +68,14 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Row(
+                                Row(
                                   children: [
-                                    Text("Shoes Casual Sport"),
+                                    Text(
+                                      "Shoes Casual Sport",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
                                     Icon(
                                       Icons.delete_outline,
                                       color: Colors.orange,
