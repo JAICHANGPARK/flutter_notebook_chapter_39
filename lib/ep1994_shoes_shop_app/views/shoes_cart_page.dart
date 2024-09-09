@@ -130,7 +130,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
                                       child: const Icon(Icons.remove),
                                     ),
                                     Gap(4),
-                                    const Text("01"),
+                                     Text("${item.count}",),
                                     Gap(4),
                                     Container(
                                       decoration: BoxDecoration(
