@@ -95,7 +95,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      "Shoes Casual Sport",
+                                      "${item.title}",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
