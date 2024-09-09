@@ -19,7 +19,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-             Row(
+              Row(
                 children: [
                   CircleAvatar(
                     radius: 20,
@@ -39,6 +39,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   ),
                   CircleAvatar(
                     radius: 20,
+                    backgroundColor: Colors.grey[200]!,
                     child: Icon(
                       Icons.more_vert,
                     ),
@@ -135,23 +136,34 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   itemCount: 5,
                 ),
               ),
+              Gap(24),
               Row(
                 children: [
                   Text("Subtotal :"),
                   Text("\$600.00"),
                 ],
               ),
+              Gap(16),
               Row(
                 children: [
                   Text("Subtotal :"),
                   Text("\$600.00"),
                 ],
               ),
+              Gap(16),
               Row(
                 children: [
                   Text("Subtotal :"),
                   Text("\$600.00"),
                 ],
+              ),
+              Gap(16),
+              Container(
+                height: 62,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange[600]!,
+                  borderRadius: BorderRadius.circular(8),
+                ),
               )
             ],
           ),
