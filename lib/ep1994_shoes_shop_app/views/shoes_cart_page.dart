@@ -100,9 +100,14 @@ class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    Icon(
-                                      Icons.delete_outline,
-                                      color: Colors.orange,
+                                    InkWell(
+                                      onTap: (){
+                                        singleItem.value.removeAt(index);
+                                      },
+                                      child: Icon(
+                                        Icons.delete_outline,
+                                        color: Colors.orange,
+                                      ),
                                     )
                                   ],
                                 ),
