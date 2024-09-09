@@ -17,11 +17,8 @@ class ShoesCartPage extends StatefulWidget {
   State<ShoesCartPage> createState() => _ShoesCartPageState();
 }
 
-class _ShoesCartPageState extends State<ShoesCartPage> {
-  late final Signal<ShoesItem> singleItem =
-  SignalsMixin
-  createSignal(
-    context,
+class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
+  late final Signal<ShoesItem> singleItem = this.createSignal(
     ShoesItem("Shoes Casual Sport", 1),
   );
 
