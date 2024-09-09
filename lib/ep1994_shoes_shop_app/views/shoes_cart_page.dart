@@ -164,7 +164,8 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                   color: Colors.deepOrange[600]!,
                   borderRadius: BorderRadius.circular(8),
                 ),
-              )
+              ),
+              Gap(16),
             ],
           ),
         ),
