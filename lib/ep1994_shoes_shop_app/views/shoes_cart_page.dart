@@ -19,11 +19,12 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              const Row(
+             Row(
                 children: [
                   CircleAvatar(
                     radius: 20,
                     child: Icon(Icons.arrow_back_ios_new),
+                    backgroundColor: Colors.grey[200]!,
                   ),
                   Expanded(
                     child: Center(
@@ -99,10 +100,11 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
-                                          color: Colors.grey[100]!,
+                                          color: Colors.grey[200]!,
                                         ),
                                         borderRadius: BorderRadius.circular(4),
                                       ),
+                                      padding: EdgeInsets.all(4),
                                       child: const Icon(Icons.remove),
                                     ),
                                     Gap(4),
@@ -115,6 +117,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                         ),
                                         borderRadius: BorderRadius.circular(4),
                                       ),
+                                      padding: EdgeInsets.all(4),
                                       child: const Icon(Icons.add),
                                     ),
                                   ],
@@ -126,7 +129,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                       ),
                     );
                   },
-                  separatorBuilder: (context, index) => const Divider(
+                  separatorBuilder: (context, index) => Divider(
                     color: Colors.orange[100]!,
                   ),
                   itemCount: 5,
