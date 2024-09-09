@@ -92,8 +92,10 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                       "\$224.00",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
+                                        fontSize: 20,
                                       ),
                                     ),
+                                    Spacer(),
                                     Container(
                                       decoration: BoxDecoration(
                                         border: Border.all(
