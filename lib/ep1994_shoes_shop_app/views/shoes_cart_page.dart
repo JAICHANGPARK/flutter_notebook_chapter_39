@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 
+class ShoesItem {
+  String? title;
+  int? count;
+
+  ShoesItem(this.title, this.count);
+}
+
 class ShoesCartPage extends StatefulWidget {
   const ShoesCartPage({super.key});
 
@@ -10,7 +17,6 @@ class ShoesCartPage extends StatefulWidget {
 }
 
 class _ShoesCartPageState extends State<ShoesCartPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
