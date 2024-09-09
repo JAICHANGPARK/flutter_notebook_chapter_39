@@ -18,8 +18,10 @@ class ShoesCartPage extends StatefulWidget {
 }
 
 class _ShoesCartPageState extends State<ShoesCartPage> with SignalsMixin {
-  late final Signal<ShoesItem> singleItem = this.createSignal(
-    ShoesItem("Shoes Casual Sport", 1),
+  late final Signal<List<ShoesItem>> singleItem = this.createSignal(
+    [ShoesItem("Shoes Casual Sport", 1),
+    
+    ]
   );
 
   @override
