@@ -69,6 +69,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
                                       "Shoes Casual Sport",
@@ -82,6 +83,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                     )
                                   ],
                                 ),
+                                Gap(12),
                                 const Text("Woman's Shoes"),
                                 Row(
                                   children: [
