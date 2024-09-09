@@ -85,6 +85,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                                 ),
                                 Gap(12),
                                 const Text("Woman's Shoes"),
+                                Gap(12),
                                 Row(
                                   children: [
                                     const Text("\$224.00"),
