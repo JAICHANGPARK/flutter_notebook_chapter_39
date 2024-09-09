@@ -49,7 +49,7 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                 child: ListView.separated(
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.blue,
+                      
                       padding: const EdgeInsets.all(8),
                       child: Row(
                         children: [
