@@ -163,13 +163,14 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                     "Subtotal :",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 16,
                     ),
                   ),
                   Text(
                     "\$600.00",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 22,
                     ),
                   ),
                 ],
@@ -182,13 +183,14 @@ class _ShoesCartPageState extends State<ShoesCartPage> {
                     "Subtotal :",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 16,
                     ),
                   ),
                   Text(
                     "\$600.00",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 22,
                     ),
                   ),
                 ],
